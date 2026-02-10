@@ -1,48 +1,31 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 
 const classes = [
   {
-    id: 'warrior',
-    name: 'Warrior',
-    tagline: 'Masters of Iron',
+    id: 'warrior', name: 'Warrior', tagline: 'Masters of Iron', stat: 'STR', color: '#F87171',
     description: 'Warriors gain bonus XP from strength training. Built for lifters and gym lovers who live for the pump.',
     bonuses: ['+25% Strength XP', 'Heavy armor sets', 'Intimidation abilities'],
-    stat: 'STR',
-    color: '#F87171',
     image: '/characters/warrior.png',
   },
   {
-    id: 'ranger',
-    name: 'Ranger',
-    tagline: 'Born to Run',
+    id: 'ranger', name: 'Ranger', tagline: 'Born to Run', stat: 'END', color: '#34D399',
     description: 'Rangers excel at cardio and endurance. Built for runners, cyclists, and anyone who loves to move.',
     bonuses: ['+25% Cardio XP', 'Agility gear', 'Speed abilities'],
-    stat: 'END',
-    color: '#34D399',
     image: '/characters/ranger.png',
   },
   {
-    id: 'mage',
-    name: 'Mage',
-    tagline: 'Mind & Body',
+    id: 'mage', name: 'Mage', tagline: 'Mind & Body', stat: 'FLX', color: '#A78BFA',
     description: 'Mages focus on yoga, flexibility, and mindful movement. Wisdom through wellness.',
     bonuses: ['+25% Flexibility XP', 'Recovery bonuses', 'Mystical gear'],
-    stat: 'FLX',
-    color: '#A78BFA',
     image: '/characters/mage.png',
   },
   {
-    id: 'paladin',
-    name: 'Paladin',
-    tagline: 'Balanced & Strong',
+    id: 'paladin', name: 'Paladin', tagline: 'Balanced & Strong', stat: 'BAL', color: '#FBBF24',
     description: 'Paladins are all-rounders. Bonus XP from every workout type. The true jack of all trades.',
     bonuses: ['+15% All XP', 'Healing abilities', 'Radiant armor'],
-    stat: 'BAL',
-    color: '#FBBF24',
     image: '/characters/paladin.png',
   },
 ]
@@ -52,100 +35,88 @@ export default function ClassSelectionSection() {
   const active = classes.find(c => c.id === selected)!
 
   return (
-    <section id="classes" className="py-28 sm:py-36 px-6 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-surface/20 to-transparent pointer-events-none" />
+    <section id="classes" style={{ padding: '100px 40px', position: 'relative' }}>
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent, rgba(20,24,51,0.2), transparent)', pointerEvents: 'none' }} />
 
-      <div className="max-w-6xl mx-auto relative">
-        <div className="text-center mb-16">
-          <p className="text-primary-light font-mono text-sm tracking-widest uppercase mb-4">Choose Your Path</p>
-          <h2 className="text-4xl sm:text-5xl font-bold">
+      <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
+        <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+          <p className="font-mono" style={{ color: '#A78BFA', fontSize: '13px', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '16px' }}>Choose Your Path</p>
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700 }}>
             Pick Your <span className="gradient-text">Class</span>
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
           {/* Character Image */}
-          <div className="relative flex justify-center order-2 lg:order-1">
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-64 h-64 rounded-full blur-[80px] transition-colors duration-500" style={{ backgroundColor: active.color + '25' }} />
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
+              <div style={{ width: '256px', height: '256px', borderRadius: '50%', filter: 'blur(80px)', background: active.color + '25', transition: 'background 0.5s' }} />
             </div>
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={active.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.35 }}
-                className="relative w-[280px] h-[350px] sm:w-[340px] sm:h-[420px]"
-              >
-                <Image
-                  src={active.image}
-                  alt={active.name}
-                  fill
-                  className="object-contain drop-shadow-[0_0_30px_rgba(123,108,246,0.2)]"
-                />
-              </motion.div>
-            </AnimatePresence>
+            <div style={{ position: 'relative', width: '340px', height: '420px' }}>
+              <Image
+                src={active.image}
+                alt={active.name}
+                fill
+                style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 30px rgba(123,108,246,0.2))' }}
+              />
+            </div>
           </div>
 
           {/* Class selector + details */}
-          <div className="space-y-6 order-1 lg:order-2">
-            {/* Class tabs */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            {/* Tabs */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px' }}>
               {classes.map((cls) => (
                 <button
                   key={cls.id}
                   onClick={() => setSelected(cls.id)}
-                  className={`p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer ${
-                    selected === cls.id
-                      ? 'bg-surface border-border-hover shadow-lg'
-                      : 'bg-transparent border-border hover:border-border-hover'
-                  }`}
+                  style={{
+                    padding: '16px',
+                    borderRadius: '16px',
+                    border: selected === cls.id ? '1px solid rgba(255,255,255,0.14)' : '1px solid var(--color-border)',
+                    background: selected === cls.id ? 'var(--color-surface)' : 'transparent',
+                    textAlign: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s',
+                    boxShadow: selected === cls.id ? '0 8px 32px rgba(0,0,0,0.3)' : 'none',
+                  }}
                 >
-                  <div className="text-xs font-bold font-mono mb-1" style={{ color: cls.color }}>{cls.stat}</div>
-                  <div className="text-sm font-semibold text-text-primary">{cls.name}</div>
+                  <div className="font-mono" style={{ fontSize: '12px', fontWeight: 700, color: cls.color, marginBottom: '4px' }}>{cls.stat}</div>
+                  <div style={{ fontSize: '14px', fontWeight: 600, color: 'var(--color-text-primary)' }}>{cls.name}</div>
                 </button>
               ))}
             </div>
 
-            {/* Active class detail */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={active.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.25 }}
-                className="card p-8 space-y-6"
+            {/* Detail card */}
+            <div className="card" style={{ padding: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 700, color: active.color, marginBottom: '4px' }}>{active.name}</h3>
+                <p className="font-mono" style={{ color: 'var(--color-text-muted)', fontSize: '13px' }}>{active.tagline}</p>
+              </div>
+
+              <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>{active.description}</p>
+
+              <div>
+                <p className="font-mono" style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-text-muted)', marginBottom: '12px' }}>Class Bonuses</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {active.bonuses.map((bonus, i) => (
+                    <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                      <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: active.color, flexShrink: 0 }} />
+                      <span style={{ fontSize: '14px', color: 'var(--color-text-secondary)' }}>{bonus}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <button
+                className="btn-primary"
+                style={{ width: '100%', justifyContent: 'center' }}
+                onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <div>
-                  <h3 className="text-2xl font-bold mb-1" style={{ color: active.color }}>{active.name}</h3>
-                  <p className="text-text-muted text-sm font-mono">{active.tagline}</p>
-                </div>
-
-                <p className="text-text-secondary leading-relaxed">{active.description}</p>
-
-                <div>
-                  <p className="text-xs font-mono uppercase tracking-widest text-text-muted mb-3">Class Bonuses</p>
-                  <div className="space-y-2.5">
-                    {active.bonuses.map((bonus, i) => (
-                      <div key={i} className="flex items-center gap-3">
-                        <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: active.color }} />
-                        <span className="text-sm text-text-secondary">{bonus}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <button
-                  className="btn-primary w-full justify-center"
-                  onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  <span>Play as {active.name}</span>
-                  <span>→</span>
-                </button>
-              </motion.div>
-            </AnimatePresence>
+                <span>Play as {active.name}</span>
+                <span>→</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -2,17 +2,15 @@
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border">
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
-          <div className="text-lg font-bold gradient-text">fit.gg</div>
-          <div className="flex gap-8 text-sm text-text-muted">
-            <a href="#how-it-works" className="hover:text-text-primary transition-colors">How It Works</a>
-            <a href="#classes" className="hover:text-text-primary transition-colors">Classes</a>
-            <a href="#features" className="hover:text-text-primary transition-colors">Features</a>
-          </div>
-          <p className="text-text-muted text-sm">© 2026 fit.gg</p>
+    <footer style={{ borderTop: '1px solid var(--color-border)' }}>
+      <div style={{ maxWidth: '960px', margin: '0 auto', padding: '48px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '24px' }}>
+        <span className="gradient-text" style={{ fontSize: '1.1rem', fontWeight: 700 }}>fit.gg</span>
+        <div style={{ display: 'flex', gap: '32px', fontSize: '14px' }}>
+          <a href="#how-it-works" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>How It Works</a>
+          <a href="#classes" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>Classes</a>
+          <a href="#features" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>Features</a>
         </div>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '14px' }}>© 2026 fit.gg</p>
       </div>
     </footer>
   )

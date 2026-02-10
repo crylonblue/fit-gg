@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 
 export default function WaitlistSection() {
   const [email, setEmail] = useState('')
@@ -19,53 +18,53 @@ export default function WaitlistSection() {
   }
 
   return (
-    <section id="waitlist" className="py-28 sm:py-36 px-6 relative">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[400px] bg-primary/10 rounded-full blur-[120px]" />
+    <section id="waitlist" style={{ padding: '100px 40px', position: 'relative' }}>
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+        <div style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', width: '500px', height: '400px', background: 'rgba(123,108,246,0.1)', borderRadius: '50%', filter: 'blur(120px)' }} />
       </div>
 
-      <div className="max-w-xl mx-auto relative text-center">
+      <div style={{ maxWidth: '560px', margin: '0 auto', position: 'relative', textAlign: 'center' }}>
         {submitted ? (
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="space-y-6">
-            <div className="text-6xl">🎉</div>
-            <h2 className="text-3xl sm:text-4xl font-bold"><span className="gradient-text">You&apos;re In!</span></h2>
-            <p className="text-text-secondary text-lg">We&apos;ll notify you when fit.gg launches.</p>
-            <div className="card p-6 text-left space-y-3">
-              <p className="text-xs font-mono uppercase tracking-widest text-text-muted">What&apos;s next</p>
-              <div className="space-y-2 text-text-secondary text-sm">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <div style={{ fontSize: '3.5rem' }}>🎉</div>
+            <h2 style={{ fontSize: '2rem', fontWeight: 700 }}><span className="gradient-text">You&apos;re In!</span></h2>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem' }}>We&apos;ll notify you when fit.gg launches.</p>
+            <div className="card" style={{ padding: '24px', textAlign: 'left' }}>
+              <p className="font-mono" style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-text-muted)', marginBottom: '12px' }}>What&apos;s next</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--color-text-secondary)', fontSize: '14px' }}>
                 <p>✉️ Check your inbox for a welcome email</p>
                 <p>🎁 Early members get exclusive Founder&apos;s Armor</p>
                 <p>💬 Join our Discord for sneak peeks</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         ) : (
           <>
-            <div className="space-y-5 mb-10">
-              <p className="text-primary-light font-mono text-sm tracking-widest uppercase">Join the Quest</p>
-              <h2 className="text-3xl sm:text-5xl font-bold">
+            <div style={{ marginBottom: '40px' }}>
+              <p className="font-mono" style={{ color: '#A78BFA', fontSize: '13px', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '16px' }}>Join the Quest</p>
+              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700, marginBottom: '16px' }}>
                 Ready to <span className="gradient-text">Begin?</span>
               </h2>
-              <p className="text-text-secondary text-lg max-w-md mx-auto">
+              <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', maxWidth: '400px', margin: '0 auto' }}>
                 Be the first to play. Early members get exclusive Founder&apos;s Armor.
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+            <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '12px' }}>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="your@email.com"
-                className="flex-1 px-5 py-4 bg-surface border border-border rounded-2xl text-text-primary placeholder-text-muted focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-base"
+                style={{ flex: 1, padding: '16px 20px', background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '16px', color: 'var(--color-text-primary)', fontSize: '16px', outline: 'none' }}
               />
-              <button type="submit" disabled={submitting} className="btn-primary px-8 py-4 justify-center whitespace-nowrap disabled:opacity-50">
-                {submitting ? <span className="animate-pulse">Joining...</span> : <><span>Join Waitlist</span><span>→</span></>}
+              <button type="submit" disabled={submitting} className="btn-primary" style={{ whiteSpace: 'nowrap', opacity: submitting ? 0.5 : 1 }}>
+                {submitting ? 'Joining...' : <>Join Waitlist →</>}
               </button>
             </form>
 
-            <p className="text-text-muted text-sm mt-4">No spam, ever. Just launch updates.</p>
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '13px', marginTop: '16px' }}>No spam, ever. Just launch updates.</p>
           </>
         )}
       </div>

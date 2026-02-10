@@ -12,15 +12,15 @@ export default function LandingPage() {
     <main className="relative min-h-screen bg-bg-primary">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '16px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <span className="text-xl font-bold gradient-text">fit.gg</span>
-
-          <div className="flex items-center gap-8">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
             <a href="#how-it-works" className="hidden sm:inline text-sm text-text-muted hover:text-text-primary transition-colors">How It Works</a>
             <a href="#classes" className="hidden sm:inline text-sm text-text-muted hover:text-text-primary transition-colors">Classes</a>
             <a href="#features" className="hidden sm:inline text-sm text-text-muted hover:text-text-primary transition-colors">Features</a>
             <button
-              className="btn-primary text-sm !px-5 !py-2.5 !rounded-xl"
+              className="btn-primary text-sm"
+              style={{ padding: '10px 24px', borderRadius: '12px' }}
               onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Join Waitlist
@@ -30,9 +30,13 @@ export default function LandingPage() {
       </nav>
 
       <HeroSection />
+      <div style={{ height: '40px' }} />
       <HowItWorksSection />
+      <div style={{ height: '20px' }} />
       <ClassSelectionSection />
+      <div style={{ height: '20px' }} />
       <FeaturesSection />
+      <div style={{ height: '20px' }} />
       <WaitlistSection />
       <Footer />
     </main>

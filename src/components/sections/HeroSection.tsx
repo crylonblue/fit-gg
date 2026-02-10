@@ -4,41 +4,43 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden px-6 sm:px-10 lg:px-16 pt-28 pb-20">
+    <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden', padding: '120px 40px 60px 40px' }}>
       {/* Background glow effects */}
-      <div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent-cyan/6 rounded-full blur-[120px] pointer-events-none" />
+      <div style={{ position: 'absolute', top: '25%', left: '33%', width: '600px', height: '600px', background: 'rgba(123,108,246,0.08)', borderRadius: '50%', filter: 'blur(150px)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', bottom: '25%', right: '25%', width: '400px', height: '400px', background: 'rgba(34,211,238,0.06)', borderRadius: '50%', filter: 'blur(120px)', pointerEvents: 'none' }} />
 
-      <div className="max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div style={{ maxWidth: '1280px', margin: '0 auto', width: '100%' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
           {/* Left: Copy */}
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface border border-border text-sm text-text-secondary">
-              <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
+            <div className="inline-flex items-center gap-2.5" style={{ padding: '8px 16px', borderRadius: '9999px', background: 'var(--color-surface)', border: '1px solid var(--color-border)', fontSize: '14px', color: 'var(--color-text-secondary)', width: 'fit-content' }}>
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#34D399' }} />
               Coming Soon — Join the Waitlist
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight">
-              <span className="text-text-primary">Your Body.</span>
+            <h1 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', fontWeight: 800, lineHeight: 1.05, letterSpacing: '-0.02em' }}>
+              <span style={{ color: 'var(--color-text-primary)' }}>Your Body.</span>
               <br />
               <span className="gradient-text">Your Game.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-text-secondary max-w-lg leading-relaxed">
+            <p style={{ fontSize: '1.2rem', color: 'var(--color-text-secondary)', maxWidth: '480px', lineHeight: 1.7 }}>
               The fitness RPG where real workouts level up your character. 
               Build streaks, join guilds, fight bosses — all powered by your sweat.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div style={{ display: 'flex', gap: '16px', paddingTop: '8px', flexWrap: 'wrap' }}>
               <button 
-                className="btn-primary text-lg"
+                className="btn-primary"
+                style={{ fontSize: '18px' }}
                 onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <span>Join the Quest</span>
                 <span>⚔️</span>
               </button>
               <button 
-                className="btn-outline text-lg"
+                className="btn-outline"
+                style={{ fontSize: '18px' }}
                 onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <span>How It Works</span>
@@ -48,33 +50,33 @@ export default function HeroSection() {
           </div>
 
           {/* Right: Hero Character */}
-          <div className="relative flex justify-center">
-            {/* Glow behind character */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-80 h-80 bg-primary/20 rounded-full blur-[80px]" />
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+            {/* Glow */}
+            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
+              <div style={{ width: '320px', height: '320px', background: 'rgba(123,108,246,0.2)', borderRadius: '50%', filter: 'blur(80px)' }} />
             </div>
 
-            <div className="relative w-[340px] h-[420px] sm:w-[400px] sm:h-[480px]">
+            <div style={{ position: 'relative', width: '400px', height: '480px' }}>
               <Image
                 src="/characters/hero.png"
                 alt="fit.gg Hero Character"
                 fill
-                className="object-contain drop-shadow-[0_0_40px_rgba(123,108,246,0.3)]"
+                style={{ objectFit: 'contain', filter: 'drop-shadow(0 0 40px rgba(123,108,246,0.3))' }}
                 priority
               />
             </div>
 
-            {/* Floating stat badges */}
-            <div className="absolute top-8 right-0 sm:right-8 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3 animate-bounce" style={{ animationDuration: '3s' }}>
-              <span className="text-accent-green font-mono font-bold text-sm">+250 XP</span>
+            {/* Floating badges */}
+            <div style={{ position: 'absolute', top: '32px', right: '32px', background: 'rgba(14,17,40,0.8)', backdropFilter: 'blur(12px)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '12px 20px' }}>
+              <span className="font-mono font-bold text-sm" style={{ color: '#34D399' }}>+250 XP</span>
             </div>
 
-            <div className="absolute bottom-24 left-0 sm:left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3">
-              <span className="text-accent-orange font-mono font-bold text-sm">🔥 12 Day Streak</span>
+            <div style={{ position: 'absolute', bottom: '96px', left: '16px', background: 'rgba(14,17,40,0.8)', backdropFilter: 'blur(12px)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '12px 20px' }}>
+              <span className="font-mono font-bold text-sm" style={{ color: '#F97316' }}>🔥 12 Day Streak</span>
             </div>
 
-            <div className="absolute top-32 left-0 sm:-left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3">
-              <span className="text-primary-light font-mono font-bold text-sm">⬆️ Level 24</span>
+            <div style={{ position: 'absolute', top: '128px', left: '-16px', background: 'rgba(14,17,40,0.8)', backdropFilter: 'blur(12px)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '12px 20px' }}>
+              <span className="font-mono font-bold text-sm" style={{ color: '#A78BFA' }}>⬆️ Level 24</span>
             </div>
           </div>
         </div>

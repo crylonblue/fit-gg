@@ -9,29 +9,26 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-28 sm:py-36 px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-primary-light font-mono text-sm tracking-widest uppercase mb-4">Features</p>
-          <h2 className="text-4xl sm:text-5xl font-bold">
+    <section id="features" style={{ padding: '100px 40px' }}>
+      <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+          <p className="font-mono" style={{ color: '#A78BFA', fontSize: '13px', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '16px' }}>Features</p>
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700 }}>
             Not Your Average <span className="gradient-text-warm">Fitness App</span>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px' }}>
           {features.map((f, i) => (
-            <div key={i} className="card p-8 group">
-              <div className="flex items-start gap-5">
-                <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shrink-0 transition-transform duration-300 group-hover:scale-110"
-                  style={{ backgroundColor: f.color + '14' }}
-                >
+            <div key={i} className="card" style={{ padding: '32px' }}>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+                <div style={{ width: '56px', height: '56px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0, background: f.color + '14' }}>
                   {f.icon}
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-bold text-text-primary">{f.title}</h3>
-                  <p className="text-sm font-medium" style={{ color: f.color }}>{f.tagline}</p>
-                  <p className="text-text-secondary text-sm leading-relaxed">{f.description}</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--color-text-primary)' }}>{f.title}</h3>
+                  <p style={{ fontSize: '14px', fontWeight: 500, color: f.color }}>{f.tagline}</p>
+                  <p style={{ fontSize: '14px', color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>{f.description}</p>
                 </div>
               </div>
             </div>

@@ -8,26 +8,26 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-28 sm:py-36 px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-20">
-          <p className="text-primary-light font-mono text-sm tracking-widest uppercase mb-4">How It Works</p>
-          <h2 className="text-4xl sm:text-5xl font-bold">
+    <section id="how-it-works" style={{ padding: '100px 40px' }}>
+      <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+          <p className="font-mono" style={{ color: '#A78BFA', fontSize: '13px', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '16px' }}>How It Works</p>
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 700 }}>
             Simple as <span className="gradient-text">1, 2, 3</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px' }}>
           {steps.map((step, i) => (
-            <div key={i} className="text-center">
-              <div className="inline-flex items-center justify-center w-24 h-24 mb-8 rounded-3xl bg-surface border border-border relative">
-                <span className="text-4xl">{step.icon}</span>
-                <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold font-mono text-white" style={{ backgroundColor: step.color }}>
+            <div key={i} style={{ textAlign: 'center' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '96px', height: '96px', marginBottom: '32px', borderRadius: '24px', background: 'var(--color-surface)', border: '1px solid var(--color-border)', position: 'relative' }}>
+                <span style={{ fontSize: '2.5rem' }}>{step.icon}</span>
+                <div style={{ position: 'absolute', top: '-8px', right: '-8px', width: '28px', height: '28px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', fontWeight: 700, color: '#fff', background: step.color, fontFamily: 'var(--font-mono)' }}>
                   {step.number}
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-text-primary mb-3">{step.title}</h3>
-              <p className="text-text-secondary leading-relaxed max-w-[280px] mx-auto">{step.description}</p>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-primary)', marginBottom: '12px' }}>{step.title}</h3>
+              <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7, maxWidth: '280px', margin: '0 auto' }}>{step.description}</p>
             </div>
           ))}
         </div>
