@@ -1,11 +1,12 @@
 'use client'
 
+import Image from 'next/image'
 import { useReveal } from '@/hooks/useReveal'
 
 const steps = [
-  { num: '01', word: 'OPEN', line: 'Your daily session is ready.' },
-  { num: '02', word: 'MOVE', line: '5 minutes. Bodyweight. Anywhere.' },
-  { num: '03', word: 'LEVEL UP', line: 'XP. Streaks. Leagues. Repeat.' },
+  { num: '01', word: 'OPEN', line: 'Your daily session is ready. Picked for your level.', img: null },
+  { num: '02', word: 'MOVE', line: '5 minutes. Bodyweight. Anywhere.', img: '/img-move.png' },
+  { num: '03', word: 'LEVEL UP', line: 'XP. Streaks. Leagues. Repeat.', img: null },
 ]
 
 export default function HowItWorks() {
@@ -22,10 +23,15 @@ export default function HowItWorks() {
             DEAD SIMPLE.<br /><span className="text-gradient-animated">STUPIDLY EFFECTIVE.</span>
           </h2>
 
+          {/* Center image */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '64px' }}>
+            <Image src="/img-move.png" alt="Movement" width={400} height={400} style={{ maxWidth: '100%', height: 'auto', filter: 'brightness(1.1)' }} />
+          </div>
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px' }}>
             {steps.map((s, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: 'clamp(5rem, 8vw, 8rem)', fontWeight: 800, color: '#111', fontFamily: 'var(--font-heading)', lineHeight: 1, marginBottom: '16px' }}>
+                <div style={{ fontSize: 'clamp(4rem, 7vw, 7rem)', fontWeight: 800, color: '#111', fontFamily: 'var(--font-heading)', lineHeight: 1, marginBottom: '16px' }}>
                   {s.num}
                 </div>
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.01em', marginBottom: '8px', color: '#00FF87' }}>

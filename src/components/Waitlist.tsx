@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { useReveal } from '@/hooks/useReveal'
 
 export default function Waitlist() {
@@ -18,10 +19,12 @@ export default function Waitlist() {
   }
 
   return (
-    <section id="waitlist" style={{ padding: '160px 24px', position: 'relative' }}>
-      {/* Background glow */}
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', height: '400px', background: 'radial-gradient(ellipse, rgba(0,255,135,0.04) 0%, transparent 70%)', pointerEvents: 'none' }} />
-      
+    <section id="waitlist" style={{ padding: '160px 24px', position: 'relative', overflow: 'hidden' }}>
+      {/* Energy burst background */}
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '800px', height: '800px', opacity: 0.3, pointerEvents: 'none' }}>
+        <Image src="/img-energy.png" alt="" width={800} height={800} style={{ maxWidth: '100%', height: 'auto' }} />
+      </div>
+
       <div className="container" style={{ textAlign: 'center', position: 'relative' }}>
         <div ref={ref} className="reveal">
           <h2 style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 800, letterSpacing: '-0.04em', marginBottom: '24px' }}>
