@@ -1,84 +1,67 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
 
 const steps = [
   {
     number: '01',
+    title: 'Workout',
+    description: 'Complete real exercises — push-ups, runs, yoga, whatever moves you. Your phone or watch tracks every rep.',
     icon: '💪',
-    title: 'Work Out',
-    description: 'Do any workout — gym, run, yoga, whatever moves you. Log it in seconds or sync from Apple Health.',
-    color: '#FF6B35',
+    color: 'from-accent-orange to-accent-gold',
   },
   {
     number: '02',
-    icon: '⚡',
     title: 'Earn XP',
-    description: 'Every rep, every mile, every stretch earns experience points. Your real effort becomes real progress.',
-    color: '#6C5CE7',
+    description: 'Every workout earns experience points. Harder challenges, bigger rewards. Build streaks for bonus multipliers.',
+    icon: '⚡',
+    color: 'from-primary to-accent-cyan',
   },
   {
     number: '03',
-    icon: '🎮',
     title: 'Level Up',
-    description: 'Watch your character grow stronger, unlock epic gear, and evolve into a legendary hero.',
-    color: '#00D68F',
+    description: 'Watch your character grow stronger. Unlock new gear, abilities, and cosmetics as you progress.',
+    icon: '🚀',
+    color: 'from-accent-green to-accent-cyan',
   },
 ]
 
 export default function HowItWorksSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
-
   return (
-    <section id="how-it-works" ref={ref} className="section-padding relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="how-it-works" className="section-padding relative">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
+
+      <div className="max-w-5xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
           className="text-center mb-20"
         >
-          <p className="text-primary-light font-mono text-sm tracking-widest uppercase mb-4">How It Works</p>
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Simple as <span className="gradient-text">1, 2, 3</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+            How It <span className="gradient-text">Works</span>
           </h2>
+          <p className="text-text-secondary text-lg max-w-md mx-auto">
+            Three simple steps to turn every workout into an epic adventure.
+          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="relative text-center"
+              key={step.number}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ delay: i * 0.15, duration: 0.5 }}
+              className="card-glass p-8 text-center group"
             >
-              {/* Connector line */}
-              {i < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 left-[60%] w-[80%] h-px bg-gradient-to-r from-border-hover to-transparent" />
-              )}
-
-              <div className="relative inline-flex items-center justify-center w-28 h-28 mb-8">
-                <div 
-                  className="absolute inset-0 rounded-3xl opacity-15 blur-xl"
-                  style={{ backgroundColor: step.color }}
-                />
-                <div className="relative w-full h-full rounded-3xl bg-surface border border-border flex items-center justify-center">
-                  <span className="text-5xl">{step.icon}</span>
-                </div>
+              <div className="text-5xl mb-6">{step.icon}</div>
+              <div className={`inline-block text-xs font-mono font-bold tracking-widest bg-gradient-to-r ${step.color} bg-clip-text text-transparent mb-3`}>
+                STEP {step.number}
               </div>
-
-              <div className="space-y-3">
-                <p className="font-mono text-xs tracking-widest uppercase" style={{ color: step.color }}>
-                  Step {step.number}
-                </p>
-                <h3 className="text-2xl font-bold text-text-primary">{step.title}</h3>
-                <p className="text-text-secondary leading-relaxed max-w-xs mx-auto">
-                  {step.description}
-                </p>
-              </div>
+              <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
+              <p className="text-text-secondary leading-relaxed">{step.description}</p>
             </motion.div>
           ))}
         </div>

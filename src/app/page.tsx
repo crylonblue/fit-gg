@@ -31,7 +31,7 @@ export default function LandingPage() {
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                className="text-sm text-text-muted hover:text-text-primary transition-colors"
+                className="text-sm text-text-secondary hover:text-text-primary transition-colors"
               >
                 {item}
               </a>
@@ -44,7 +44,6 @@ export default function LandingPage() {
             </button>
           </motion.div>
 
-          {/* Mobile CTA */}
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -56,7 +55,6 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      {/* Sections */}
       <HeroSection />
       <HowItWorksSection />
       <ClassSelectionSection />

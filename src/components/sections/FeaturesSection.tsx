@@ -1,83 +1,69 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const features = [
   {
     icon: '🔥',
-    title: 'Streaks',
-    tagline: 'Miss a day, your armor rusts.',
-    description: 'Build daily workout streaks for multiplied XP. Your gear literally glows brighter the longer you go.',
-    color: '#FF6B35',
-  },
-  {
-    icon: '👥',
-    title: 'Guilds',
-    tagline: 'Your squad needs you.',
-    description: 'Form guilds with friends. Complete team challenges, share XP bonuses, and climb leaderboards together.',
-    color: '#4ECDC4',
+    title: 'Daily Streaks',
+    description: 'Build momentum with consecutive workout days. Longer streaks unlock rare rewards and XP multipliers.',
+    gradient: 'from-accent-orange/20 to-accent-gold/10',
   },
   {
     icon: '⚔️',
+    title: 'Guilds',
+    description: 'Team up with friends or join a guild of like-minded athletes. Train together, compete on leaderboards.',
+    gradient: 'from-primary/20 to-accent-cyan/10',
+  },
+  {
+    icon: '🏆',
     title: 'PvP Duels',
-    tagline: 'Settle it with sweat.',
-    description: 'Challenge anyone to workout duels. Weekly competitions with exclusive rewards for the victor.',
-    color: '#FF6B6B',
+    description: 'Challenge other players to head-to-head workout battles. Outperform them to claim victory and loot.',
+    gradient: 'from-accent-red/20 to-accent-orange/10',
   },
   {
     icon: '🐉',
     title: 'Boss Raids',
-    tagline: 'The whole server vs one boss.',
-    description: 'Epic community events where every workout deals damage. Unite against massive raid bosses for legendary loot.',
-    color: '#A29BFE',
+    description: 'Epic weekly challenges that require your whole guild. Take down massive bosses through collective effort.',
+    gradient: 'from-accent-purple/20 to-primary/10',
   },
 ]
 
 export default function FeaturesSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-80px' })
-
   return (
-    <section id="features" ref={ref} className="section-padding relative">
+    <section id="features" className="section-padding relative">
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-accent-cyan/5 blur-[100px] pointer-events-none" />
+
       <div className="max-w-6xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          className="text-center mb-20"
         >
-          <p className="text-primary-light font-mono text-sm tracking-widest uppercase mb-4">Features</p>
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Not Your Average <span className="gradient-text-warm">Fitness App</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+            Built for <span className="gradient-text-warm">Adventure</span>
           </h2>
-          <p className="text-text-secondary mt-4 max-w-2xl mx-auto text-lg">
-            This is a game that happens to make you fit. Every feature keeps you coming back.
+          <p className="text-text-secondary text-lg max-w-md mx-auto">
+            Everything you need to stay motivated and make fitness genuinely fun.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {features.map((feature, i) => (
             <motion.div
-              key={i}
+              key={feature.title}
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="card p-8 group"
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              className="card-glass p-8 group"
             >
-              <div className="flex items-start gap-5">
-                <div 
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shrink-0 transition-transform duration-300 group-hover:scale-110"
-                  style={{ backgroundColor: feature.color + '15' }}
-                >
-                  {feature.icon}
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-text-primary">{feature.title}</h3>
-                  <p className="text-sm font-medium" style={{ color: feature.color }}>{feature.tagline}</p>
-                  <p className="text-text-secondary leading-relaxed">{feature.description}</p>
-                </div>
+              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center text-2xl mb-5`}>
+                {feature.icon}
               </div>
+              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+              <p className="text-text-secondary leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>

@@ -1,44 +1,17 @@
 'use client'
 
-const links = {
-  Product: ['How It Works', 'Classes', 'Features', 'Roadmap'],
-  Community: ['Discord', 'Twitter', 'Reddit'],
-  Legal: ['Privacy', 'Terms'],
-}
-
 export default function Footer() {
   return (
-    <footer className="border-t border-border">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold gradient-text mb-3">fit.gg</h3>
-            <p className="text-text-muted text-sm leading-relaxed">
-              The RPG that makes fitness fun. Your body is the controller.
-            </p>
-          </div>
-
-          {/* Links */}
-          {Object.entries(links).map(([title, items]) => (
-            <div key={title}>
-              <h4 className="font-semibold text-text-primary mb-4 text-sm">{title}</h4>
-              <ul className="space-y-2">
-                {items.map((item) => (
-                  <li key={item}>
-                    <a href="#" className="text-text-muted text-sm hover:text-text-primary transition-colors">
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <footer className="border-t border-border py-10 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-lg font-bold gradient-text">fit.gg</div>
+        <div className="flex items-center gap-6 text-sm text-text-muted">
+          <a href="#how-it-works" className="hover:text-text-secondary transition-colors">How It Works</a>
+          <a href="#classes" className="hover:text-text-secondary transition-colors">Classes</a>
+          <a href="#features" className="hover:text-text-secondary transition-colors">Features</a>
         </div>
-
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-text-muted text-sm">© 2026 fit.gg. All rights reserved.</p>
-          <p className="text-text-muted text-sm">Made for heroes who never quit 💪</p>
+        <div className="text-sm text-text-muted">
+          © {new Date().getFullYear()} fit.gg
         </div>
       </div>
     </footer>
