@@ -121,6 +121,13 @@ input[type="email"]:focus {
   .section, .section-muted {
     padding: 64px 20px;
   }
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .hero-stats {
+    justify-content: center !important;
+  }
 }
 
 /* Gradient text */
