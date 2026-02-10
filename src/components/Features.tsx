@@ -1,118 +1,97 @@
 'use client'
-
-import Image from 'next/image'
 import { useReveal } from '@/hooks/useReveal'
 
 export default function Features() {
   const ref = useReveal()
-
   return (
-    <section id="features" style={{ padding: '140px 24px' }}>
+    <section id="features" style={{ padding: '160px 24px' }}>
       <div className="container">
         <div ref={ref} className="reveal">
-          <p style={{ fontSize: '14px', fontWeight: 700, color: '#00FF87', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', textAlign: 'center' }}>
-            The Engine
-          </p>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.03em', textAlign: 'center', marginBottom: '64px' }}>
-            POWERED BY<br /><span className="text-gradient-animated">ADDICTION SCIENCE.</span>
+          <p style={{ fontSize: '13px', fontWeight: 700, color: '#00FF87', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '20px', textAlign: 'center' }}>The Engine</p>
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.03em', textAlign: 'center', marginBottom: '72px' }}>
+            POWERED BY <span className="text-gradient">ADDICTION SCIENCE.</span>
           </h2>
 
           <div className="bento">
-            {/* Large: Streaks with fire image */}
-            <div className="bento-card bento-large" style={{ display: 'grid', gridTemplateColumns: '1fr 180px', gap: '24px', alignItems: 'center' }}>
-              <div>
-                <div style={{ fontSize: '14px', fontWeight: 700, color: '#F97316', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>🔥 Streaks</div>
-                <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: '12px' }}>Your streak is sacred.</h3>
-                <p style={{ color: '#888', lineHeight: 1.7, marginBottom: '20px' }}>Every day you show up, it grows. Break it and it resets. The longer it gets, the more it hurts to lose.</p>
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  {[...Array(7)].map((_, i) => (
-                    <div key={i} style={{
-                      width: '36px', height: '36px', borderRadius: '6px',
-                      background: i < 5 ? 'rgba(249,115,22,0.15)' : '#0A0A0A',
-                      border: i < 5 ? '1px solid rgba(249,115,22,0.3)' : '1px solid #1a1a1a',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      fontSize: i < 5 ? '16px' : '11px', color: '#555',
-                    }}>
-                      {i < 5 ? '🔥' : ['S', 'S'][i - 5]}
-                    </div>
-                  ))}
-                </div>
+            {/* ── Streaks (wide) ── */}
+            <div className="bento-card bento-wide accent-orange">
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#F97316', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>🔥 Streaks</div>
+              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '10px' }}>Your streak is sacred.</h3>
+              <p style={{ color: '#555', lineHeight: 1.7, marginBottom: '20px', fontSize: '15px' }}>Show up every day. Watch it grow. Break it and it resets. The longer it gets, the more it hurts to lose.</p>
+              <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                {[1,2,3,4,5].map(d => (
+                  <div key={d} style={{ width: '40px', height: '40px', borderRadius: '8px', background: 'rgba(249,115,22,0.1)', border: '1px solid rgba(249,115,22,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>🔥</div>
+                ))}
+                {[6,7].map(d => (
+                  <div key={d} style={{ width: '40px', height: '40px', borderRadius: '8px', background: '#0a0a0a', border: '1px solid #151515', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', color: '#333', fontWeight: 700 }}>{d === 6 ? 'S' : 'S'}</div>
+                ))}
+                <span style={{ marginLeft: '12px', fontSize: '22px', fontWeight: 800, color: '#F97316', fontFamily: 'var(--font-heading)' }}>5</span>
               </div>
-              <Image src="/img-fire.png" alt="Streak fire" width={180} height={180} style={{ maxWidth: '100%', height: 'auto', filter: 'brightness(1.1)' }} />
             </div>
 
-            {/* Small: Leagues with crown */}
-            <div className="bento-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-              <div>
-                <div style={{ fontSize: '14px', fontWeight: 700, color: '#A855F7', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>⚔️ Leagues</div>
-                <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px' }}>Compete weekly.</h3>
-                <p style={{ color: '#888', lineHeight: 1.6, fontSize: '14px' }}>Get promoted. Get demoted. Talk trash.</p>
+            {/* ── Leagues ── */}
+            <div className="bento-card accent-purple">
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#A855F7', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>⚔️ Leagues</div>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '8px' }}>Weekly competition.</h3>
+              <p style={{ color: '#555', lineHeight: 1.6, fontSize: '14px', marginBottom: '14px' }}>Top 10 promote. Bottom 5 demote.</p>
+              <div style={{ display: 'flex', gap: '6px', fontSize: '22px' }}>
+                {['🥉','🥈','🥇'].map((e,i) => <span key={i}>{e}</span>)}
+                {['💎','👑'].map((e,i) => <span key={i} style={{ opacity: 0.25 }}>{e}</span>)}
               </div>
-              <Image src="/img-crown.png" alt="Crown" width={120} height={120} style={{ alignSelf: 'center', marginTop: '16px', filter: 'brightness(1.1)' }} />
             </div>
 
-            {/* Small: Hearts */}
-            <div className="bento-card">
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#EF4444', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>❤️ Hearts</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px' }}>5 per day.</h3>
-              <p style={{ color: '#888', lineHeight: 1.6, fontSize: '14px', marginBottom: '16px' }}>Quit early or skip? Lose a heart. Keeps you honest.</p>
-              <div style={{ display: 'flex', gap: '6px' }}>
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ fontSize: '24px', opacity: i < 3 ? 1 : 0.2 }}>{i < 3 ? '❤️' : '🖤'}</span>
+            {/* ── Hearts ── */}
+            <div className="bento-card accent-red">
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#EF4444', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>❤️ Hearts</div>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '8px' }}>5 per day. Use them wisely.</h3>
+              <p style={{ color: '#555', lineHeight: 1.6, fontSize: '14px', marginBottom: '14px' }}>Skip or quit? Lose a heart.</p>
+              <div style={{ display: 'flex', gap: '4px', fontSize: '26px' }}>
+                {[0,1,2].map(i => <span key={i}>❤️</span>)}
+                {[3,4].map(i => <span key={i} style={{ opacity: 0.15 }}>🖤</span>)}
+              </div>
+            </div>
+
+            {/* ── Skill Tree (wide) ── */}
+            <div className="bento-card bento-wide accent-green">
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#00FF87', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>🌳 Skill Tree</div>
+              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '10px' }}>Progressive. Not random.</h3>
+              <p style={{ color: '#555', lineHeight: 1.7, marginBottom: '20px', fontSize: '15px' }}>Master basics, unlock advanced moves. You can&apos;t skip ahead — and that&apos;s the point.</p>
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {['Squats','Pushups','Core','Mobility','Jumps','Diamond'].map((s,i) => (
+                  <span key={i} className="node" style={{ padding: '6px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: 700, background: 'rgba(0,255,135,0.06)', border: '1px solid rgba(0,255,135,0.2)', color: '#00FF87', textTransform: 'uppercase' }}>{s} ✓</span>
+                ))}
+                {['Planks','Burpees','Pike'].map((s,i) => (
+                  <span key={i} style={{ padding: '6px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: 700, background: '#060606', border: '1px solid #121212', color: '#222', textTransform: 'uppercase' }}>🔒 {s}</span>
                 ))}
               </div>
             </div>
 
-            {/* Large: Skill Tree with tree image */}
-            <div className="bento-card bento-large" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: '24px', alignItems: 'center' }}>
-              <Image src="/img-tree.png" alt="Skill tree" width={180} height={180} style={{ maxWidth: '100%', height: 'auto', filter: 'brightness(1.1)' }} />
-              <div>
-                <div style={{ fontSize: '14px', fontWeight: 700, color: '#00FF87', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>🌳 Skill Tree</div>
-                <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: '12px' }}>Progressive. Not random.</h3>
-                <p style={{ color: '#888', lineHeight: 1.7, marginBottom: '20px' }}>Master basics, unlock advanced moves. You can&apos;t skip ahead. Every session builds on the last.</p>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  {['Squats', 'Pushups', 'Core'].map((s, i) => (
-                    <span key={i} className="node-active" style={{
-                      padding: '6px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: 700,
-                      background: 'rgba(0,255,135,0.08)', border: '1px solid rgba(0,255,135,0.25)',
-                      color: '#00FF87', textTransform: 'uppercase',
-                    }}>{s} ✓</span>
-                  ))}
-                  {['Planks', 'Burpees'].map((s, i) => (
-                    <span key={i} style={{
-                      padding: '6px 12px', borderRadius: '6px', fontSize: '11px', fontWeight: 700,
-                      background: '#0A0A0A', border: '1px solid #1a1a1a', color: '#333', textTransform: 'uppercase',
-                    }}>🔒 {s}</span>
-                  ))}
-                </div>
-              </div>
+            {/* ── Adaptive ── */}
+            <div className="bento-card accent-blue">
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#3B82F6', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>🧠 Adaptive</div>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '8px' }}>Your AI coach.</h3>
+              <p style={{ color: '#555', lineHeight: 1.6, fontSize: '14px' }}>Too easy? Harder. Struggling? Dialed back. Every session adapts to you.</p>
             </div>
 
-            {/* Small: Adaptive */}
-            <div className="bento-card">
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#3B82F6', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>🧠 Adaptive</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px' }}>Evolves with you.</h3>
-              <p style={{ color: '#888', lineHeight: 1.6, fontSize: '14px' }}>Too easy? Harder. Struggling? Dialed back. Your AI coach adjusts every session.</p>
-            </div>
-
-            {/* Small: XP */}
-            <div className="bento-card">
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#FBBF24', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>⚡ XP System</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px' }}>Every rep counts.</h3>
-              <p style={{ color: '#888', lineHeight: 1.6, fontSize: '14px', marginBottom: '16px' }}>Watch your level climb.</p>
-              <div style={{ fontSize: '11px', color: '#888', marginBottom: '6px', display: 'flex', justifyContent: 'space-between' }}>
-                <span>Level 12</span><span style={{ color: '#FBBF24' }}>2,450 / 3,000</span>
+            {/* ── XP ── */}
+            <div className="bento-card accent-yellow">
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#FBBF24', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>⚡ XP System</div>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '8px' }}>Every rep counts.</h3>
+              <p style={{ color: '#555', lineHeight: 1.6, fontSize: '14px', marginBottom: '14px' }}>Watch your level climb.</p>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', marginBottom: '6px' }}>
+                <span style={{ color: '#555' }}>Level 12</span>
+                <span style={{ color: '#FBBF24', fontWeight: 700 }}>2,450 / 3,000</span>
               </div>
               <div style={{ height: '6px', borderRadius: '3px', background: '#111', overflow: 'hidden' }}>
-                <div className="xp-bar-fill" />
+                <div className="xp-fill" />
               </div>
             </div>
 
-            {/* Small: Zero Equipment */}
-            <div className="bento-card">
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '16px' }}>🏠 Zero Equipment</div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px' }}>Your body is the gym.</h3>
-              <p style={{ color: '#888', lineHeight: 1.6, fontSize: '14px' }}>Bedroom. Hotel. Park. Anywhere with floor space.</p>
+            {/* ── Zero Equipment ── */}
+            <div className="bento-card" style={{ borderTop: '2px solid #22222244' }}>
+              <div style={{ fontSize: '13px', fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '14px' }}>🏠 Zero Equipment</div>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: '8px' }}>Your body is the gym.</h3>
+              <p style={{ color: '#555', lineHeight: 1.6, fontSize: '14px' }}>Bedroom. Hotel room. Park. Anywhere with floor space and 5 minutes.</p>
             </div>
           </div>
         </div>
