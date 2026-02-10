@@ -1,30 +1,33 @@
 'use client'
 
 const steps = [
-  { num: '1', icon: '📱', title: 'Open', desc: "Get today's 5-minute session, picked for your level." },
-  { num: '2', icon: '🏋️', title: 'Move', desc: 'Follow along with guided exercises. No equipment needed.' },
-  { num: '3', icon: '📈', title: 'Progress', desc: 'Earn XP, extend your streak, unlock new skills.' },
+  { num: '01', icon: '📱', title: 'OPEN', desc: "Your daily 5-minute session is ready. Picked for your level. No thinking required." },
+  { num: '02', icon: '⚡', title: 'MOVE', desc: 'Follow guided exercises. Bodyweight only. Your bedroom is your gym.' },
+  { num: '03', icon: '🏆', title: 'LEVEL UP', desc: 'Earn XP. Extend your streak. Climb the leaderboard. Unlock new skills.' },
 ]
 
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="section">
-      <div className="container" style={{ textAlign: 'center' }}>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '16px' }}>
-          Dead simple. Stupidly effective.
-        </h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--color-text-secondary)', marginBottom: '56px' }}>
-          Three steps. Five minutes. Every day.
-        </p>
+      <div className="container">
+        <div style={{ textAlign: 'center', marginBottom: '72px' }}>
+          <div className="badge" style={{ marginBottom: '24px', display: 'inline-flex' }}>The Loop</div>
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
+            Dead Simple.<br /><span className="text-neon">Stupidly Effective.</span>
+          </h2>
+        </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
           {steps.map((s, i) => (
-            <div key={i} style={{ textAlign: 'center' }}>
-              <div style={{ width: '80px', height: '80px', borderRadius: '20px', background: 'var(--color-green-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '36px', margin: '0 auto 20px' }}>
-                {s.icon}
+            <div key={i} className="card" style={{ position: 'relative', overflow: 'hidden' }}>
+              {/* Step number watermark */}
+              <div style={{ position: 'absolute', top: '-10px', right: '16px', fontSize: '120px', fontWeight: 900, color: 'rgba(255,255,255,0.02)', fontFamily: 'var(--font-heading)', lineHeight: 1, pointerEvents: 'none' }}>{s.num}</div>
+              <div style={{ position: 'relative' }}>
+                <div style={{ fontSize: '40px', marginBottom: '20px' }}>{s.icon}</div>
+                <div style={{ fontSize: '12px', fontWeight: 800, color: 'var(--color-neon-green)', letterSpacing: '0.1em', marginBottom: '8px' }}>STEP {s.num}</div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '12px', letterSpacing: '-0.01em' }}>{s.title}</h3>
+                <p style={{ fontSize: '15px', color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>{s.desc}</p>
               </div>
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '8px' }}>{s.title}</h3>
-              <p style={{ fontSize: '16px', color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{s.desc}</p>
             </div>
           ))}
         </div>

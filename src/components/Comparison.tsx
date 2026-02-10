@@ -5,43 +5,41 @@ const rows = [
   { feature: 'Progressive skill tree', fitgg: true, others: false },
   { feature: 'Streak & XP system', fitgg: true, others: false },
   { feature: 'Adaptive difficulty', fitgg: true, others: false },
-  { feature: 'Zero equipment needed', fitgg: true, others: true },
+  { feature: 'Zero equipment', fitgg: true, others: true },
   { feature: 'Weekly leagues', fitgg: true, others: false },
-  { feature: 'Heart / accountability system', fitgg: true, others: false },
+  { feature: 'Heart system', fitgg: true, others: false },
   { feature: 'Free tier', fitgg: true, others: true },
 ]
 
 export default function Comparison() {
   return (
-    <section className="section-muted">
+    <section className="section">
       <div className="container" style={{ textAlign: 'center' }}>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '16px' }}>
-          Not another workout library.
+        <div className="badge" style={{ marginBottom: '24px', display: 'inline-flex' }}>Why Us</div>
+        <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '56px', textTransform: 'uppercase' }}>
+          Not Another <span className="text-neon">Workout Library.</span>
         </h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--color-text-secondary)', marginBottom: '48px' }}>
-          Here&apos;s what makes fit.gg different.
-        </p>
 
-        <div style={{ maxWidth: '600px', margin: '0 auto', borderRadius: '20px', overflow: 'hidden', border: '1px solid var(--color-border)', background: 'white' }}>
+        <div style={{ maxWidth: '640px', margin: '0 auto', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)' }}>
           {/* Header */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 100px 100px', padding: '16px 24px', background: 'var(--color-bg-muted)', borderBottom: '1px solid var(--color-border)', fontSize: '14px', fontWeight: 700, fontFamily: 'var(--font-heading)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 100px 100px', padding: '16px 24px', background: 'var(--color-bg-card)', borderBottom: '1px solid var(--color-border)', fontSize: '13px', fontWeight: 800, fontFamily: 'var(--font-heading)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             <div style={{ textAlign: 'left' }}></div>
-            <div className="text-gradient">fit.gg</div>
+            <div className="text-neon">fit.gg</div>
             <div style={{ color: 'var(--color-text-muted)' }}>Others</div>
           </div>
-          {/* Rows */}
           {rows.map((r, i) => (
             <div key={i} style={{ 
               display: 'grid', 
               gridTemplateColumns: '1fr 100px 100px', 
               padding: '14px 24px', 
               borderBottom: i < rows.length - 1 ? '1px solid var(--color-border)' : 'none',
-              fontSize: '15px',
+              fontSize: '14px',
               alignItems: 'center',
+              background: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.01)',
             }}>
-              <div style={{ textAlign: 'left', fontWeight: 500 }}>{r.feature}</div>
-              <div style={{ fontSize: '20px' }}>{r.fitgg ? '✅' : '—'}</div>
-              <div style={{ fontSize: '20px' }}>{r.others ? '✅' : '❌'}</div>
+              <div style={{ textAlign: 'left', fontWeight: 600, color: 'var(--color-text-secondary)' }}>{r.feature}</div>
+              <div style={{ fontSize: '18px' }}>{r.fitgg ? '✅' : '—'}</div>
+              <div style={{ fontSize: '18px' }}>{r.others ? '⚪' : '❌'}</div>
             </div>
           ))}
         </div>

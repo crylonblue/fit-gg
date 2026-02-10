@@ -15,10 +15,13 @@ export default function LandingPage() {
     <main>
       <Nav />
       <Hero />
+      <hr className="gradient-line" />
       <Problem />
       <HowItWorks />
+      <hr className="gradient-line" />
       <SkillTree />
       <Features />
+      <hr className="gradient-line" />
       <Comparison />
       <Waitlist />
       <Footer />

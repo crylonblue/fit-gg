@@ -1,77 +1,83 @@
 'use client'
 
-import dynamic from 'next/dynamic'
-
-const MascotScene = dynamic(() => import('./MascotScene'), { ssr: false })
+import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="section" style={{ paddingTop: '140px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
-      {/* Background blobs */}
-      <div style={{ position: 'absolute', top: '-20%', right: '-10%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(52,211,153,0.08) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
-      <div style={{ position: 'absolute', bottom: '-10%', left: '-10%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(123,108,246,0.06) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
+    <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', overflow: 'hidden', padding: '120px 24px 80px' }}>
+      {/* Background effects */}
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 0%, rgba(0,255,135,0.06) 0%, transparent 60%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', top: '20%', left: '60%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(178,75,243,0.05) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
+      
+      {/* Grid lines background */}
+      <div style={{ position: 'absolute', inset: 0, opacity: 0.03, backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '60px 60px', pointerEvents: 'none' }} />
 
       <div className="container" style={{ position: 'relative' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px', alignItems: 'center' }}>
           {/* Left: Copy */}
           <div>
-            {/* Badge */}
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', borderRadius: '9999px', background: 'var(--color-green-light)', fontSize: '14px', fontWeight: 600, color: 'var(--color-green-dark)', marginBottom: '28px' }}>
-              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-green-primary)' }} />
-              Coming Soon
+            <div className="badge" style={{ marginBottom: '24px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--color-neon-green)', boxShadow: '0 0 8px var(--color-neon-green)' }} />
+              Early Access — 2026
             </div>
 
-            <h1 style={{ fontSize: 'clamp(2.2rem, 4.5vw, 3.5rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '24px' }}>
-              The 5-minute workout habit<br />
-              <span className="text-gradient">that actually sticks.</span>
+            <h1 style={{ fontSize: 'clamp(3rem, 5.5vw, 4.5rem)', fontWeight: 800, lineHeight: 1.05, letterSpacing: '-0.03em', marginBottom: '24px' }}>
+              YOUR BODY.<br />
+              <span className="text-neon-glow glow-pulse">YOUR GAME.</span>
             </h1>
 
-            <p style={{ fontSize: '1.15rem', color: 'var(--color-text-secondary)', lineHeight: 1.7, maxWidth: '480px', marginBottom: '36px' }}>
-              Duolingo-style progression for bodyweight fitness. Build streaks, unlock skills, get stronger — 5 minutes at a time.
+            <p style={{ fontSize: '1.2rem', color: 'var(--color-text-secondary)', lineHeight: 1.7, maxWidth: '460px', marginBottom: '40px' }}>
+              5-minute daily workouts with RPG progression. Build streaks, climb leagues, unlock skills — all powered by your sweat. Zero equipment. Zero excuses.
             </p>
 
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '56px' }}>
               <button
                 className="btn-primary"
-                style={{ fontSize: '17px', padding: '16px 32px' }}
                 onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Join the Waitlist 💪
+                Join the Quest ⚔️
               </button>
               <button
-                className="btn-secondary"
-                style={{ fontSize: '17px', padding: '16px 32px' }}
+                className="btn-outline"
                 onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                How It Works ↓
+                See How It Works
               </button>
             </div>
 
-            {/* Stats row */}
-            <div style={{ display: 'flex', gap: '32px', marginTop: '48px' }}>
-              <div>
-                <div style={{ fontSize: '28px', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>🔥 5 min</div>
-                <div style={{ fontSize: '13px', color: 'var(--color-text-muted)', fontWeight: 500 }}>Daily sessions</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '28px', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>⚡ 200+</div>
-                <div style={{ fontSize: '13px', color: 'var(--color-text-muted)', fontWeight: 500 }}>Guided workouts</div>
-              </div>
-              <div>
-                <div style={{ fontSize: '28px', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>🏠 Zero</div>
-                <div style={{ fontSize: '13px', color: 'var(--color-text-muted)', fontWeight: 500 }}>Equipment needed</div>
-              </div>
+            {/* Stats */}
+            <div style={{ display: 'flex', gap: '40px' }}>
+              {[
+                { value: '5 min', label: 'Daily Sessions' },
+                { value: '200+', label: 'Workouts' },
+                { value: '0', label: 'Equipment' },
+              ].map((s, i) => (
+                <div key={i}>
+                  <div style={{ fontSize: '24px', fontWeight: 800, fontFamily: 'var(--font-heading)', color: 'var(--color-neon-green)' }}>{s.value}</div>
+                  <div style={{ fontSize: '12px', color: 'var(--color-text-muted)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.label}</div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Right: 3D Mascot */}
-          <div style={{ position: 'relative' }}>
-            {/* Glow behind mascot */}
-            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '350px', height: '350px', background: 'radial-gradient(circle, rgba(52,211,153,0.15) 0%, rgba(123,108,246,0.08) 50%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
-            <MascotScene />
+          {/* Right: Mascot image */}
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            {/* Glow */}
+            <div style={{ position: 'absolute', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(0,255,135,0.12) 0%, rgba(178,75,243,0.06) 50%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
+            <Image
+              src="/mascot-3d-hero.png"
+              alt="fit.gg mascot"
+              width={500}
+              height={500}
+              style={{ position: 'relative', filter: 'drop-shadow(0 0 40px rgba(0,255,135,0.2))', maxWidth: '100%', height: 'auto' }}
+              priority
+            />
           </div>
         </div>
       </div>
+
+      {/* Bottom gradient line */}
+      <div className="gradient-line" style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }} />
     </section>
   )
 }
