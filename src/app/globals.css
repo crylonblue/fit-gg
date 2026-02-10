@@ -110,6 +110,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+/* Input */
+input[type="email"]:focus {
+  border-color: var(--color-green-primary) !important;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section, .section-muted {
+    padding: 64px 20px;
+  }
+}
+
 /* Gradient text */
 .text-gradient {
   background: linear-gradient(135deg, var(--color-green-primary), var(--color-purple-primary));

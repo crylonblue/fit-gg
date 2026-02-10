@@ -4,6 +4,17 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'fit.gg — The 5-Minute Workout Habit That Actually Sticks',
   description: 'Duolingo-style progression for bodyweight fitness. Build streaks, unlock skills, get stronger — 5 minutes at a time.',
+  openGraph: {
+    title: 'fit.gg — The 5-Minute Workout Habit That Actually Sticks',
+    description: 'Duolingo-style progression for bodyweight fitness. Build streaks, unlock skills, get stronger — 5 minutes at a time.',
+    siteName: 'fit.gg',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'fit.gg — The 5-Minute Workout Habit That Actually Sticks',
+    description: 'Duolingo-style progression for bodyweight fitness.',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
