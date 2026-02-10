@@ -1,11 +1,10 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden px-6 pt-28 pb-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden px-6 sm:px-10 lg:px-16 pt-28 pb-20">
       {/* Background glow effects */}
       <div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent-cyan/6 rounded-full blur-[120px] pointer-events-none" />
@@ -13,12 +12,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Copy */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="space-y-8"
-          >
+          <div className="space-y-8">
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface border border-border text-sm text-text-secondary">
               <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
               Coming Soon — Join the Waitlist
@@ -51,15 +45,10 @@ export default function HeroSection() {
                 <span>↓</span>
               </button>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Hero Character */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className="relative flex justify-center"
-          >
+          <div className="relative flex justify-center">
             {/* Glow behind character */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="w-80 h-80 bg-primary/20 rounded-full blur-[80px]" />
@@ -76,30 +65,18 @@ export default function HeroSection() {
             </div>
 
             {/* Floating stat badges */}
-            <motion.div
-              animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute top-8 right-0 sm:right-8 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3"
-            >
+            <div className="absolute top-8 right-0 sm:right-8 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3 animate-bounce" style={{ animationDuration: '3s' }}>
               <span className="text-accent-green font-mono font-bold text-sm">+250 XP</span>
-            </motion.div>
+            </div>
 
-            <motion.div
-              animate={{ y: [0, -6, 0] }}
-              transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-              className="absolute bottom-24 left-0 sm:left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3"
-            >
+            <div className="absolute bottom-24 left-0 sm:left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3">
               <span className="text-accent-orange font-mono font-bold text-sm">🔥 12 Day Streak</span>
-            </motion.div>
+            </div>
 
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-              className="absolute top-32 left-0 sm:-left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3"
-            >
+            <div className="absolute top-32 left-0 sm:-left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3">
               <span className="text-primary-light font-mono font-bold text-sm">⬆️ Level 24</span>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
