@@ -1,35 +1,40 @@
 'use client'
 
+import { useReveal } from '@/hooks/useReveal'
+
 const steps = [
-  { num: '01', icon: '📱', title: 'OPEN', desc: "Your daily 5-minute session is ready. Picked for your level. No thinking required." },
-  { num: '02', icon: '⚡', title: 'MOVE', desc: 'Follow guided exercises. Bodyweight only. Your bedroom is your gym.' },
-  { num: '03', icon: '🏆', title: 'LEVEL UP', desc: 'Earn XP. Extend your streak. Climb the leaderboard. Unlock new skills.' },
+  { num: '01', word: 'OPEN', line: 'Your daily session is ready.' },
+  { num: '02', word: 'MOVE', line: '5 minutes. Bodyweight. Anywhere.' },
+  { num: '03', word: 'LEVEL UP', line: 'XP. Streaks. Leagues. Repeat.' },
 ]
 
 export default function HowItWorks() {
-  return (
-    <section id="how-it-works" className="section">
-      <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: '72px' }}>
-          <div className="badge" style={{ marginBottom: '24px', display: 'inline-flex' }}>The Loop</div>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
-            Dead Simple.<br /><span className="text-neon">Stupidly Effective.</span>
-          </h2>
-        </div>
+  const ref = useReveal()
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
-          {steps.map((s, i) => (
-            <div key={i} className="card" style={{ position: 'relative', overflow: 'hidden' }}>
-              {/* Step number watermark */}
-              <div style={{ position: 'absolute', top: '-10px', right: '16px', fontSize: '120px', fontWeight: 900, color: 'rgba(255,255,255,0.02)', fontFamily: 'var(--font-heading)', lineHeight: 1, pointerEvents: 'none' }}>{s.num}</div>
-              <div style={{ position: 'relative' }}>
-                <div style={{ fontSize: '40px', marginBottom: '20px' }}>{s.icon}</div>
-                <div style={{ fontSize: '12px', fontWeight: 800, color: 'var(--color-neon-green)', letterSpacing: '0.1em', marginBottom: '8px' }}>STEP {s.num}</div>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '12px', letterSpacing: '-0.01em' }}>{s.title}</h3>
-                <p style={{ fontSize: '15px', color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>{s.desc}</p>
+  return (
+    <section id="how-it-works" style={{ padding: '140px 24px' }}>
+      <div className="container">
+        <div ref={ref} className="reveal">
+          <p style={{ fontSize: '14px', fontWeight: 700, color: '#00FF87', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '24px', textAlign: 'center' }}>
+            The Loop
+          </p>
+          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.03em', textAlign: 'center', marginBottom: '80px' }}>
+            DEAD SIMPLE.<br /><span className="text-gradient-animated">STUPIDLY EFFECTIVE.</span>
+          </h2>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px' }}>
+            {steps.map((s, i) => (
+              <div key={i} style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: 'clamp(5rem, 8vw, 8rem)', fontWeight: 800, color: '#111', fontFamily: 'var(--font-heading)', lineHeight: 1, marginBottom: '16px' }}>
+                  {s.num}
+                </div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.01em', marginBottom: '8px', color: '#00FF87' }}>
+                  {s.word}
+                </h3>
+                <p style={{ fontSize: '15px', color: '#888', lineHeight: 1.6 }}>{s.line}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

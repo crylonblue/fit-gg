@@ -1,10 +1,12 @@
 'use client'
 
 import { useState } from 'react'
+import { useReveal } from '@/hooks/useReveal'
 
 export default function Waitlist() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const ref = useReveal()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -16,50 +18,45 @@ export default function Waitlist() {
   }
 
   return (
-    <section id="waitlist" className="section-alt" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section id="waitlist" style={{ padding: '160px 24px', position: 'relative' }}>
       {/* Background glow */}
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', height: '300px', background: 'radial-gradient(ellipse, rgba(0,255,135,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', height: '400px', background: 'radial-gradient(ellipse, rgba(0,255,135,0.04) 0%, transparent 70%)', pointerEvents: 'none' }} />
       
       <div className="container" style={{ textAlign: 'center', position: 'relative' }}>
-        <div className="badge" style={{ marginBottom: '24px', display: 'inline-flex' }}>Waitlist Open</div>
-        <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '16px', textTransform: 'uppercase' }}>
-          Ready to <span className="text-neon-glow">Level Up?</span>
-        </h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--color-text-secondary)', marginBottom: '40px', maxWidth: '460px', margin: '0 auto 40px' }}>
-          Be the first to play. Drop your email and we&apos;ll ping you when it&apos;s go time.
-        </p>
+        <div ref={ref} className="reveal">
+          <h2 style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 800, letterSpacing: '-0.04em', marginBottom: '24px' }}>
+            READY<span style={{ color: '#00FF87' }}>?</span>
+          </h2>
+          <p style={{ fontSize: '1.1rem', color: '#888', marginBottom: '48px', maxWidth: '400px', margin: '0 auto 48px' }}>
+            Drop your email. We&apos;ll ping you when it&apos;s go time.
+          </p>
 
-        {submitted ? (
-          <div className="card" style={{ display: 'inline-block', padding: '32px 48px', borderColor: 'rgba(0,255,135,0.3)' }}>
-            <div style={{ fontSize: '48px', marginBottom: '12px' }}>⚡</div>
-            <p style={{ fontSize: '20px', fontWeight: 800, textTransform: 'uppercase' }}>You&apos;re In.</p>
-            <p style={{ fontSize: '14px', color: 'var(--color-text-secondary)', marginTop: '4px' }}>GG. We&apos;ll keep you posted.</p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '500px', margin: '0 auto' }}>
-            <input
-              type="email"
-              placeholder="your@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              style={{
-                flex: 1,
-                minWidth: '260px',
-                padding: '16px 20px',
-                borderRadius: '8px',
-                fontSize: '16px',
-              }}
-            />
-            <button type="submit" className="btn-primary" style={{ whiteSpace: 'nowrap' }}>
-              Count Me In ⚡
-            </button>
-          </form>
-        )}
+          {submitted ? (
+            <div style={{ padding: '32px' }}>
+              <div style={{ fontSize: '48px', marginBottom: '16px' }}>⚡</div>
+              <p style={{ fontSize: '24px', fontWeight: 800, textTransform: 'uppercase' }}>GG. You&apos;re in.</p>
+              <p style={{ fontSize: '14px', color: '#888', marginTop: '8px' }}>We&apos;ll keep you posted.</p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '480px', margin: '0 auto' }}>
+              <input
+                type="email"
+                placeholder="your@email.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                style={{ flex: 1, minWidth: '260px', padding: '18px 20px', borderRadius: '8px', fontSize: '16px' }}
+              />
+              <button type="submit" className="btn" style={{ whiteSpace: 'nowrap' }}>
+                Count Me In
+              </button>
+            </form>
+          )}
 
-        <p style={{ fontSize: '12px', color: 'var(--color-text-muted)', marginTop: '16px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-          No spam. Just launch updates.
-        </p>
+          <p style={{ fontSize: '12px', color: '#444', marginTop: '20px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            No spam. Ever.
+          </p>
+        </div>
       </div>
     </section>
   )

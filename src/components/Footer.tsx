@@ -1,14 +1,9 @@
 export default function Footer() {
   return (
-    <footer style={{ padding: '40px 24px', borderTop: '1px solid var(--color-border)', textAlign: 'center' }}>
-      <div className="container">
-        <span style={{ fontWeight: 800, fontSize: '20px', fontFamily: 'var(--font-heading)' }}>
-          <span className="text-neon">fit</span>.gg
-        </span>
-        <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-          Made with 💪 and code &middot; &copy; {new Date().getFullYear()}
-        </p>
-      </div>
+    <footer style={{ padding: '32px 24px', borderTop: '1px solid #111', textAlign: 'center' }}>
+      <p style={{ fontSize: '13px', color: '#333' }}>
+        <span style={{ color: '#00FF87' }}>fit</span>.gg &middot; Made with 💪 &middot; &copy; {new Date().getFullYear()}
+      </p>
     </footer>
   )
 }
