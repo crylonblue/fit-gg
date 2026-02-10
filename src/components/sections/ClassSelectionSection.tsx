@@ -2,151 +2,152 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import dynamic from 'next/dynamic'
-
-const ChibiCharacter = dynamic(() => import('@/components/3d/ChibiCharacter'), { ssr: false })
+import Image from 'next/image'
 
 const classes = [
   {
     id: 'warrior',
     name: 'Warrior',
-    focus: 'Strength Training',
-    description: 'Masters of heavy lifting. Every squat, deadlift, and bench press fuels raw power. Wield a mighty sword forged from iron discipline.',
-    color: '#DC2626',
-    bgGlow: 'rgba(220, 38, 38, 0.08)',
-    stats: { strength: 95, endurance: 70, agility: 45, spirit: 40 },
+    tagline: 'Masters of Iron',
+    description: 'Warriors gain bonus XP from strength training. Built for lifters and gym lovers who live for the pump.',
+    bonuses: ['+25% Strength XP', 'Heavy armor sets', 'Intimidation abilities'],
+    stat: 'STR',
+    color: '#F87171',
+    image: '/characters/warrior.png',
   },
   {
     id: 'ranger',
     name: 'Ranger',
-    focus: 'Cardio & Running',
-    description: 'Swift and relentless. Runs, cycling, and HIIT forge unmatched stamina. The arrow flies true for those who never stop moving.',
-    color: '#16A34A',
-    bgGlow: 'rgba(22, 163, 74, 0.08)',
-    stats: { strength: 50, endurance: 95, agility: 85, spirit: 50 },
+    tagline: 'Born to Run',
+    description: 'Rangers excel at cardio and endurance. Built for runners, cyclists, and anyone who loves to move.',
+    bonuses: ['+25% Cardio XP', 'Agility gear', 'Speed abilities'],
+    stat: 'END',
+    color: '#34D399',
+    image: '/characters/ranger.png',
   },
   {
     id: 'mage',
     name: 'Mage',
-    focus: 'Flexibility & Yoga',
-    description: 'Harness the arcane through flow and focus. Yoga, stretching, and mobility unlock powers beyond the physical.',
-    color: '#A855F7',
-    bgGlow: 'rgba(168, 85, 247, 0.08)',
-    stats: { strength: 35, endurance: 55, agility: 90, spirit: 95 },
+    tagline: 'Mind & Body',
+    description: 'Mages focus on yoga, flexibility, and mindful movement. Wisdom through wellness.',
+    bonuses: ['+25% Flexibility XP', 'Recovery bonuses', 'Mystical gear'],
+    stat: 'FLX',
+    color: '#A78BFA',
+    image: '/characters/mage.png',
   },
   {
     id: 'paladin',
     name: 'Paladin',
-    focus: 'Balanced Training',
-    description: 'Jack of all trades, master of balance. A blend of strength, cardio, and flexibility creates the ultimate all-rounder.',
-    color: '#D97706',
-    bgGlow: 'rgba(217, 119, 6, 0.08)',
-    stats: { strength: 75, endurance: 75, agility: 70, spirit: 75 },
+    tagline: 'Balanced & Strong',
+    description: 'Paladins are all-rounders. Bonus XP from every workout type. The true jack of all trades.',
+    bonuses: ['+15% All XP', 'Healing abilities', 'Radiant armor'],
+    stat: 'BAL',
+    color: '#FBBF24',
+    image: '/characters/paladin.png',
   },
 ]
 
-function StatBar({ label, value, color }: { label: string; value: number; color: string }) {
-  return (
-    <div className="flex items-center gap-3 text-sm">
-      <span className="w-16 text-text-muted">{label}</span>
-      <div className="flex-1 h-1.5 bg-bg-secondary rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: `${value}%` }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="h-full rounded-full"
-          style={{ backgroundColor: color }}
-        />
-      </div>
-      <span className="w-8 text-right text-text-secondary font-mono text-xs">{value}</span>
-    </div>
-  )
-}
-
 export default function ClassSelectionSection() {
-  const [activeClass, setActiveClass] = useState('warrior')
-  const active = classes.find((c) => c.id === activeClass) || classes[0]
+  const [selected, setSelected] = useState('warrior')
+  const active = classes.find(c => c.id === selected)!
 
   return (
-    <section id="classes" className="section-padding relative">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Choose Your <span className="gradient-text">Class</span>
-          </h2>
-          <p className="text-text-secondary text-lg max-w-md mx-auto">
-            Your workout style defines your hero. Pick a class that matches how you train.
-          </p>
-        </motion.div>
+    <section id="classes" className="py-28 sm:py-36 px-6 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-surface/20 to-transparent pointer-events-none" />
 
-        {/* Class selector tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {classes.map((cls) => (
-            <button
-              key={cls.id}
-              onClick={() => setActiveClass(cls.id)}
-              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
-                activeClass === cls.id
-                  ? 'text-white shadow-lg scale-105'
-                  : 'bg-surface border border-border text-text-secondary hover:border-border-hover'
-              }`}
-              style={
-                activeClass === cls.id
-                  ? { backgroundColor: cls.color, boxShadow: `0 8px 30px ${cls.color}40` }
-                  : undefined
-              }
-            >
-              {cls.name}
-            </button>
-          ))}
+      <div className="max-w-6xl mx-auto relative">
+        <div className="text-center mb-16">
+          <p className="text-primary-light font-mono text-sm tracking-widest uppercase mb-4">Choose Your Path</p>
+          <h2 className="text-4xl sm:text-5xl font-bold">
+            Pick Your <span className="gradient-text">Class</span>
+          </h2>
         </div>
 
-        {/* Active class display */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={active.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.35 }}
-            className="grid lg:grid-cols-2 gap-8 items-center"
-          >
-            {/* 3D character */}
-            <div
-              className="h-[400px] lg:h-[480px] rounded-3xl relative overflow-hidden"
-              style={{ background: active.bgGlow }}
-            >
-              <ChibiCharacter characterClass={active.id} scale={1.6} />
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Character Image */}
+          <div className="relative flex justify-center order-2 lg:order-1">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="w-64 h-64 rounded-full blur-[80px] transition-colors duration-500" style={{ backgroundColor: active.color + '25' }} />
             </div>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.35 }}
+                className="relative w-[280px] h-[350px] sm:w-[340px] sm:h-[420px]"
+              >
+                <Image
+                  src={active.image}
+                  alt={active.name}
+                  fill
+                  className="object-contain drop-shadow-[0_0_30px_rgba(123,108,246,0.2)]"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
 
-            {/* Info */}
-            <div className="space-y-6">
-              <div>
-                <div
-                  className="text-xs font-mono font-bold tracking-widest mb-2"
-                  style={{ color: active.color }}
+          {/* Class selector + details */}
+          <div className="space-y-6 order-1 lg:order-2">
+            {/* Class tabs */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {classes.map((cls) => (
+                <button
+                  key={cls.id}
+                  onClick={() => setSelected(cls.id)}
+                  className={`p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer ${
+                    selected === cls.id
+                      ? 'bg-surface border-border-hover shadow-lg'
+                      : 'bg-transparent border-border hover:border-border-hover'
+                  }`}
                 >
-                  {active.focus.toUpperCase()}
-                </div>
-                <h3 className="text-3xl md:text-4xl font-extrabold mb-3">{active.name}</h3>
-                <p className="text-text-secondary text-lg leading-relaxed">{active.description}</p>
-              </div>
-
-              <div className="card-glass p-6 space-y-3">
-                <div className="text-sm font-semibold text-text-secondary mb-2 uppercase tracking-wider">Stats</div>
-                <StatBar label="STR" value={active.stats.strength} color={active.color} />
-                <StatBar label="END" value={active.stats.endurance} color={active.color} />
-                <StatBar label="AGI" value={active.stats.agility} color={active.color} />
-                <StatBar label="SPI" value={active.stats.spirit} color={active.color} />
-              </div>
+                  <div className="text-xs font-bold font-mono mb-1" style={{ color: cls.color }}>{cls.stat}</div>
+                  <div className="text-sm font-semibold text-text-primary">{cls.name}</div>
+                </button>
+              ))}
             </div>
-          </motion.div>
-        </AnimatePresence>
+
+            {/* Active class detail */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active.id}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.25 }}
+                className="card p-8 space-y-6"
+              >
+                <div>
+                  <h3 className="text-2xl font-bold mb-1" style={{ color: active.color }}>{active.name}</h3>
+                  <p className="text-text-muted text-sm font-mono">{active.tagline}</p>
+                </div>
+
+                <p className="text-text-secondary leading-relaxed">{active.description}</p>
+
+                <div>
+                  <p className="text-xs font-mono uppercase tracking-widest text-text-muted mb-3">Class Bonuses</p>
+                  <div className="space-y-2.5">
+                    {active.bonuses.map((bonus, i) => (
+                      <div key={i} className="flex items-center gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: active.color }} />
+                        <span className="text-sm text-text-secondary">{bonus}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <button
+                  className="btn-primary w-full justify-center"
+                  onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <span>Play as {active.name}</span>
+                  <span>→</span>
+                </button>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
       </div>
     </section>
   )

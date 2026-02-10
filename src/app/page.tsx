@@ -10,7 +10,7 @@ import Footer from '@/components/sections/Footer'
 
 export default function LandingPage() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen bg-bg-primary">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -27,17 +27,21 @@ export default function LandingPage() {
             animate={{ opacity: 1, x: 0 }}
             className="hidden md:flex items-center gap-8"
           >
-            {['How It Works', 'Classes', 'Features'].map((item) => (
+            {[
+              { label: 'How It Works', href: '#how-it-works' },
+              { label: 'Classes', href: '#classes' },
+              { label: 'Features', href: '#features' },
+            ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                className="text-sm text-text-secondary hover:text-text-primary transition-colors"
+                key={item.label}
+                href={item.href}
+                className="text-sm text-text-muted hover:text-text-primary transition-colors"
               >
-                {item}
+                {item.label}
               </a>
             ))}
             <button
-              className="btn-primary text-sm px-5 py-2.5"
+              className="btn-primary text-sm !px-5 !py-2.5 !rounded-xl"
               onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Join Waitlist
@@ -47,7 +51,7 @@ export default function LandingPage() {
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="md:hidden btn-primary text-sm px-4 py-2"
+            className="md:hidden btn-primary text-sm !px-4 !py-2 !rounded-xl"
             onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Join

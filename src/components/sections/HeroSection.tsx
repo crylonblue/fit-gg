@@ -1,107 +1,106 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import dynamic from 'next/dynamic'
-
-const ChibiCharacter = dynamic(() => import('@/components/3d/ChibiCharacter'), { ssr: false })
+import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient orbs */}
-      <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-accent-cyan/8 blur-[100px] pointer-events-none" />
+    <section className="relative min-h-screen flex items-center overflow-hidden px-6 pt-28 pb-20">
+      {/* Background glow effects */}
+      <div className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent-cyan/6 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 pt-28 pb-20 grid lg:grid-cols-2 gap-12 items-center w-full">
-        {/* Left: Copy */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-        >
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Copy */}
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-border text-sm text-text-secondary mb-8"
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="space-y-8"
           >
-            <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
-            Coming Soon — Join the Waitlist
-          </motion.div>
-
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
-            Your Workout.{' '}
-            <span className="gradient-text">Your Quest.</span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-text-secondary max-w-lg mb-10 leading-relaxed">
-            Real workouts level up your 3D character. Join guilds, fight bosses, earn loot.
-            The RPG that makes fitness an adventure.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <button
-              className="btn-primary text-base"
-              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <span>Join the Quest</span>
-              <span>⚔️</span>
-            </button>
-            <button
-              className="btn-outline text-base"
-              onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              How It Works
-            </button>
-          </div>
-        </motion.div>
-
-        {/* Right: 3D Character + floating UI */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative h-[480px] lg:h-[560px]"
-        >
-          <ChibiCharacter characterClass="warrior" scale={1.6} />
-
-          {/* Floating XP badge */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.5 }}
-            className="absolute top-8 right-4 glass rounded-2xl px-4 py-3 text-sm"
-          >
-            <div className="text-accent-gold font-bold">+250 XP</div>
-            <div className="text-text-muted text-xs">Morning Run Complete</div>
-          </motion.div>
-
-          {/* Floating level indicator */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
-            className="absolute bottom-16 left-0 glass rounded-2xl px-4 py-3 text-sm"
-          >
-            <div className="flex items-center gap-2">
-              <span className="text-accent-cyan font-bold">LVL 24</span>
-              <div className="w-20 h-1.5 bg-bg-secondary rounded-full overflow-hidden">
-                <div className="w-[72%] h-full bg-gradient-to-r from-primary to-accent-cyan rounded-full" />
-              </div>
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface border border-border text-sm text-text-secondary">
+              <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
+              Coming Soon — Join the Waitlist
             </div>
-            <div className="text-text-muted text-xs mt-1">Warrior • 3,420 / 4,750 XP</div>
+
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight">
+              <span className="text-text-primary">Your Body.</span>
+              <br />
+              <span className="gradient-text">Your Game.</span>
+            </h1>
+
+            <p className="text-lg sm:text-xl text-text-secondary max-w-lg leading-relaxed">
+              The fitness RPG where real workouts level up your character. 
+              Build streaks, join guilds, fight bosses — all powered by your sweat.
+            </p>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+              <button 
+                className="btn-primary text-lg"
+                onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                <span>Join the Quest</span>
+                <span>⚔️</span>
+              </button>
+              <button 
+                className="btn-outline text-lg"
+                onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                <span>How It Works</span>
+                <span>↓</span>
+              </button>
+            </div>
           </motion.div>
 
-          {/* Streak badge */}
+          {/* Right: Hero Character */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4, duration: 0.5 }}
-            className="absolute top-1/2 right-0 glass rounded-2xl px-4 py-2 text-sm"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+            className="relative flex justify-center"
           >
-            <div className="text-accent-orange font-bold">🔥 12 Day Streak</div>
+            {/* Glow behind character */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="w-80 h-80 bg-primary/20 rounded-full blur-[80px]" />
+            </div>
+
+            <div className="relative w-[340px] h-[420px] sm:w-[400px] sm:h-[480px]">
+              <Image
+                src="/characters/hero.png"
+                alt="fit.gg Hero Character"
+                fill
+                className="object-contain drop-shadow-[0_0_40px_rgba(123,108,246,0.3)]"
+                priority
+              />
+            </div>
+
+            {/* Floating stat badges */}
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+              className="absolute top-8 right-0 sm:right-8 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3"
+            >
+              <span className="text-accent-green font-mono font-bold text-sm">+250 XP</span>
+            </motion.div>
+
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+              className="absolute bottom-24 left-0 sm:left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3"
+            >
+              <span className="text-accent-orange font-mono font-bold text-sm">🔥 12 Day Streak</span>
+            </motion.div>
+
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+              className="absolute top-32 left-0 sm:-left-4 bg-bg-secondary/80 backdrop-blur-sm border border-border rounded-2xl px-5 py-3"
+            >
+              <span className="text-primary-light font-mono font-bold text-sm">⬆️ Level 24</span>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
