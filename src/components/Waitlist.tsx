@@ -5,15 +5,38 @@ import { useReveal } from '@/hooks/useReveal'
 export default function Waitlist() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
   const ref = useReveal()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!email) return
-    const existing = JSON.parse(localStorage.getItem('fitgg_waitlist') || '[]')
-    existing.push({ email, date: new Date().toISOString() })
-    localStorage.setItem('fitgg_waitlist', JSON.stringify(existing))
-    setSubmitted(true)
+    if (!email || loading) return
+
+    setLoading(true)
+    setError('')
+
+    try {
+      const res = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'landing' }),
+      })
+
+      const data = await res.json()
+
+      if (data.success) {
+        setSubmitted(true)
+      } else if (data.reason === 'invalid_email') {
+        setError('Please enter a valid email.')
+      } else {
+        setError('Something went wrong. Try again.')
+      }
+    } catch {
+      setError('Connection failed. Try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -35,13 +58,18 @@ export default function Waitlist() {
               <p style={{ fontSize: '14px', color: '#444', marginTop: '8px' }}>We&apos;ll keep you posted.</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '460px', margin: '0 auto' }}>
-              <input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required
-                style={{ flex: 1, minWidth: '250px', padding: '18px 20px', borderRadius: '8px', fontSize: '16px' }} />
-              <button type="submit" className="btn" style={{ whiteSpace: 'nowrap', animation: 'none', boxShadow: 'none' }}>
-                Count Me In
-              </button>
-            </form>
+            <>
+              <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '460px', margin: '0 auto' }}>
+                <input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required
+                  style={{ flex: 1, minWidth: '250px', padding: '18px 20px', borderRadius: '8px', fontSize: '16px' }} />
+                <button type="submit" className="btn" style={{ whiteSpace: 'nowrap', animation: 'none', boxShadow: 'none', opacity: loading ? 0.6 : 1 }} disabled={loading}>
+                  {loading ? 'Joining...' : 'Count Me In'}
+                </button>
+              </form>
+              {error && (
+                <p style={{ fontSize: '13px', color: '#ff4444', marginTop: '12px' }}>{error}</p>
+              )}
+            </>
           )}
 
           <p style={{ fontSize: '11px', color: '#333', marginTop: '20px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
