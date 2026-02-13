@@ -24,6 +24,19 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.ico' },
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'How long are the workouts?', acceptedAnswer: { '@type': 'Answer', text: 'Just 5 minutes. Every session is designed to be short, intense, and completable — even on your worst days.' } },
+    { '@type': 'Question', name: 'Do I need any equipment?', acceptedAnswer: { '@type': 'Answer', text: 'Zero. Every exercise is bodyweight-only. All you need is a bit of floor space.' } },
+    { '@type': 'Question', name: 'How is this different from other fitness apps?', acceptedAnswer: { '@type': 'Answer', text: 'fit.gg uses the same psychology that makes Duolingo addictive — streaks, leagues, XP, skill trees — to make showing up feel like a game, not a chore.' } },
+    { '@type': 'Question', name: 'Is it good for beginners?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. The skill tree starts with fundamentals and progressively unlocks harder moves as you improve.' } },
+    { '@type': 'Question', name: 'Can I actually get fit in 5 minutes a day?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — science backs this up. Consistent short bursts of high-intensity bodyweight exercise improve strength, endurance, and metabolic health.' } },
+    { '@type': 'Question', name: 'Is fit.gg free?', acceptedAnswer: { '@type': 'Answer', text: 'The core experience will be free. We\'re exploring a premium tier for extra features, but the main game loop will always be free.' } },
+  ],
+}
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
@@ -49,6 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
       <body>{children}</body>
