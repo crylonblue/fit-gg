@@ -105,6 +105,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
 @media (max-width: 768px) {
   .bento { grid-template-columns: 1fr; }
   .bento-wide { grid-column: span 1; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
 
 /* ── Bento card ── */
