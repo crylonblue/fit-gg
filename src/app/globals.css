@@ -106,6 +106,8 @@ h1, h2, h3 { font-family: var(--font-heading); }
   .bento { grid-template-columns: 1fr; }
   .bento-wide { grid-column: span 1; }
   .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .comparison-desktop { display: none !important; }
+  .comparison-mobile { display: block !important; }
 }
 
 /* ── Bento card ── */

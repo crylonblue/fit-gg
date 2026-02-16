@@ -8,6 +8,7 @@ import SkillTree from '@/components/SkillTree'
 import Waitlist from '@/components/Waitlist'
 import Footer from '@/components/Footer'
 import FAQ from '@/components/FAQ'
+import Comparison from '@/components/Comparison'
 import SocialProof from '@/components/SocialProof'
 
 export default function LandingPage() {
@@ -24,6 +25,8 @@ export default function LandingPage() {
       <Features />
       <hr className="gradient-line" />
       <SkillTree />
+      <hr className="gradient-line" />
+      <Comparison />
       <hr className="gradient-line" />
       <FAQ />
       <hr className="gradient-line" />
