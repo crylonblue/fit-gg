@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,11 +16,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://fit.gg',
     locale: 'en_US',
+    images: [{ url: 'https://fit.gg/og.png', width: 1200, height: 630, alt: 'fit.gg — Your Body. Your Game.' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'fit.gg — Your Body. Your Game.',
     description: '5-minute daily workouts with RPG progression. Build streaks. Climb leagues. Level up.',
+    images: ['https://fit.gg/og.png'],
   },
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.ico' },
@@ -68,7 +72,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   )
 }
