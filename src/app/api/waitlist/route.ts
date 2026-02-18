@@ -1,9 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { readFile, writeFile, mkdir } from 'fs/promises'
-import { join } from 'path'
+import { S3Client, GetObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3'
 
-const DATA_DIR = '/tmp/fitgg'
-const DATA_FILE = join(DATA_DIR, 'waitlist.json')
+const R2_ENDPOINT = 'https://97ffb7df18e8eb1b21bde1082ab21ee6.eu.r2.cloudflarestorage.com'
+const R2_BUCKET = 'autofound'
+const R2_KEY = 'fitgg/waitlist.json'
+
+const s3 = new S3Client({
+  region: 'auto',
+  endpoint: R2_ENDPOINT,
+  credentials: {
+    accessKeyId: process.env.R2_ACCESS_KEY_ID || '',
+    secretAccessKey: process.env.R2_SECRET_ACCESS_KEY || '',
+  },
+})
 
 interface WaitlistEntry {
   email: string
@@ -13,16 +22,21 @@ interface WaitlistEntry {
 
 async function getEntries(): Promise<WaitlistEntry[]> {
   try {
-    const data = await readFile(DATA_FILE, 'utf-8')
-    return JSON.parse(data)
+    const res = await s3.send(new GetObjectCommand({ Bucket: R2_BUCKET, Key: R2_KEY }))
+    const body = await res.Body?.transformToString()
+    return body ? JSON.parse(body) : []
   } catch {
     return []
   }
 }
 
 async function saveEntries(entries: WaitlistEntry[]) {
-  await mkdir(DATA_DIR, { recursive: true })
-  await writeFile(DATA_FILE, JSON.stringify(entries, null, 2))
+  await s3.send(new PutObjectCommand({
+    Bucket: R2_BUCKET,
+    Key: R2_KEY,
+    Body: JSON.stringify(entries, null, 2),
+    ContentType: 'application/json',
+  }))
 }
 
 export async function POST(req: NextRequest) {
@@ -33,7 +47,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, reason: 'invalid_email' }, { status: 400 })
     }
 
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     const normalizedEmail = email.toLowerCase().trim()
     if (!emailRegex.test(normalizedEmail)) {
@@ -42,7 +55,6 @@ export async function POST(req: NextRequest) {
 
     const entries = await getEntries()
 
-    // Duplicate check
     if (entries.some(e => e.email === normalizedEmail)) {
       return NextResponse.json({ success: true, reason: 'already_joined' })
     }
@@ -56,7 +68,8 @@ export async function POST(req: NextRequest) {
     await saveEntries(entries)
 
     return NextResponse.json({ success: true, count: entries.length })
-  } catch {
+  } catch (err) {
+    console.error('Waitlist error:', err)
     return NextResponse.json({ success: false, reason: 'server_error' }, { status: 500 })
   }
 }
