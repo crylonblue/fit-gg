@@ -21,10 +21,13 @@ export default function Nav() {
         <span style={{ fontSize: '22px', fontWeight: 800, fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
           <span style={{ color: '#00FF87' }}>fit</span><span style={{ color: '#333' }}>.</span>gg
         </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <a href="/blog" style={{ color: '#888', fontSize: '13px', fontWeight: 600, textDecoration: 'none', transition: 'color 0.2s' }}>Blog</a>
         <button className="btn" style={{ padding: '10px 24px', fontSize: '12px', animation: 'none', boxShadow: 'none' }}
           onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}>
           Join Waitlist
         </button>
+        </div>
       </div>
     </nav>
   )
