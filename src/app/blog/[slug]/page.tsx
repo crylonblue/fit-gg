@@ -4,6 +4,178 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'morning-workout-routine-5-minutes': {
+    content: (
+      <>
+        <p>Your alarm goes off. You grab your phone. 20 minutes of scrolling later, you&apos;re already behind. Sound familiar?</p>
+        <p>What if those first 5 minutes looked different? <strong>A short morning workout rewires your entire day</strong> — more energy, better focus, and a win before most people hit snooze.</p>
+
+        <h2>Why Morning Workouts Hit Different</h2>
+        <p>A 2025 study in the <em>Journal of Physiology</em> found that morning exercisers had <strong>48% better adherence rates</strong> than evening exercisers. The reason is simple: willpower is highest in the morning, and nothing competes for your time at 6 AM.</p>
+        <p>Morning movement also triggers a cortisol spike (the good kind) that replaces the groggy caffeine dependency most people live with. You&apos;re essentially telling your body: &quot;We&apos;re awake. Let&apos;s go.&quot;</p>
+
+        <h2>The 5-Minute Morning Routine</h2>
+        <p>No warmup needed — these movements ARE the warmup. Do each for 50 seconds, rest 10 seconds between.</p>
+
+        <h3>Minute 1: Jumping Jacks</h3>
+        <p>Gets blood flowing everywhere. Wakes up your cardiovascular system and loosens your joints. Start at whatever pace feels right — the goal is movement, not intensity.</p>
+
+        <h3>Minute 2: Bodyweight Squats</h3>
+        <p>Fires up the largest muscles in your body. Go deep, keep your chest up, and focus on controlled reps. Aim for 12-15 in the 50 seconds.</p>
+
+        <h3>Minute 3: Push-Ups</h3>
+        <p>Upper body activation. Do them on your knees if needed — there&apos;s zero shame in scaling. 8-12 good reps beats 20 sloppy ones.</p>
+
+        <h3>Minute 4: Mountain Climbers</h3>
+        <p>Now your heart rate is up. Mountain climbers hit your core, hip flexors, and cardio simultaneously. Keep your hips low and drive those knees.</p>
+
+        <h3>Minute 5: Plank Hold</h3>
+        <p>Finish strong. Hold a solid plank for the full 50 seconds. Squeeze everything — glutes, core, quads. This is your &quot;I did it&quot; moment.</p>
+
+        <h2>The Science of Morning Movement</h2>
+        <p>Exercise triggers a cascade of neurochemicals:</p>
+        <ul>
+          <li><strong>Endorphins</strong> — Natural mood boost that lasts 2-4 hours</li>
+          <li><strong>BDNF</strong> — Brain-Derived Neurotrophic Factor, which improves learning and memory</li>
+          <li><strong>Norepinephrine</strong> — Sharpens attention and focus</li>
+          <li><strong>Serotonin</strong> — Regulates mood and reduces anxiety</li>
+        </ul>
+        <p>All of this from 5 minutes. You&apos;d need 2-3 cups of coffee to get half these effects — and caffeine doesn&apos;t build muscle.</p>
+
+        <h2>How to Actually Make It Happen</h2>
+        <h3>The Night-Before Setup</h3>
+        <p>Put your workout clothes next to your bed. Seriously. Removing even one decision makes the morning easier. When you wake up, put them on before your brain can negotiate.</p>
+
+        <h3>The 3-Second Rule</h3>
+        <p>When your alarm goes off, count 3-2-1 and stand up. Don&apos;t think. Don&apos;t check your phone. The longer you lie there, the louder the &quot;skip it&quot; voice gets.</p>
+
+        <h3>Stack It</h3>
+        <p>Workout → shower → coffee. Make it a non-negotiable sequence. After 2 weeks, it&apos;ll feel automatic. After 30 days, skipping will feel wrong.</p>
+
+        <h2>Level It Up</h2>
+        <p>Once 5 minutes feels easy, you have two options:</p>
+        <ol>
+          <li><strong>Increase intensity</strong> — Swap jumping jacks for burpees, squats for jump squats</li>
+          <li><strong>Add a second round</strong> — Go from 5 minutes to 10</li>
+        </ol>
+        <p>fit.gg handles this progression automatically. Our skill tree adapts as you get stronger, swapping in harder movements at exactly the right time.</p>
+
+        <h2>Your Morning, Upgraded</h2>
+        <p>5 minutes. No equipment. No gym. No excuses. Tomorrow morning, try it once. Feel the difference. Then try to stop.</p>
+      </>
+    ),
+  },
+  'how-to-start-working-out-at-home-beginner': {
+    content: (
+      <>
+        <p>You want to start working out. You&apos;ve wanted to for a while. But every time you look up a program, it&apos;s <strong>12-week periodized hypertrophy splits</strong> designed for people who already go to the gym.</p>
+        <p>This guide is for everyone else. The true beginners. The people starting from zero.</p>
+
+        <h2>Step 1: Forget Everything You Think You Know</h2>
+        <p>You don&apos;t need:</p>
+        <ul>
+          <li>A gym membership</li>
+          <li>Protein powder</li>
+          <li>A workout plan from some influencer</li>
+          <li>60 minutes of free time</li>
+          <li>To be &quot;in shape&quot; before starting</li>
+        </ul>
+        <p>You need: a body, a floor, and 5 minutes. That&apos;s it.</p>
+
+        <h2>Step 2: Start Embarrassingly Small</h2>
+        <p>This is the most important principle in fitness and the one everyone ignores: <strong>start so small it feels ridiculous.</strong></p>
+        <p>Day 1 should be:</p>
+        <ul>
+          <li>5 wall push-ups</li>
+          <li>10 bodyweight squats</li>
+          <li>20-second plank</li>
+        </ul>
+        <p>That&apos;s roughly 90 seconds of actual exercise. Feels like nothing? Good. You&apos;ll actually do it tomorrow. And the day after. And the day after that.</p>
+        <p>The person who does 90 seconds every day for a year will be in better shape than the person who does an intense hour-long workout for two weeks and quits.</p>
+
+        <h2>Step 3: Build the Habit Before the Body</h2>
+        <p>Your goal for the first 30 days is NOT to get fit. It&apos;s to <strong>prove to yourself that you&apos;re someone who works out.</strong></p>
+        <p>Identity drives behavior. Once you see yourself as &quot;someone who exercises daily,&quot; the workouts get easier — not because your body changed, but because your brain did.</p>
+        <p>How to build the habit:</p>
+        <ol>
+          <li><strong>Same time every day</strong> — Morning works best (nothing competes for your attention)</li>
+          <li><strong>Track your streak</strong> — Mark an X on a calendar, use an app, whatever makes the chain visible</li>
+          <li><strong>Never miss twice</strong> — One skip is fine. Two in a row kills momentum. Get back on it.</li>
+        </ol>
+
+        <h2>Step 4: The Beginner Progression</h2>
+        <p>Here&apos;s a realistic timeline for someone starting from zero:</p>
+
+        <h3>Weeks 1-2: Foundation</h3>
+        <ul>
+          <li>Wall push-ups → 3 sets of 10</li>
+          <li>Bodyweight squats → 3 sets of 10</li>
+          <li>Plank → 3 × 20 seconds</li>
+          <li>Total time: ~5 minutes</li>
+        </ul>
+
+        <h3>Weeks 3-4: Building</h3>
+        <ul>
+          <li>Knee push-ups → 3 sets of 8</li>
+          <li>Squats (deeper) → 3 sets of 15</li>
+          <li>Plank → 3 × 30 seconds</li>
+          <li>Add: Glute bridges → 3 sets of 12</li>
+          <li>Total time: ~8 minutes</li>
+        </ul>
+
+        <h3>Weeks 5-8: Leveling Up</h3>
+        <ul>
+          <li>Full push-ups → 3 sets of 5-8</li>
+          <li>Squats + Lunges → 3 sets of 12 each</li>
+          <li>Plank → 3 × 45 seconds</li>
+          <li>Add: Mountain climbers → 3 × 20 seconds</li>
+          <li>Total time: ~12 minutes</li>
+        </ul>
+
+        <h3>Weeks 9-12: Intermediate</h3>
+        <ul>
+          <li>Push-ups → 3 sets of 10-15</li>
+          <li>Jump squats, Bulgarian split squats</li>
+          <li>Pike push-ups → 3 sets of 5</li>
+          <li>Hollow body holds → 3 × 20 seconds</li>
+          <li>Total time: ~15 minutes</li>
+        </ul>
+
+        <h2>Step 5: Common Beginner Mistakes</h2>
+
+        <h3>❌ Doing Too Much Too Soon</h3>
+        <p>The #1 reason beginners quit. You feel motivated on day 1, do an intense 45-minute workout, can&apos;t walk for 3 days, and never do it again. Start small. Build up.</p>
+
+        <h3>❌ Chasing Soreness</h3>
+        <p>Soreness is NOT a sign of a good workout. It&apos;s a sign your body isn&apos;t adapted yet. As you get consistent, soreness decreases. That&apos;s progress, not failure.</p>
+
+        <h3>❌ Skipping Rest Days (At First)</h3>
+        <p>Beginners: take 1-2 rest days per week. Your muscles grow during recovery. As your workouts get shorter and more habitual (like a 5-minute daily session), daily training becomes fine.</p>
+
+        <h3>❌ Comparing Yourself to Fitness Influencers</h3>
+        <p>They&apos;ve been training for years. You&apos;re on week 1. Compare yourself to yesterday-you. That&apos;s the only benchmark that matters.</p>
+
+        <h2>Step 6: Nutrition (Keep It Simple)</h2>
+        <p>Don&apos;t overhaul your diet on day 1. That&apos;s two habits at once, and both will fail. Focus on exercise first.</p>
+        <p>When you&apos;re ready, the basics are:</p>
+        <ul>
+          <li><strong>Eat enough protein</strong> — 0.7g per pound of body weight is a good target</li>
+          <li><strong>Drink water</strong> — Most people are chronically dehydrated</li>
+          <li><strong>Eat real food</strong> — If it grew from the ground or had a face, it&apos;s probably fine</li>
+        </ul>
+        <p>That&apos;s it. No counting calories. No meal prep. Not yet.</p>
+
+        <h2>Why fit.gg Is Built for Beginners</h2>
+        <p>Most fitness apps assume you already know what you&apos;re doing. fit.gg doesn&apos;t. Our skill tree starts with the absolute basics and guides you through progressions automatically. You don&apos;t need to plan anything — just open the app and follow along.</p>
+        <p>Think Duolingo, but for your body. Start easy. Build streaks. Unlock harder moves. Before you know it, you&apos;re doing things you never thought possible.</p>
+
+        <h2>Start Today. Not Monday.</h2>
+        <p>The best time to start was a year ago. The second best time is right now. Not Monday. Not January 1st. Now.</p>
+        <p>5 wall push-ups. 10 squats. 20-second plank. Do it right now. Seriously. We&apos;ll wait.</p>
+        <p>Welcome to day 1. 💪</p>
+      </>
+    ),
+  },
   '5-minute-workout-daily-habit': {
     content: (
       <>

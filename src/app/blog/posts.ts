@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'morning-workout-routine-5-minutes',
+    title: 'The Perfect 5-Minute Morning Workout Routine (Wake Up → Workout → Done)',
+    description: 'A science-backed morning workout routine that takes 5 minutes, requires zero equipment, and sets you up for a productive day.',
+    date: '2026-02-20',
+    readTime: '6 min read',
+    category: 'Routines',
+  },
+  {
+    slug: 'how-to-start-working-out-at-home-beginner',
+    title: 'How to Start Working Out at Home: The Complete Beginner\'s Guide (2026)',
+    description: 'Never worked out before? This no-BS beginner guide shows you exactly how to start exercising at home — from your first rep to a daily habit.',
+    date: '2026-02-20',
+    readTime: '8 min read',
+    category: 'Beginner',
+  },
+  {
     slug: '5-minute-workout-daily-habit',
     title: 'Why 5-Minute Workouts Beat 1-Hour Gym Sessions for Building Habits',
     description: 'Science shows that consistency beats intensity. Here\'s why 5 minutes a day will get you further than occasional hour-long sessions.',
