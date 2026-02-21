@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'push-up-progression-beginner-to-advanced',
+    title: 'Push-Up Progression: From Zero to One-Arm (Complete Roadmap)',
+    description: 'Can\'t do a single push-up? This step-by-step progression takes you from wall push-ups to one-arm push-ups — no gym required.',
+    date: '2026-02-21',
+    readTime: '9 min read',
+    category: 'Workouts',
+  },
+  {
+    slug: 'workout-motivation-psychology',
+    title: 'Why Motivation Fails (And What Actually Gets You to Work Out)',
+    description: 'Stop waiting to feel motivated. The psychology behind building an unbreakable workout habit — backed by behavioral science.',
+    date: '2026-02-21',
+    readTime: '7 min read',
+    category: 'Motivation',
+  },
+  {
     slug: 'morning-workout-routine-5-minutes',
     title: 'The Perfect 5-Minute Morning Workout Routine (Wake Up → Workout → Done)',
     description: 'A science-backed morning workout routine that takes 5 minutes, requires zero equipment, and sets you up for a productive day.',

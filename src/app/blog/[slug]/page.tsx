@@ -4,6 +4,99 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'push-up-progression-beginner-to-advanced': {
+    content: (
+      <>
+        <p>The push-up is the king of bodyweight exercises. It builds your chest, shoulders, triceps, and core — all at once, anywhere, with zero equipment. But what if you can&apos;t do one yet?</p>
+        <p>This progression will take you from <strong>absolute zero to one-arm push-ups</strong>. Each level builds on the last. Don&apos;t skip ahead — master each stage before moving on.</p>
+
+        <h2>Level 1: Wall Push-Ups (Week 1-2)</h2>
+        <p>Stand arm&apos;s length from a wall. Place your palms flat at shoulder height. Lean in, touch your chest to the wall, push back. That&apos;s it.</p>
+        <p>This isn&apos;t &quot;easy mode&quot; — it&apos;s <strong>smart mode</strong>. You&apos;re teaching your body the push-up movement pattern with minimal load. Do 3 sets of 15. When it feels effortless, move on.</p>
+
+        <h2>Level 2: Incline Push-Ups (Week 2-4)</h2>
+        <p>Find a sturdy surface — a table, countertop, or park bench. The lower the surface, the harder it gets. Start high (kitchen counter) and progressively go lower (coffee table, then a step).</p>
+        <p><strong>Target:</strong> 3 sets of 12 at each height before lowering. Your body should form a straight line from head to heels — no sagging hips.</p>
+
+        <h2>Level 3: Knee Push-Ups (Week 4-6)</h2>
+        <p>Now you&apos;re on the floor. Knees down, ankles crossed, hands shoulder-width apart. Lower until your chest touches the ground. Press back up.</p>
+        <p>The key mistake here: people flare their elbows to 90°. Keep them at about 45° — it&apos;s safer for your shoulders and builds more functional strength.</p>
+        <p><strong>Target:</strong> 3 sets of 15 with perfect form.</p>
+
+        <h2>Level 4: Full Push-Ups (Week 6-10)</h2>
+        <p>The moment of truth. Toes on the ground, body rigid like a plank, lower until your chest is an inch from the floor. Push back up. <strong>One.</strong></p>
+        <p>Can&apos;t get a full rep? Do &quot;negatives&quot; — start at the top, lower yourself as slowly as possible (aim for 5 seconds), then reset from knees. Negatives build strength faster than you&apos;d think.</p>
+        <p><strong>Milestone:</strong> 3 sets of 20 with clean form. When you hit this, you&apos;re already stronger than most people.</p>
+
+        <h2>Level 5: Diamond Push-Ups (Week 10-14)</h2>
+        <p>Bring your hands together under your chest, index fingers and thumbs forming a diamond shape. This shifts the load to your triceps and inner chest. Much harder than it sounds.</p>
+        <p><strong>Target:</strong> 3 sets of 12. If your wrists complain, widen the diamond slightly.</p>
+
+        <h2>Level 6: Archer Push-Ups (Week 14-18)</h2>
+        <p>Wide hand placement. As you lower, shift your weight toward one hand while the other arm extends out straight. Alternate sides. This is your gateway to one-arm work.</p>
+        <p>You&apos;ll feel a serious imbalance at first — your dominant side will be noticeably stronger. That&apos;s normal. Give your weak side extra reps to catch up.</p>
+
+        <h2>Level 7: One-Arm Push-Ups (Week 18+)</h2>
+        <p>Feet wide for balance. One hand behind your back. Lower with control. Push up with everything you&apos;ve got.</p>
+        <p>This is the <strong>boss fight</strong>. Most people never get here. If you can do 5 clean one-arm push-ups per side, you&apos;re in elite bodyweight territory.</p>
+        <p><strong>Pro tip:</strong> Start with one-arm incline push-ups (hand on a step or bench) before going full floor.</p>
+
+        <h2>The fit.gg Way</h2>
+        <p>In fit.gg, push-up progressions live in the <strong>Pressing skill tree</strong>. Each level unlocks the next variation, and you earn XP for every session. The app tracks your reps, ensures proper rest periods, and tells you exactly when you&apos;re ready to progress.</p>
+        <p>No guessing. No ego lifting. Just steady, visible progress from Day 1 to one-arm push-up mastery.</p>
+      </>
+    ),
+  },
+  'workout-motivation-psychology': {
+    content: (
+      <>
+        <p>&quot;I&apos;ll start on Monday.&quot; &quot;I just need to find the right program.&quot; &quot;I&apos;m waiting until I feel motivated.&quot;</p>
+        <p>Sound familiar? Here&apos;s the uncomfortable truth: <strong>motivation is not coming to save you</strong>. And if you keep waiting for it, you&apos;ll be waiting forever.</p>
+
+        <h2>The Motivation Myth</h2>
+        <p>We&apos;ve been sold a lie: that successful people are more motivated than the rest of us. That athletes wake up excited to train. That fit people love every workout.</p>
+        <p>They don&apos;t. A 2024 study from the University of British Columbia found that <strong>regular exercisers report the same levels of pre-workout reluctance</strong> as non-exercisers. The difference? They show up anyway.</p>
+        <p>Motivation is an emotion, not a strategy. And emotions are unreliable. You need something better.</p>
+
+        <h2>The 3 Pillars of Behavioral Change</h2>
+
+        <h3>1. Identity Over Outcomes</h3>
+        <p>Don&apos;t set a goal to &quot;get fit.&quot; Instead, decide you&apos;re <strong>someone who works out</strong>. Research by James Clear (Atomic Habits) shows that identity-based habits stick 3x longer than outcome-based ones.</p>
+        <p>Every 5-minute workout is a vote for your new identity. You&apos;re not trying to get a six-pack — you&apos;re being the person who never misses a session.</p>
+
+        <h3>2. Friction Reduction</h3>
+        <p>Every barrier between you and your workout is a chance to quit. Sleep in workout clothes. Keep your mat out. Choose exercises that need zero setup.</p>
+        <p>Stanford researcher BJ Fogg calls this <strong>&quot;designing for laziness.&quot;</strong> Make the desired behavior the path of least resistance. If starting a workout takes 30 seconds instead of 15 minutes, you&apos;ll actually do it.</p>
+
+        <h3>3. The Streak Effect</h3>
+        <p>There&apos;s a reason Duolingo users spend 34 minutes a day on language learning. <strong>Streaks create commitment</strong>. Once you&apos;ve built a 10-day streak, the psychological cost of breaking it outweighs the effort of a 5-minute session.</p>
+        <p>This isn&apos;t manipulation — it&apos;s alignment. You&apos;re giving your brain a visible record of progress. Every day on the streak is proof that you&apos;re the person you decided to be.</p>
+
+        <h2>Why &quot;Just Do It&quot; Doesn&apos;t Work</h2>
+        <p>Willpower is a finite resource. Using it to force yourself through hour-long gym sessions is like running your phone at 100% brightness — the battery drains fast.</p>
+        <p>The fix: <strong>make the workout so small that willpower barely enters the equation</strong>. Five minutes. That&apos;s it. Your brain can&apos;t argue with five minutes. It&apos;s too short to resist, but long enough to build real strength and real habits.</p>
+
+        <h2>The Motivation Paradox</h2>
+        <p>Here&apos;s the twist most people miss: <strong>motivation follows action, not the other way around</strong>. You don&apos;t get motivated then work out. You work out, then feel motivated.</p>
+        <p>Psychologists call this &quot;behavioral activation.&quot; Start the action — even reluctantly — and your brain releases dopamine that makes you want to continue. The hardest part is always the first rep.</p>
+
+        <h2>Building Your System</h2>
+        <p>Stop relying on motivation. Build a system instead:</p>
+        <ul>
+          <li><strong>Same time every day</strong> — anchor your workout to an existing habit (after brushing teeth, before shower)</li>
+          <li><strong>Never miss twice</strong> — one bad day is fine. Two is the start of a new habit</li>
+          <li><strong>Track visually</strong> — streaks, calendars, progress photos. Your brain needs proof</li>
+          <li><strong>Start embarrassingly small</strong> — 5 minutes, not 50. Scale up later</li>
+          <li><strong>Remove decisions</strong> — follow a program so you never wonder &quot;what should I do today?&quot;</li>
+        </ul>
+
+        <h2>This Is Why We Built fit.gg</h2>
+        <p>fit.gg bakes all of this psychology into the product. Streaks that matter. Sessions so short your brain can&apos;t object. XP and levels that make progress tangible. A skill tree that removes the &quot;what do I do?&quot; question entirely.</p>
+        <p>We didn&apos;t build another workout app. We built a <strong>habit machine</strong> — designed around how human psychology actually works, not how we wish it worked.</p>
+        <p>Stop waiting for motivation. Start building the system.</p>
+      </>
+    ),
+  },
   'morning-workout-routine-5-minutes': {
     content: (
       <>
