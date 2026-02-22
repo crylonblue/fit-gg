@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'squat-progression-bodyweight',
+    title: 'Squat Progression: From Air Squats to Pistol Squats (No Gym Needed)',
+    description: 'Master every bodyweight squat variation with this step-by-step progression. From your first air squat to single-leg pistol squats — zero equipment required.',
+    date: '2026-02-22',
+    readTime: '8 min read',
+    category: 'Workouts',
+  },
+  {
+    slug: 'desk-worker-stretches-exercises',
+    title: '7 Exercises That Undo 8 Hours of Sitting (The Desk Worker Rescue Plan)',
+    description: 'Sitting all day is wrecking your body. These 7 exercises fix tight hips, rounded shoulders, and weak glutes in under 10 minutes.',
+    date: '2026-02-22',
+    readTime: '6 min read',
+    category: 'Routines',
+  },
+  {
     slug: 'push-up-progression-beginner-to-advanced',
     title: 'Push-Up Progression: From Zero to One-Arm (Complete Roadmap)',
     description: 'Can\'t do a single push-up? This step-by-step progression takes you from wall push-ups to one-arm push-ups — no gym required.',

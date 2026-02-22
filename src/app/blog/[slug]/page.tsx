@@ -4,6 +4,92 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'squat-progression-bodyweight': {
+    content: (
+      <>
+        <p>The squat is the most fundamental human movement. You did it perfectly as a toddler. Somewhere between then and your office chair, you lost it. <strong>Time to get it back.</strong></p>
+        <p>This progression takes you from basic air squats all the way to the legendary pistol squat — one leg, full depth, zero assistance. Each level builds the strength, mobility, and balance you need for the next.</p>
+
+        <h2>Level 1: Box Squats (Week 1-2)</h2>
+        <p>Stand in front of a chair or bench. Feet shoulder-width apart, toes slightly out. Sit down slowly, touch the seat, stand back up. That&apos;s it.</p>
+        <p>The box removes the fear of falling and teaches you to sit <strong>back</strong> into the squat instead of forward onto your toes. Focus on keeping your chest up and weight in your heels.</p>
+        <p><strong>Target:</strong> 3 sets of 15 with a controlled 2-second descent.</p>
+
+        <h2>Level 2: Air Squats (Week 2-4)</h2>
+        <p>Remove the box. Feet shoulder-width, squat until your hip crease drops below your knees (that&apos;s &quot;below parallel&quot;). Stand back up.</p>
+        <p>Common mistakes: heels lifting off the ground (ankle mobility issue), knees caving inward (weak glutes), and leaning too far forward (tight hip flexors). Fix these now — they only get worse as you progress.</p>
+        <p><strong>Target:</strong> 3 sets of 20 with full depth and no heel lift.</p>
+
+        <h2>Level 3: Jump Squats (Week 4-6)</h2>
+        <p>Air squat down, then explode upward as high as you can. Land softly — think &quot;ninja landing.&quot; This builds the <strong>power</strong> your legs need for advanced variations.</p>
+        <p>Land with bent knees, absorb the impact, and immediately flow into the next rep. If your knees hurt, go back to air squats — you&apos;re not ready yet.</p>
+        <p><strong>Target:</strong> 3 sets of 12 with maximum height.</p>
+
+        <h2>Level 4: Bulgarian Split Squats (Week 6-10)</h2>
+        <p>One foot on the floor, the other elevated behind you on a couch or step. Lower your back knee toward the ground. This is where things get real.</p>
+        <p>Split squats expose every weakness: balance, single-leg strength, hip mobility. Your weak leg will hate you. <strong>That&apos;s the point.</strong> Strength imbalances cause injuries — fix them now.</p>
+        <p><strong>Target:</strong> 3 sets of 10 per leg with full range of motion.</p>
+
+        <h2>Level 5: Deep Pause Squats (Week 10-14)</h2>
+        <p>Full air squat, but pause at the bottom for 3 seconds. No bouncing, no momentum — just you sitting in the hole with full tension.</p>
+        <p>Pause squats build <strong>bottom-position strength</strong>, which is the hardest part of any squat. They also improve ankle and hip mobility over time. If you can pause comfortably at full depth, you&apos;re ready for single-leg work.</p>
+        <p><strong>Target:</strong> 3 sets of 8 with a 3-second pause.</p>
+
+        <h2>Level 6: Assisted Pistol Squats (Week 14-18)</h2>
+        <p>Hold a doorframe, pole, or TRX strap. Extend one leg in front of you and squat all the way down on the other. Use your hands for balance — not for pulling yourself up.</p>
+        <p>The balance challenge is real. Your first attempts will look ugly. That&apos;s fine. Reduce assistance gradually: two hands → one hand → fingertips → nothing.</p>
+        <p><strong>Target:</strong> 3 sets of 5 per leg with minimal hand assistance.</p>
+
+        <h2>Level 7: Pistol Squats (Week 18+)</h2>
+        <p>One leg. Full depth. No assistance. Arms extended forward for counterbalance. This is the <strong>boss fight of lower body calisthenics</strong>.</p>
+        <p>The pistol squat requires strength, mobility, and balance in equal measure. If you can do 5 clean reps per leg, you have stronger, more functional legs than most gym-goers squatting with a barbell.</p>
+        <p><strong>Pro tip:</strong> If depth is the issue, practice by squatting onto progressively lower surfaces (high bench → low bench → nothing).</p>
+
+        <h2>The fit.gg Way</h2>
+        <p>In fit.gg, the <strong>Legs skill tree</strong> guides you through this exact progression. Each node unlocks when you&apos;ve proven mastery at the previous level — no guessing, no ego, just steady progress toward the pistol squat.</p>
+      </>
+    ),
+  },
+  'desk-worker-stretches-exercises': {
+    content: (
+      <>
+        <p>You sit 8+ hours a day. Your hip flexors are concrete. Your shoulders round forward like a question mark. Your glutes have forgotten they exist. <strong>Sound about right?</strong></p>
+        <p>These 7 exercises are specifically designed to reverse the damage of prolonged sitting. They take under 10 minutes and require zero equipment. Do them daily and you&apos;ll feel like a different person within a week.</p>
+
+        <h2>1. Hip Flexor Stretch (90 seconds per side)</h2>
+        <p>Kneel on one knee, other foot forward in a lunge position. Push your hips forward until you feel a deep stretch in the front of your back leg&apos;s hip. Hold.</p>
+        <p>Sitting keeps your hip flexors in a shortened position for hours. This stretch reverses that. If you do <strong>nothing else on this list</strong>, do this one. Tight hip flexors cause lower back pain, poor posture, and weak glutes.</p>
+
+        <h2>2. Glute Bridges (3 sets of 15)</h2>
+        <p>Lie on your back, feet flat on the floor, knees bent. Squeeze your glutes and lift your hips until your body forms a straight line from knees to shoulders. Hold for 2 seconds at the top.</p>
+        <p>Your glutes are the biggest muscle group in your body, and sitting switches them off. This exercise <strong>wakes them up</strong>. Weak glutes force your lower back to compensate — hello, chronic pain.</p>
+
+        <h2>3. Thoracic Spine Rotation (8 per side)</h2>
+        <p>On all fours, place one hand behind your head. Rotate your upper back toward the ceiling, opening your chest. Return and rotate toward the floor. Move slowly.</p>
+        <p>Desk work locks your upper back into flexion. This mobility drill restores rotation — essential for healthy shoulders and a straight posture. You&apos;ll hear satisfying cracks. That&apos;s normal.</p>
+
+        <h2>4. Wall Angels (2 sets of 10)</h2>
+        <p>Stand with your back flat against a wall. Arms up in a &quot;goal post&quot; position, elbows and wrists touching the wall. Slide your arms up overhead, then back down. Keep everything in contact with the wall.</p>
+        <p>This is harder than it sounds. If you can&apos;t keep your lower back, elbows, and wrists all touching the wall, your posture is worse than you think. <strong>That&apos;s exactly why you need this.</strong></p>
+
+        <h2>5. Deep Squat Hold (60 seconds total)</h2>
+        <p>Drop into the deepest squat you can manage. Feet flat, chest up, arms between your knees pushing your legs apart. Just... hang out there.</p>
+        <p>Humans were designed to squat. Your ancestors rested in this position. Modern chairs stole this ability. A daily squat hold restores hip, ankle, and lower back mobility simultaneously.</p>
+
+        <h2>6. Cat-Cow Stretch (10 slow reps)</h2>
+        <p>On all fours, alternate between arching your back (cow — belly drops, head up) and rounding it (cat — belly lifts, chin to chest). Move with your breath: inhale into cow, exhale into cat.</p>
+        <p>This is spinal hygiene. It mobilizes every segment of your spine and relieves the compression that builds up from sitting. Think of it as <strong>flossing for your back</strong>.</p>
+
+        <h2>7. Chest Doorway Stretch (45 seconds per side)</h2>
+        <p>Stand in a doorway, forearm against the frame at shoulder height. Step through until you feel a stretch across your chest and front shoulder. Hold.</p>
+        <p>Hours of typing pull your shoulders forward and shorten your chest muscles. This stretch opens everything back up. Pair it with wall angels for maximum posture correction.</p>
+
+        <h2>The 10-Minute Rescue Routine</h2>
+        <p>Do all 7 in order. The whole thing takes about 10 minutes. Set a daily reminder — your body will thank you within the first week.</p>
+        <p>At fit.gg, our <strong>Mobility skill tree</strong> includes desk worker recovery flows as daily options. The app adapts the routine based on how long you&apos;ve been sitting (yes, it knows) and progressively increases difficulty as your mobility improves.</p>
+      </>
+    ),
+  },
   'push-up-progression-beginner-to-advanced': {
     content: (
       <>
