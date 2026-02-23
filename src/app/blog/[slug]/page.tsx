@@ -4,6 +4,102 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'plank-variations-core-strength': {
+    content: (
+      <>
+        <p>You can hold a plank for 60 seconds? Cool. Now what? If your core routine starts and ends with the basic plank, you&apos;re leaving <strong>serious strength on the table</strong>.</p>
+        <p>The plank is a foundation — not a destination. These 8 variations progressively challenge your core in ways a static hold never will. Anti-rotation, dynamic stability, and single-arm strength — this is how you build a core that actually performs.</p>
+
+        <h2>1. Standard Plank (The Baseline)</h2>
+        <p>Forearms on the floor, body straight from head to heels. Squeeze your glutes, brace your abs like someone&apos;s about to punch your stomach. Hold.</p>
+        <p>If you can hold this for 60 seconds with perfect form, you&apos;re ready to progress. If you can hold it for 3 minutes, you&apos;re wasting your time — harder variations will build more strength in less time.</p>
+        <p><strong>Target:</strong> 60 seconds with zero sagging or piking.</p>
+
+        <h2>2. Plank Shoulder Taps (Anti-Rotation)</h2>
+        <p>High plank position (hands, not forearms). Lift one hand and tap the opposite shoulder. Your hips should NOT rotate. Alternate sides.</p>
+        <p>This teaches <strong>anti-rotation</strong> — your core&apos;s job isn&apos;t just to hold you rigid, it&apos;s to prevent unwanted movement. If your hips sway side to side, widen your feet and slow down.</p>
+        <p><strong>Target:</strong> 3 sets of 10 per side with zero hip movement.</p>
+
+        <h2>3. Plank Up-Downs (Dynamic Strength)</h2>
+        <p>Start in a forearm plank. Press up to a high plank one arm at a time, then lower back down. Alternate which arm leads each rep.</p>
+        <p>This combines core stability with tricep and shoulder endurance. Keep your hips level — the wider your feet, the easier the balance component.</p>
+        <p><strong>Target:</strong> 3 sets of 8 per side.</p>
+
+        <h2>4. Side Plank (Lateral Stability)</h2>
+        <p>Forearm on the ground, body sideways, feet stacked. Lift your hips until your body forms a straight line. The obliques do the heavy lifting here.</p>
+        <p>Side planks target the often-neglected lateral chain: obliques, QL, and hip stabilizers. Weak obliques contribute to lower back pain and poor rotational power.</p>
+        <p><strong>Target:</strong> 45 seconds per side.</p>
+
+        <h2>5. Plank with Leg Lift</h2>
+        <p>Standard forearm plank, but lift one foot 6 inches off the ground. Hold for 5 seconds, switch. This shifts your center of gravity and forces your core to stabilize asymmetrically.</p>
+        <p>Resist the urge to shift your weight to one side. The goal is to look identical to a normal plank — with one leg floating. Harder than it sounds.</p>
+        <p><strong>Target:</strong> 3 sets of 8 lifts per leg (5-second hold each).</p>
+
+        <h2>6. Body Saw Plank</h2>
+        <p>Forearm plank with your feet on a towel (on a hard floor) or socks. Rock your body forward past your elbows, then push back. Small, controlled movements.</p>
+        <p>This changes the lever length dynamically, making your core work through a range of motion instead of a static hold. The further back you go, the harder it gets. <strong>Welcome to real core training.</strong></p>
+        <p><strong>Target:</strong> 3 sets of 10 slow reps.</p>
+
+        <h2>7. Copenhagen Plank (Adductor + Core)</h2>
+        <p>Side plank position, but your top foot is elevated on a bench or chair. Your bottom leg hangs free. Lift your hips and hold.</p>
+        <p>This is an advanced variation that crushes your adductors (inner thigh) and obliques simultaneously. Athletes use it for groin injury prevention. If it&apos;s too hard, bend your top knee on the bench instead of using a straight leg.</p>
+        <p><strong>Target:</strong> 30 seconds per side.</p>
+
+        <h2>8. RKC Plank (Maximum Tension)</h2>
+        <p>Looks like a normal plank. Feels like death. Pull your elbows toward your toes (they won&apos;t move). Squeeze your glutes as hard as possible. Brace your abs at maximum effort. Every muscle fires.</p>
+        <p>The RKC (Russian Kettlebell Challenge) plank turns a boring hold into the most intense 10 seconds of your life. You won&apos;t hold this long — and that&apos;s the point. <strong>10 seconds of an RKC plank beats 2 minutes of a regular one.</strong></p>
+        <p><strong>Target:</strong> 3 sets of 10-second max-effort holds.</p>
+
+        <h2>The fit.gg Progression</h2>
+        <p>In fit.gg, the <strong>Core skill tree</strong> walks you through these exact variations. Master one, unlock the next. No guessing about when to progress — the app tracks your holds, reps, and form milestones. Level up your core like leveling up a character.</p>
+      </>
+    ),
+  },
+  'hiit-vs-steady-state-cardio': {
+    content: (
+      <>
+        <p>Every fitness forum has this argument. HIIT lovers say steady-state cardio is a waste of time. Joggers say HIIT is a fad. The science? <strong>They&apos;re both wrong — and both right.</strong></p>
+        <p>Let&apos;s break down what each actually does, what the research shows, and when to use which. No bro-science, no tribal loyalty — just data.</p>
+
+        <h2>What Is HIIT, Really?</h2>
+        <p>High-Intensity Interval Training means alternating between near-maximum effort (85-95% max heart rate) and recovery periods. A real HIIT session looks like: 30 seconds all-out sprint, 60 seconds walking. Repeat 8-10 times.</p>
+        <p>Key word: <strong>near-maximum effort.</strong> If you can hold a conversation during the &quot;hard&quot; intervals, you&apos;re not doing HIIT. You&apos;re doing moderate-intensity intervals — which is fine, but it&apos;s not the same thing.</p>
+
+        <h2>What Is Steady-State Cardio?</h2>
+        <p>Sustained effort at a consistent moderate intensity (60-70% max heart rate) for 30-60+ minutes. Jogging, cycling, swimming laps, brisk walking. Your heart rate stays elevated but manageable.</p>
+        <p>This is the classic &quot;cardio&quot; that&apos;s been prescribed since the 1970s. It works. It&apos;s just not the only thing that works.</p>
+
+        <h2>Fat Burning: The Calorie Math</h2>
+        <p>A 2019 meta-analysis in the <em>British Journal of Sports Medicine</em> compared HIIT and steady-state for fat loss across 786 participants. The result? <strong>Both reduced body fat by similar amounts.</strong> HIIT had a slight edge in total fat reduction, but the difference wasn&apos;t statistically significant when you control for total time spent.</p>
+        <p>Here&apos;s the real difference: a 20-minute HIIT session burns roughly the same calories as a 40-minute steady-state session. HIIT is more <strong>time-efficient</strong>, not magically better.</p>
+        <p>The &quot;afterburn effect&quot; (EPOC) that HIIT fans love to cite? It&apos;s real but modest — about 50-80 extra calories over 24 hours. That&apos;s an apple. Not a game-changer.</p>
+
+        <h2>Cardiovascular Health</h2>
+        <p>Both improve VO2 max (your body&apos;s ability to use oxygen). HIIT improves it <strong>faster</strong> — a 2017 study in <em>PLOS ONE</em> showed HIIT increased VO2 max by 8% vs 5% for steady-state over 8 weeks.</p>
+        <p>But steady-state builds a larger aerobic base. Marathon runners don&apos;t do HIIT exclusively for a reason — sustained effort trains your heart to pump more blood per beat (stroke volume), which is the foundation of endurance.</p>
+
+        <h2>Muscle Preservation</h2>
+        <p>This is where HIIT wins clearly. Steady-state cardio — especially long runs — can break down muscle tissue for fuel. HIIT&apos;s short bursts preserve muscle mass better because the effort pattern is closer to resistance training.</p>
+        <p>If you&apos;re trying to build or maintain muscle while losing fat, <strong>HIIT is the better choice for your cardio days.</strong></p>
+
+        <h2>Recovery and Injury Risk</h2>
+        <p>HIIT is demanding. True high-intensity work stresses your joints, nervous system, and muscles significantly. Doing HIIT 5-6 days a week is a recipe for overtraining, burnout, and injury.</p>
+        <p>Steady-state is gentle enough for daily use. You can walk or jog every day without accumulating the same fatigue. This makes it <strong>more sustainable</strong> for most people.</p>
+
+        <h2>The Verdict: Use Both</h2>
+        <p>The science is clear: the best approach is a combination.</p>
+        <ul>
+          <li><strong>2-3 HIIT sessions per week</strong> for time efficiency, VO2 max, and muscle preservation</li>
+          <li><strong>2-3 steady-state sessions per week</strong> for aerobic base, recovery, and sustainability</li>
+          <li><strong>1-2 rest days</strong> because your body adapts during rest, not during work</li>
+        </ul>
+        <p>The worst cardio plan is the one you quit after 3 weeks because it burned you out. The best one is the one you actually do. For most people, that means mixing hard and easy days.</p>
+
+        <h2>How fit.gg Handles It</h2>
+        <p>fit.gg&apos;s workout engine alternates between high-intensity skill challenges and active recovery sessions automatically. The app tracks your intensity levels and adjusts — push hard on Monday, move easy on Tuesday. <strong>No overtraining, no burnout, just consistent progress.</strong></p>
+      </>
+    ),
+  },
   'squat-progression-bodyweight': {
     content: (
       <>

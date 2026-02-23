@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'plank-variations-core-strength',
+    title: 'Beyond the Basic Plank: 8 Variations That Actually Build Core Strength',
+    description: 'The standard plank gets boring fast. These 8 progressive variations challenge your core in new ways — from beginner to advanced.',
+    date: '2026-02-23',
+    readTime: '7 min read',
+    category: 'Workouts',
+  },
+  {
+    slug: 'hiit-vs-steady-state-cardio',
+    title: 'HIIT vs Steady-State Cardio: Which Burns More Fat? (Science Settles It)',
+    description: 'The great cardio debate, settled by research. When to use HIIT, when to go steady, and why the answer depends on your goals.',
+    date: '2026-02-23',
+    readTime: '8 min read',
+    category: 'Science',
+  },
+  {
     slug: 'squat-progression-bodyweight',
     title: 'Squat Progression: From Air Squats to Pistol Squats (No Gym Needed)',
     description: 'Master every bodyweight squat variation with this step-by-step progression. From your first air squat to single-leg pistol squats — zero equipment required.',
