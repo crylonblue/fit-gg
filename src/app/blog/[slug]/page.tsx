@@ -4,6 +4,138 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'how-to-do-pull-ups-at-home-no-bar': {
+    content: (
+      <>
+        <p>The pull-up is the holy grail of bodyweight exercises. Nothing builds a strong back, biceps, and grip quite like it. But here&apos;s the problem: <strong>most people don&apos;t have a pull-up bar at home.</strong></p>
+        <p>Good news — you don&apos;t need one to start training for pull-ups. These progressions build the exact pulling muscles you need, using furniture you already own.</p>
+
+        <h2>Why Pull-Up Strength Matters</h2>
+        <p>Pull-ups train your lats, rhomboids, rear delts, biceps, forearms, and core — all in one movement. They&apos;re the upper body counterpart to squats. Skip them and you&apos;ll develop the classic &quot;mirror muscles only&quot; physique: strong chest, weak back, rounded shoulders.</p>
+        <p>A 2023 study in the <em>Journal of Strength and Conditioning Research</em> found that pull-up ability is one of the <strong>strongest predictors of overall upper body functional strength</strong>. If you can do 10 clean pull-ups, you&apos;re stronger than 90% of the general population.</p>
+
+        <h2>Level 1: Towel Rows (Week 1-2)</h2>
+        <p>Loop a towel around a sturdy door handle. Hold both ends, lean back until your arms are straight, feet close to the door. Pull your chest toward the door. Slowly return.</p>
+        <p>This is your entry point. The angle determines difficulty — the more horizontal your body, the harder it gets. Start nearly upright and gradually lean further back as you get stronger.</p>
+        <p><strong>Target:</strong> 3 sets of 12-15 reps.</p>
+
+        <h2>Level 2: Table Rows (Week 2-4)</h2>
+        <p>Lie under a sturdy table (dining tables work great). Grip the edge with both hands, body straight like an inverted plank. Pull your chest to the table edge. Lower with control.</p>
+        <p>This is essentially an inverted row — the same movement pattern as a pull-up but at an easier angle. Keep your body rigid from head to heels. <strong>No sagging hips.</strong></p>
+        <p><strong>Target:</strong> 3 sets of 10-12 reps. When this feels easy, elevate your feet on a chair.</p>
+
+        <h2>Level 3: Doorframe Rows (Week 4-6)</h2>
+        <p>Stand in a doorframe. Grip both sides at chest height. Walk your feet forward until you&apos;re leaning back at a 45° angle. Pull yourself into the frame. Return slowly.</p>
+        <p>This variation hits your grip strength hard — your fingers are working overtime on the flat doorframe. If grip fails before your back does, that&apos;s normal. It&apos;ll catch up.</p>
+        <p><strong>Target:</strong> 3 sets of 10 with a 2-second hold at the top.</p>
+
+        <h2>Level 4: Isometric Holds (Week 6-8)</h2>
+        <p>Using your table row setup, pull yourself up and <strong>hold</strong> at the top position for as long as possible. Your muscles build strength fastest in the positions where they work hardest.</p>
+        <p>Also practice &quot;dead hangs&quot; from anything you can safely grip — a sturdy tree branch, a playground bar, even a staircase overhang. Hang with straight arms for time. This builds the grip endurance that pull-ups demand.</p>
+        <p><strong>Target:</strong> 3 holds of 15-20 seconds at the top of a row. Dead hangs: work up to 30 seconds.</p>
+
+        <h2>Level 5: Negative Pull-Ups (Week 8-12)</h2>
+        <p>Find anything you can hang from — a playground bar, a sturdy tree branch, or even a stairwell ledge. Jump to the top position (chin over the bar) and <strong>lower yourself as slowly as possible</strong>. Aim for 5 seconds down.</p>
+        <p>Negatives are the secret weapon for pull-up training. Eccentric (lowering) contractions build strength faster than concentric (lifting) ones. If you can do 3 sets of 5 slow negatives, you&apos;re weeks away from your first full pull-up.</p>
+        <p><strong>Target:</strong> 3 sets of 5 reps with a 5-second descent.</p>
+
+        <h2>Level 6: Your First Pull-Up</h2>
+        <p>After 8-12 weeks of consistent progression, try it. Hang with straight arms, pull until your chin clears the bar. One rep. That&apos;s all you need to prove it&apos;s possible.</p>
+        <p>Can&apos;t quite get there? Use a resistance band looped over the bar and under your foot for assistance. Reduce band thickness over time until you don&apos;t need it.</p>
+
+        <h2>The Muscles You&apos;re Building</h2>
+        <ul>
+          <li><strong>Latissimus Dorsi</strong> — The wide, V-shape back muscles. Primary movers in a pull-up.</li>
+          <li><strong>Rhomboids &amp; Traps</strong> — Between your shoulder blades. Critical for posture.</li>
+          <li><strong>Biceps</strong> — Your arms do serious work, especially with an underhand grip.</li>
+          <li><strong>Forearms &amp; Grip</strong> — Often the first thing to fatigue. Rows and hangs fix this.</li>
+          <li><strong>Core</strong> — A proper pull-up demands full body tension. Your abs work harder than you&apos;d think.</li>
+        </ul>
+
+        <h2>Common Mistakes</h2>
+        <ul>
+          <li><strong>Kipping or swinging</strong> — Momentum robs your muscles of the work. Strict form builds real strength.</li>
+          <li><strong>Ignoring grip training</strong> — Your grip will be the bottleneck. Train it deliberately with dead hangs.</li>
+          <li><strong>Going too fast</strong> — Slow eccentrics build more strength than fast reps. Control the movement.</li>
+          <li><strong>Neglecting rows</strong> — Horizontal pulling (rows) complements vertical pulling (pull-ups). Do both.</li>
+        </ul>
+
+        <h2>The fit.gg Pulling Skill Tree</h2>
+        <p>In fit.gg, pulling movements have their own skill tree branch. You start with towel rows, progress through table rows and negatives, and eventually unlock full pull-ups and beyond (archer pull-ups, muscle-ups). The app tracks your strength milestones and tells you exactly when to progress — <strong>no guessing, no plateaus.</strong></p>
+      </>
+    ),
+  },
+  'rest-day-workout-active-recovery': {
+    content: (
+      <>
+        <p>You crushed your workout yesterday. Today your muscles are sore and your brain says &quot;rest day.&quot; So you lie on the couch for 12 hours. <strong>That&apos;s not recovery — that&apos;s just inactivity.</strong></p>
+        <p>Active recovery is the difference between feeling stiff for 3 days and bouncing back in 1. Here&apos;s how to do rest days right.</p>
+
+        <h2>What Is Active Recovery?</h2>
+        <p>Active recovery means low-intensity movement that increases blood flow without adding training stress. Think 30-50% effort — enough to get your heart rate slightly elevated and your muscles moving through their full range of motion.</p>
+        <p>A 2018 meta-analysis in <em>Sports Medicine</em> confirmed that active recovery <strong>reduces blood lactate levels faster</strong> than passive rest and decreases perceived muscle soreness by 15-20%. Your muscles literally heal faster when you move them gently.</p>
+
+        <h2>The Best Active Recovery Activities</h2>
+
+        <h3>1. Walking (20-30 minutes)</h3>
+        <p>The most underrated exercise in existence. A moderate-pace walk increases circulation to every muscle group, clears metabolic waste, and reduces inflammation — all without any recovery cost.</p>
+        <p>Bonus: walking outdoors in natural light helps regulate your circadian rhythm, improving sleep quality. And better sleep = better recovery.</p>
+
+        <h3>2. Yoga or Stretching (15-20 minutes)</h3>
+        <p>Not the intense, sweaty power yoga. Gentle flow or static stretching that takes your muscles through full range of motion. Focus on the areas that are sore.</p>
+        <p>Key stretches for workout recovery:</p>
+        <ul>
+          <li><strong>Hip flexor stretch</strong> — Fixes tightness from squats and sitting</li>
+          <li><strong>Chest doorway stretch</strong> — Opens up after push-ups and pressing</li>
+          <li><strong>Cat-cow</strong> — Mobilizes the entire spine</li>
+          <li><strong>Pigeon pose</strong> — Deep hip and glute release</li>
+          <li><strong>Child&apos;s pose</strong> — Gentle lat and back stretch</li>
+        </ul>
+
+        <h3>3. Foam Rolling (10-15 minutes)</h3>
+        <p>Self-myofascial release — fancy term for &quot;massage your own muscles with a foam cylinder.&quot; Roll slowly over sore areas, pausing on tender spots for 20-30 seconds.</p>
+        <p>Research shows foam rolling <strong>reduces DOMS (delayed onset muscle soreness) by up to 50%</strong> when done within 24 hours of exercise. No foam roller? A tennis ball works for smaller areas like shoulders and feet.</p>
+
+        <h3>4. Swimming or Light Cycling (20 minutes)</h3>
+        <p>Low-impact cardio that moves blood without stressing joints. Swimming is especially good because the water pressure acts as gentle compression therapy. Keep the intensity conversational — if you&apos;re breathing hard, you&apos;ve gone too far.</p>
+
+        <h3>5. Mobility Work (10 minutes)</h3>
+        <p>Controlled movements through your joints&apos; full range of motion. Arm circles, hip circles, ankle rotations, thoracic spine rotations. These aren&apos;t stretches — they&apos;re <strong>movement drills</strong> that keep your joints healthy and prepare you for your next workout.</p>
+
+        <h2>What NOT to Do on Rest Days</h2>
+        <ul>
+          <li><strong>High-intensity anything</strong> — HIIT, heavy lifting, sprints. Your body is rebuilding. Don&apos;t interrupt it.</li>
+          <li><strong>Absolutely nothing</strong> — Total inactivity leads to stiffness, slower recovery, and broken momentum.</li>
+          <li><strong>Only stretching sore muscles</strong> — Stretch everything. Tightness in one area creates compensation patterns elsewhere.</li>
+          <li><strong>Ignoring sleep</strong> — Recovery happens primarily during sleep. 7-9 hours is non-negotiable. No amount of foam rolling compensates for 5 hours of sleep.</li>
+        </ul>
+
+        <h2>The Recovery Science</h2>
+        <p>When you work out, you create micro-tears in muscle fibers. During recovery, your body repairs these tears and builds the fibers back stronger — this is how you gain strength and muscle. The process requires:</p>
+        <ul>
+          <li><strong>Blood flow</strong> — Delivers nutrients and oxygen to damaged tissue (active recovery helps here)</li>
+          <li><strong>Protein</strong> — The building blocks for muscle repair (eat enough)</li>
+          <li><strong>Sleep</strong> — Growth hormone peaks during deep sleep (prioritize it)</li>
+          <li><strong>Hydration</strong> — Dehydrated muscles recover up to 30% slower</li>
+        </ul>
+
+        <h2>How Often Should You Take Rest Days?</h2>
+        <p>For short daily workouts (5-10 minutes like fit.gg sessions), you can train 6-7 days per week because the volume per session is low enough to recover from overnight.</p>
+        <p>For longer, more intense sessions (30-60 minutes), take 2-3 rest days per week. And on those rest days, do active recovery — not Netflix marathons.</p>
+        <p>Listen to your body. Signs you need more rest:</p>
+        <ul>
+          <li>Performance is declining despite consistent training</li>
+          <li>You feel exhausted before the workout even starts</li>
+          <li>Persistent joint pain (muscle soreness is normal; joint pain is a warning)</li>
+          <li>Mood drops, sleep disruption, loss of appetite</li>
+        </ul>
+
+        <h2>Active Recovery in fit.gg</h2>
+        <p>fit.gg automatically programs recovery days into your weekly schedule. On rest days, the app offers <strong>guided mobility flows and light movement sessions</strong> that count toward your streak without adding training stress. Your streak stays alive, your body recovers, and you come back stronger the next day.</p>
+        <p>Because rest isn&apos;t the opposite of progress — it&apos;s part of it.</p>
+      </>
+    ),
+  },
   'plank-variations-core-strength': {
     content: (
       <>

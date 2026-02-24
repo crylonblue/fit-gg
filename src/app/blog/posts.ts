@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'how-to-do-pull-ups-at-home-no-bar',
+    title: 'How to Train for Pull-Ups at Home (No Bar Required)',
+    description: 'Think you need a pull-up bar to train pull-ups? These bodyweight progressions build the exact muscles you need — towel rows, inverted rows, and more.',
+    date: '2026-02-24',
+    readTime: '7 min read',
+    category: 'Workouts',
+  },
+  {
+    slug: 'rest-day-workout-active-recovery',
+    title: 'What to Do on Rest Days: Active Recovery That Actually Helps',
+    description: 'Rest days don\'t mean lying on the couch. Active recovery speeds up muscle repair, reduces soreness, and keeps your streak alive.',
+    date: '2026-02-24',
+    readTime: '6 min read',
+    category: 'Recovery',
+  },
+  {
     slug: 'plank-variations-core-strength',
     title: 'Beyond the Basic Plank: 8 Variations That Actually Build Core Strength',
     description: 'The standard plank gets boring fast. These 8 progressive variations challenge your core in new ways — from beginner to advanced.',
