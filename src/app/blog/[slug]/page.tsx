@@ -4,6 +4,332 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  '30-minute-full-body-dumbbell-workout-at-home': {
+    content: (
+      <>
+        <p>You don&apos;t need a gym membership, a cable machine, or 90 minutes of free time to build real strength. <strong>A single pair of dumbbells and 30 minutes</strong> is all it takes to hit every major muscle group — from your shoulders to your calves.</p>
+        <p>This full body dumbbell workout is designed for home training. Whether you&apos;re working with 10-pound adjustables or a pair of 25s you found on Facebook Marketplace, this routine scales to your level. No bench required. No excuses accepted.</p>
+
+        <h2>Why Full Body Dumbbell Workouts Work</h2>
+        <p>Full body training hits every muscle group in a single session. For home exercisers, this is ideal because:</p>
+        <ul>
+          <li><strong>Maximum efficiency</strong> — Train everything in 30 minutes instead of splitting across 4-5 days</li>
+          <li><strong>Higher calorie burn</strong> — More muscles working = more energy expended per session</li>
+          <li><strong>Better for consistency</strong> — Miss a day? No problem. You didn&apos;t skip &quot;leg day&quot; — you skipped everything equally</li>
+          <li><strong>Ideal for beginners and intermediates</strong> — Research in the <em>Journal of Strength and Conditioning Research</em> (2019) shows full body training produces similar hypertrophy to splits for non-advanced lifters</li>
+        </ul>
+        <p>If you&apos;re already following a <Link href="/blog/how-to-start-working-out-at-home-beginner" style={{ color: '#00FF87' }}>beginner home workout routine</Link>, adding dumbbells is the natural next step to keep progressing.</p>
+
+        <h2>What You Need</h2>
+        <ul>
+          <li><strong>One pair of dumbbells</strong> — Adjustable dumbbells are ideal, but fixed weight works too. Choose a weight that&apos;s challenging for 10-12 reps on upper body exercises.</li>
+          <li><strong>A small space</strong> — About 6 feet × 6 feet. Your living room, garage, or bedroom works.</li>
+          <li><strong>A timer</strong> — Your phone works. Or just use the fit.gg app.</li>
+        </ul>
+
+        <h2>Warm-Up (3 Minutes)</h2>
+        <p>Never skip the warm-up. Cold muscles are injury-prone muscles. This sequence prepares your joints, raises your heart rate, and activates the muscles you&apos;re about to work.</p>
+        <ul>
+          <li><strong>Arm circles</strong> — 15 seconds forward, 15 seconds backward. Loosens shoulders and improves blood flow to the rotator cuff.</li>
+          <li><strong>Bodyweight squats</strong> — 10 reps. Wakes up your quads, glutes, and hip joints. Go full depth. (<Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>Need squat form help?</Link>)</li>
+          <li><strong>Hip circles</strong> — 10 per direction. Opens up tight hips from sitting all day.</li>
+          <li><strong>Inchworms</strong> — 5 reps. Stand, hinge forward, walk your hands out to plank, walk back, stand. This mobilizes your hamstrings, shoulders, and core simultaneously.</li>
+          <li><strong>Jumping jacks</strong> — 20 reps. Elevates heart rate and primes your nervous system for work.</li>
+        </ul>
+
+        <h2>The Workout (24 Minutes)</h2>
+        <p>Perform each exercise for the prescribed sets and reps. Rest 45-60 seconds between sets. Move to the next exercise after completing all sets.</p>
+
+        <h3>1. Dumbbell Goblet Squats — 3 sets × 12 reps</h3>
+        <p>Hold one dumbbell vertically at your chest with both hands. Feet shoulder-width apart, toes slightly out. Squat until your hip crease drops below your knees. Drive through your heels to stand.</p>
+        <p><strong>Muscles worked:</strong> Quads, glutes, core, upper back (from holding the weight).<br />
+        <strong>Pro tip:</strong> The goblet position forces an upright torso — it&apos;s actually easier to hit depth than a barbell squat. If your heels lift, elevate them on small plates or a folded towel.</p>
+
+        <h3>2. Dumbbell Floor Press — 3 sets × 10 reps</h3>
+        <p>Lie on the floor, knees bent, a dumbbell in each hand. Press them up until your arms are straight. Lower until your triceps touch the floor — that&apos;s your natural range limiter. Press back up.</p>
+        <p><strong>Muscles worked:</strong> Chest, shoulders, triceps.<br />
+        <strong>Pro tip:</strong> No bench? No problem. The floor press actually protects your shoulders by limiting the range of motion. It&apos;s a safer pressing movement for home training.</p>
+
+        <h3>3. Dumbbell Romanian Deadlifts — 3 sets × 10 reps</h3>
+        <p>Hold dumbbells in front of your thighs. Hinge at the hips, pushing your butt back, and lower the weights along your legs until you feel a deep hamstring stretch. Squeeze your glutes to return to standing.</p>
+        <p><strong>Muscles worked:</strong> Hamstrings, glutes, lower back, grip.<br />
+        <strong>Pro tip:</strong> Keep the dumbbells close to your body throughout the movement. Think &quot;push your hips back&quot; not &quot;bend forward.&quot; Your back stays flat — always.</p>
+
+        <h3>4. Dumbbell Bent-Over Rows — 3 sets × 10 reps per arm</h3>
+        <p>Hinge forward at the hips about 45 degrees, one dumbbell in each hand (or one arm at a time using a chair for support). Pull the weight to your hip, squeezing your shoulder blade back. Lower with control.</p>
+        <p><strong>Muscles worked:</strong> Lats, rhomboids, rear delts, biceps.<br />
+        <strong>Pro tip:</strong> Don&apos;t jerk the weight. A controlled 1-second pull and 2-second lower builds more muscle than heaving heavy weight with momentum. If you&apos;re working toward <Link href="/blog/how-to-do-pull-ups-at-home-no-bar" style={{ color: '#00FF87' }}>your first pull-up</Link>, rows are essential.</p>
+
+        <h3>5. Dumbbell Overhead Press — 3 sets × 10 reps</h3>
+        <p>Stand with dumbbells at shoulder height, palms facing forward. Press straight up until your arms are locked out overhead. Lower to shoulders with control.</p>
+        <p><strong>Muscles worked:</strong> Shoulders (all three heads), triceps, upper chest, core (for stabilization).<br />
+        <strong>Pro tip:</strong> Standing presses are harder than seated because your core has to stabilize your entire body. That&apos;s a feature, not a bug — you&apos;re training more muscles.</p>
+
+        <h3>6. Dumbbell Reverse Lunges — 3 sets × 10 reps per leg</h3>
+        <p>Hold dumbbells at your sides. Step one foot backward, lower your back knee toward the floor until both knees form 90-degree angles. Push through your front heel to return to standing. Alternate legs.</p>
+        <p><strong>Muscles worked:</strong> Quads, glutes, hamstrings, calves, core.<br />
+        <strong>Pro tip:</strong> Reverse lunges are easier on the knees than forward lunges. Keep your torso upright and your front knee tracking over your toes.</p>
+
+        <h3>7. Dumbbell Renegade Rows — 2 sets × 8 reps per arm</h3>
+        <p>Get into push-up position with hands on the dumbbells. Row one dumbbell to your hip while stabilizing with the other arm. Alternate sides. Your hips should NOT rotate.</p>
+        <p><strong>Muscles worked:</strong> Core (anti-rotation), lats, shoulders, triceps — basically everything.<br />
+        <strong>Pro tip:</strong> This is an advanced movement. If your hips sway, widen your feet or drop to lighter dumbbells. Quality over ego. Similar anti-rotation benefits to <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>plank shoulder taps</Link>.</p>
+
+        <h3>8. Dumbbell Curl to Press — 2 sets × 10 reps</h3>
+        <p>Hold dumbbells at your sides. Curl them to your shoulders, then press overhead. Reverse the sequence back down. That&apos;s one rep.</p>
+        <p><strong>Muscles worked:</strong> Biceps, shoulders, triceps.<br />
+        <strong>Pro tip:</strong> This combo exercise is a time-saver. You get arm work and shoulder work in a single movement — perfect for squeezing everything into 30 minutes.</p>
+
+        <h2>Cool-Down (3 Minutes)</h2>
+        <p>Cooling down reduces post-workout stiffness and helps your heart rate return to normal. Don&apos;t skip it — your <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>recovery</Link> starts here.</p>
+        <ul>
+          <li><strong>Standing quad stretch</strong> — 30 seconds per leg. Pull your heel to your glute, keep your knees together.</li>
+          <li><strong>Chest doorway stretch</strong> — 30 seconds per side. Forearm against a doorframe, step through until you feel the chest open. (<Link href="/blog/desk-worker-stretches-exercises" style={{ color: '#00FF87' }}>More desk-worker stretches here</Link>)</li>
+          <li><strong>Hip flexor stretch</strong> — 30 seconds per side. Half-kneeling lunge position, push hips forward.</li>
+          <li><strong>Cat-cow</strong> — 8 slow reps. Mobilizes the spine after all that loaded work.</li>
+          <li><strong>Deep breathing</strong> — 30 seconds. Inhale for 4, hold for 4, exhale for 6. Activates your parasympathetic nervous system to kickstart recovery.</li>
+        </ul>
+
+        <h2>How to Progress</h2>
+        <p>This workout should feel challenging but doable. When it starts feeling easy, you have three options:</p>
+        <ol>
+          <li><strong>Increase weight</strong> — The most straightforward progression. Even 2.5 lbs per dumbbell makes a difference.</li>
+          <li><strong>Increase reps</strong> — Push from 10 to 12 to 15 before adding weight.</li>
+          <li><strong>Slow the tempo</strong> — Take 3 seconds to lower the weight on every rep. Same weight, dramatically harder.</li>
+        </ol>
+        <p>Do this workout 3 times per week with at least one rest day between sessions. On off days, try a <Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>5-minute bodyweight routine</Link> or active recovery to keep your streak alive.</p>
+
+        <h2>Quick Reference Cheat Sheet</h2>
+        <p>Print this or screenshot it:</p>
+        <ol>
+          <li>Goblet Squats — 3×12</li>
+          <li>Floor Press — 3×10</li>
+          <li>Romanian Deadlifts — 3×10</li>
+          <li>Bent-Over Rows — 3×10/arm</li>
+          <li>Overhead Press — 3×10</li>
+          <li>Reverse Lunges — 3×10/leg</li>
+          <li>Renegade Rows — 2×8/arm</li>
+          <li>Curl to Press — 2×10</li>
+        </ol>
+        <p><strong>Rest:</strong> 45-60 seconds between sets. <strong>Total time:</strong> ~30 minutes including warm-up and cool-down.</p>
+
+        <h2>The fit.gg Way</h2>
+        <p>In fit.gg, dumbbell workouts live in the <strong>Equipment skill tree</strong>. The app auto-selects exercises based on your available equipment, tracks your weights and reps across sessions, and tells you exactly when to increase the load. No spreadsheet required — just grab your dumbbells and follow along.</p>
+        <p>Because the best home dumbbell workout is the one you actually do. Consistently. Week after week. <strong>That&apos;s how real strength is built.</strong></p>
+      </>
+    ),
+  },
+  'simple-meal-prep-for-fitness-beginners': {
+    content: (
+      <>
+        <p>You&apos;re working out consistently. Your <Link href="/blog/how-to-start-working-out-at-home-beginner" style={{ color: '#00FF87' }}>workout habit</Link> is dialed in. But your nutrition? Still a chaotic mess of takeout, skipped meals, and last-minute decisions. <strong>Sound familiar?</strong></p>
+        <p>Meal prep doesn&apos;t have to mean spending your entire Sunday in the kitchen cooking 42 identical chicken-and-rice containers. This guide is for real beginners — simple recipes, minimal ingredients, and a system that actually fits your life.</p>
+
+        <h2>Why Meal Prep Matters for Fitness</h2>
+        <p>You can&apos;t out-train a bad diet. That&apos;s not a cliché — it&apos;s thermodynamics. A 30-minute <Link href="/blog/30-minute-full-body-dumbbell-workout-at-home" style={{ color: '#00FF87' }}>dumbbell workout</Link> burns roughly 200-300 calories. One fast-food meal can be 1,200+. The math doesn&apos;t lie.</p>
+        <p>Meal prep solves the #1 reason people eat poorly: <strong>lack of a plan</strong>. When you&apos;re hungry and there&apos;s nothing ready, you order pizza. When there&apos;s a container of good food in the fridge, you eat that instead. It&apos;s not about willpower — it&apos;s about preparation.</p>
+
+        <h2>The Beginner Meal Prep System</h2>
+        <p>Forget complicated meal plans with 47 ingredients. Here&apos;s the system:</p>
+        <ol>
+          <li><strong>Pick 2-3 proteins</strong> — Chicken, ground turkey, eggs, canned tuna, tofu</li>
+          <li><strong>Pick 2-3 carb sources</strong> — Rice, sweet potatoes, oats, whole wheat pasta</li>
+          <li><strong>Pick 3-4 vegetables</strong> — Broccoli, spinach, bell peppers, zucchini</li>
+          <li><strong>Pick 1-2 healthy fats</strong> — Olive oil, avocado, nuts</li>
+          <li><strong>Combine them into meals</strong> — That&apos;s it. No recipes needed for 90% of fitness meals.</li>
+        </ol>
+        <p>But since you asked for recipes, here are 7 dead-simple ones with full macros.</p>
+
+        <h2>Recipe 1: Honey Garlic Chicken with Rice and Broccoli</h2>
+        <p><em>The classic. Simple, satisfying, endlessly customizable.</em></p>
+        <p><strong>Ingredients (4 servings):</strong></p>
+        <ul>
+          <li>1.5 lbs chicken breast, diced</li>
+          <li>2 cups white or brown rice (dry)</li>
+          <li>4 cups broccoli florets</li>
+          <li>3 tbsp honey</li>
+          <li>2 tbsp soy sauce</li>
+          <li>3 cloves garlic, minced</li>
+          <li>1 tbsp olive oil</li>
+        </ul>
+        <p><strong>Instructions:</strong> Cook rice per package directions. Heat olive oil in a pan, cook chicken 6-7 minutes until golden. Add garlic, honey, and soy sauce — stir 2 minutes until glazed. Steam or roast broccoli for 8 minutes. Divide into 4 containers.</p>
+        <p><strong>Per serving:</strong> 485 cal | 42g protein | 58g carbs | 8g fat</p>
+
+        <h2>Recipe 2: Turkey Taco Bowls</h2>
+        <p><em>All the flavor of taco night, none of the guilt.</em></p>
+        <p><strong>Ingredients (4 servings):</strong></p>
+        <ul>
+          <li>1.5 lbs lean ground turkey</li>
+          <li>2 cups rice (dry)</li>
+          <li>1 can black beans, drained</li>
+          <li>1 cup corn (frozen is fine)</li>
+          <li>1 cup salsa</li>
+          <li>2 tbsp taco seasoning</li>
+          <li>Optional: avocado, cheese, lime</li>
+        </ul>
+        <p><strong>Instructions:</strong> Cook rice. Brown turkey in a pan, drain any fat. Add taco seasoning, beans, corn, and salsa — simmer 5 minutes. Divide rice and turkey mix into containers. Add fresh toppings when eating.</p>
+        <p><strong>Per serving:</strong> 520 cal | 40g protein | 62g carbs | 12g fat</p>
+
+        <h2>Recipe 3: Overnight Oats (Breakfast Prep)</h2>
+        <p><em>Prep in 2 minutes. Grab and go in the morning.</em></p>
+        <p><strong>Ingredients (1 serving — multiply as needed):</strong></p>
+        <ul>
+          <li>½ cup rolled oats</li>
+          <li>½ cup milk (any kind)</li>
+          <li>¼ cup Greek yogurt</li>
+          <li>1 tbsp honey or maple syrup</li>
+          <li>½ banana, sliced</li>
+          <li>1 tbsp peanut butter</li>
+        </ul>
+        <p><strong>Instructions:</strong> Combine oats, milk, yogurt, and sweetener in a jar or container. Stir. Top with banana and peanut butter. Refrigerate overnight. Eat cold in the morning. Make 5 at once on Sunday for the whole week.</p>
+        <p><strong>Per serving:</strong> 420 cal | 18g protein | 58g carbs | 14g fat</p>
+
+        <h2>Recipe 4: Sheet Pan Salmon and Sweet Potatoes</h2>
+        <p><em>One pan. Minimal cleanup. Maximum nutrition.</em></p>
+        <p><strong>Ingredients (4 servings):</strong></p>
+        <ul>
+          <li>4 salmon fillets (6 oz each)</li>
+          <li>2 large sweet potatoes, cubed</li>
+          <li>2 cups green beans</li>
+          <li>2 tbsp olive oil</li>
+          <li>Salt, pepper, paprika, garlic powder</li>
+          <li>1 lemon</li>
+        </ul>
+        <p><strong>Instructions:</strong> Preheat oven to 400°F (200°C). Toss sweet potatoes with 1 tbsp oil and seasoning, spread on a baking sheet. Roast 15 minutes. Add salmon and green beans, drizzle with remaining oil and lemon juice. Roast 12-15 more minutes. Divide into containers.</p>
+        <p><strong>Per serving:</strong> 510 cal | 38g protein | 42g carbs | 20g fat</p>
+
+        <h2>Recipe 5: Greek Chicken Wraps</h2>
+        <p><em>Light, fresh, and perfect for lunch.</em></p>
+        <p><strong>Ingredients (4 servings):</strong></p>
+        <ul>
+          <li>1.5 lbs chicken breast, grilled and sliced</li>
+          <li>4 large whole wheat wraps</li>
+          <li>1 cup cucumber, diced</li>
+          <li>1 cup cherry tomatoes, halved</li>
+          <li>½ cup red onion, sliced</li>
+          <li>½ cup feta cheese, crumbled</li>
+          <li>4 tbsp hummus</li>
+        </ul>
+        <p><strong>Instructions:</strong> Grill or pan-cook chicken with salt, pepper, and oregano. Spread hummus on each wrap. Add chicken, cucumber, tomatoes, onion, and feta. Roll tightly. Wrap in foil for grab-and-go lunches. Keep fillings separate if prepping more than 2 days ahead.</p>
+        <p><strong>Per serving:</strong> 460 cal | 44g protein | 38g carbs | 14g fat</p>
+
+        <h2>Recipe 6: Egg Muffin Cups (Breakfast)</h2>
+        <p><em>Batch-cook 12 in one go. Reheat in 60 seconds.</em></p>
+        <p><strong>Ingredients (12 muffins / 4 servings of 3):</strong></p>
+        <ul>
+          <li>10 eggs</li>
+          <li>1 cup spinach, chopped</li>
+          <li>½ cup bell peppers, diced</li>
+          <li>½ cup shredded cheese</li>
+          <li>Salt, pepper, garlic powder</li>
+          <li>Cooking spray</li>
+        </ul>
+        <p><strong>Instructions:</strong> Preheat oven to 375°F (190°C). Spray a 12-cup muffin tin. Whisk eggs with seasoning. Distribute spinach, peppers, and cheese into cups. Pour egg mixture evenly. Bake 20-22 minutes. Cool and refrigerate. Reheat in microwave for 60 seconds.</p>
+        <p><strong>Per serving (3 muffins):</strong> 290 cal | 22g protein | 4g carbs | 20g fat</p>
+
+        <h2>Recipe 7: Peanut Butter Banana Protein Smoothie</h2>
+        <p><em>The perfect post-workout recovery drink.</em></p>
+        <p><strong>Ingredients (1 serving):</strong></p>
+        <ul>
+          <li>1 banana (frozen works best)</li>
+          <li>1 scoop protein powder (any flavor)</li>
+          <li>1 tbsp peanut butter</li>
+          <li>1 cup milk</li>
+          <li>Handful of ice</li>
+          <li>Optional: 1 tbsp honey, handful of spinach</li>
+        </ul>
+        <p><strong>Instructions:</strong> Blend everything until smooth. Pour. Drink. That&apos;s it. If you freeze bananas ahead of time, you can make this in under 2 minutes.</p>
+        <p><strong>Per serving:</strong> 410 cal | 32g protein | 48g carbs | 12g fat</p>
+
+        <h2>The Complete Shopping List</h2>
+        <p>Here&apos;s everything you need to make all 7 recipes for the week:</p>
+
+        <h3>Proteins</h3>
+        <ul>
+          <li>3 lbs chicken breast</li>
+          <li>1.5 lbs lean ground turkey</li>
+          <li>4 salmon fillets (6 oz each)</li>
+          <li>10 eggs</li>
+          <li>1 tub Greek yogurt</li>
+          <li>1 scoop protein powder</li>
+        </ul>
+
+        <h3>Carbs &amp; Grains</h3>
+        <ul>
+          <li>4 cups white or brown rice (dry)</li>
+          <li>2 large sweet potatoes</li>
+          <li>2.5 cups rolled oats</li>
+          <li>4 whole wheat wraps</li>
+          <li>1 can black beans</li>
+        </ul>
+
+        <h3>Vegetables &amp; Fruits</h3>
+        <ul>
+          <li>4 cups broccoli florets</li>
+          <li>2 cups green beans</li>
+          <li>1 bag spinach</li>
+          <li>Bell peppers (2-3)</li>
+          <li>1 cucumber</li>
+          <li>1 cup cherry tomatoes</li>
+          <li>1 red onion</li>
+          <li>1 cup corn (frozen)</li>
+          <li>Bananas (3-4)</li>
+          <li>1 lemon</li>
+        </ul>
+
+        <h3>Pantry &amp; Other</h3>
+        <ul>
+          <li>Olive oil</li>
+          <li>Honey</li>
+          <li>Soy sauce</li>
+          <li>Peanut butter</li>
+          <li>Hummus</li>
+          <li>Feta cheese</li>
+          <li>Shredded cheese</li>
+          <li>Salsa</li>
+          <li>Taco seasoning</li>
+          <li>Garlic (1 head)</li>
+          <li>Milk (your preference)</li>
+          <li>Spices: salt, pepper, paprika, garlic powder, oregano</li>
+        </ul>
+
+        <h2>Meal Prep Tips for Beginners</h2>
+        <ul>
+          <li><strong>Start with just 2-3 recipes</strong> — Don&apos;t try to prep all 7 in one week. Pick 2 mains and 1 breakfast. Expand next week.</li>
+          <li><strong>Invest in good containers</strong> — Glass containers with snap lids last longer and don&apos;t absorb smells. 12-15 containers is a good starting set.</li>
+          <li><strong>Cook proteins in bulk</strong> — Grill all your chicken at once. Cook all your rice in one pot. Assembly is faster than cooking.</li>
+          <li><strong>Prep on Sunday, re-prep Wednesday</strong> — Most meals last 3-4 days in the fridge. A mid-week refresh keeps everything fresh.</li>
+          <li><strong>Keep sauces separate</strong> — Store dressings and sauces in small containers on the side. Add when eating to prevent soggy food.</li>
+          <li><strong>Label everything</strong> — Date your containers. Eat oldest first. When in doubt, throw it out.</li>
+          <li><strong>Don&apos;t aim for perfection</strong> — Eating 80% prepped meals is infinitely better than 0%. Some weeks you&apos;ll prep everything. Some weeks you&apos;ll prep breakfast only. Both count.</li>
+        </ul>
+
+        <h2>A Sample Week</h2>
+        <p>Here&apos;s how to structure your meals using these recipes:</p>
+        <ul>
+          <li><strong>Breakfast (daily):</strong> Overnight oats (Mon-Fri) or egg muffin cups (alternate days)</li>
+          <li><strong>Lunch:</strong> Greek chicken wraps (Mon-Wed), turkey taco bowls (Thu-Fri)</li>
+          <li><strong>Dinner:</strong> Honey garlic chicken + rice (Mon-Wed), sheet pan salmon (Thu-Fri)</li>
+          <li><strong>Post-workout:</strong> Protein smoothie as needed</li>
+          <li><strong>Weekends:</strong> Eat freely but mindfully. One prep-free weekend keeps you sane.</li>
+        </ul>
+
+        <h2>Daily Macro Targets (Approximate)</h2>
+        <p>Following this sample plan gives you roughly:</p>
+        <ul>
+          <li><strong>Calories:</strong> 1,800-2,200 (adjust portions to your goals)</li>
+          <li><strong>Protein:</strong> 130-160g (enough for muscle recovery and growth)</li>
+          <li><strong>Carbs:</strong> 200-250g (fuel for your <Link href="/blog/hiit-vs-steady-state-cardio" style={{ color: '#00FF87' }}>workouts</Link>)</li>
+          <li><strong>Fat:</strong> 50-70g (essential for hormones and satiety)</li>
+        </ul>
+        <p>These are starting points. If you&apos;re trying to lose fat, reduce portions slightly. Trying to gain muscle? Add an extra serving of carbs and protein to your biggest meal.</p>
+
+        <h2>The fit.gg Connection</h2>
+        <p>Your workouts and nutrition work together. fit.gg&apos;s <strong>daily workout sessions</strong> are designed to be short enough that you don&apos;t need to carb-load like a marathon runner, but intense enough to build real strength. Pair them with consistent meal prep and you&apos;ll see results faster than either alone.</p>
+        <p>Because fitness isn&apos;t just what you do in your <Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>5-minute morning workout</Link> — it&apos;s what you eat the other 23 hours and 55 minutes. <strong>Prep smart. Train hard. Stay consistent.</strong></p>
+      </>
+    ),
+  },
   'how-to-do-pull-ups-at-home-no-bar': {
     content: (
       <>

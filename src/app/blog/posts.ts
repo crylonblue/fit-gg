@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: '30-minute-full-body-dumbbell-workout-at-home',
+    title: '30-Minute Full Body Dumbbell Workout at Home',
+    description: 'A complete home dumbbell workout that hits every muscle group in 30 minutes. Includes warm-up, cool-down, sets, reps, and rest times — perfect for beginners and intermediates.',
+    date: '2026-02-25',
+    readTime: '8 min read',
+    category: 'Workouts',
+  },
+  {
+    slug: 'simple-meal-prep-for-fitness-beginners',
+    title: 'Simple Meal Prep for Fitness Beginners: A Week of Easy Recipes',
+    description: 'A beginner-friendly fitness meal prep guide with 7 easy recipes, complete macros, a shopping list, and prep tips to fuel your workouts all week.',
+    date: '2026-02-25',
+    readTime: '9 min read',
+    category: 'Nutrition',
+  },
+  {
     slug: 'how-to-do-pull-ups-at-home-no-bar',
     title: 'How to Train for Pull-Ups at Home (No Bar Required)',
     description: 'Think you need a pull-up bar to train pull-ups? These bodyweight progressions build the exact muscles you need — towel rows, inverted rows, and more.',
