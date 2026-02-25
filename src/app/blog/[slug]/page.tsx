@@ -4,6 +4,243 @@ import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'resistance-band-workouts-at-home': {
+    content: (
+      <>
+        <p>Resistance bands are the most underrated piece of home fitness equipment. They cost $15-30, weigh nothing, fit in a drawer, and can replicate <strong>nearly every gym machine movement</strong> — from lat pulldowns to leg presses.</p>
+        <p>Yet most people either don&apos;t know how to use them or think they&apos;re &quot;too easy.&quot; Both are wrong. With the right exercises and band tension, you can build serious strength, muscle, and endurance — all in 20 minutes.</p>
+        <p>This workout covers <strong>every major muscle group</strong> using just resistance bands. No door anchors required (though they help). No gym. Just you, a band, and 20 minutes.</p>
+
+        <h2>Why Resistance Bands Are Secretly Elite</h2>
+        <p>Bands aren&apos;t just for physical therapy. Research published in the <em>Journal of Sports Science &amp; Medicine</em> (2019) found that resistance band training produces <strong>comparable strength and muscle gains</strong> to free weights in untrained and moderately trained individuals.</p>
+        <p>Here&apos;s why they work so well:</p>
+        <ul>
+          <li><strong>Variable resistance</strong> — The band gets harder as you stretch it, matching your strength curve. At the top of a squat (where you&apos;re strongest), the band provides the most resistance. That&apos;s biomechanically ideal.</li>
+          <li><strong>Constant tension</strong> — Unlike dumbbells, bands never let your muscles rest during a rep. There&apos;s no &quot;dead zone&quot; where gravity does the work for you.</li>
+          <li><strong>Joint-friendly</strong> — The elastic resistance is easier on your joints than heavy metal. Great for <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>recovery days</Link> or anyone with nagging aches.</li>
+          <li><strong>Infinite scalability</strong> — Light band? High reps for endurance. Heavy band? Low reps for strength. Stack two bands? Now you&apos;re cooking.</li>
+        </ul>
+        <p>If you&apos;re doing <Link href="/blog/bodyweight-exercises-no-equipment" style={{ color: '#00FF87' }}>bodyweight-only workouts</Link>, bands are the cheapest way to add progressive resistance without buying a rack of dumbbells.</p>
+
+        <h2>What You Need</h2>
+        <ul>
+          <li><strong>1-3 loop resistance bands</strong> — Light (15-25 lbs), medium (30-50 lbs), and heavy (50-80 lbs). Long loop bands are the most versatile. Avoid the tiny &quot;booty bands&quot; for this workout.</li>
+          <li><strong>A small space</strong> — 6 × 6 feet is plenty.</li>
+          <li><strong>Optional: door anchor</strong> — Lets you simulate cable machine exercises. Costs about $5.</li>
+        </ul>
+
+        <h2>Warm-Up (2 Minutes)</h2>
+        <p>Grab your lightest band and run through this circuit once:</p>
+        <ul>
+          <li><strong>Band pull-aparts</strong> — 15 reps. Hold the band at chest height, arms straight. Pull it apart until your hands are at your sides. Wakes up your rear delts and upper back.</li>
+          <li><strong>Band overhead press</strong> — 10 reps (light). Step on the band, press overhead. Mobilizes shoulders.</li>
+          <li><strong>Band squats</strong> — 10 reps (light). Band under feet, held at shoulders. Gets blood flowing to your legs.</li>
+          <li><strong>Arm circles</strong> — 10 each direction. No band needed.</li>
+        </ul>
+
+        <h2>The Workout (18 Minutes)</h2>
+        <p>Perform 3 sets of each exercise. Rest 30-45 seconds between sets, 60 seconds between exercises. Choose a band resistance where the last 2-3 reps are genuinely challenging.</p>
+
+        <h3>1. Banded Squats — 3 × 15 reps</h3>
+        <p>Stand on the band with both feet shoulder-width apart. Loop it over your shoulders (or hold at chest height). Squat deep, keeping your chest up. The band fights you hardest at the top — exactly where bodyweight squats get too easy.</p>
+        <p><strong>Muscles:</strong> Quads, glutes, core.<br />
+        <strong>Pro tip:</strong> Use a medium or heavy band. If 15 reps are easy, your band is too light. Compare your form to the <Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>bodyweight squat progression</Link>.</p>
+
+        <h3>2. Band-Assisted or Banded Push-Ups — 3 × 12 reps</h3>
+        <p><strong>For extra resistance:</strong> Loop the band across your back and hold each end under your palms. Now every push-up fights against elastic resistance at the top.</p>
+        <p><strong>For assistance:</strong> Loop a heavy band between two elevated surfaces and push up from under it. It helps at the bottom where you&apos;re weakest.</p>
+        <p><strong>Muscles:</strong> Chest, shoulders, triceps.<br />
+        <strong>Pro tip:</strong> Banded push-ups are a game-changer for anyone stuck on the <Link href="/blog/push-up-progression-beginner-to-advanced" style={{ color: '#00FF87' }}>push-up progression</Link> between standard and diamond push-ups.</p>
+
+        <h3>3. Band Bent-Over Rows — 3 × 12 reps per arm</h3>
+        <p>Step on the band with one foot. Hinge forward at the hips (flat back). Pull the band to your hip, squeezing your shoulder blade back. Lower with control.</p>
+        <p><strong>Muscles:</strong> Lats, rhomboids, rear delts, biceps.<br />
+        <strong>Pro tip:</strong> This is the closest band exercise to a dumbbell row. Go slow on the negative (2-3 seconds down). Your back will thank you.</p>
+
+        <h3>4. Band Overhead Press — 3 × 12 reps</h3>
+        <p>Stand on the band, feet hip-width. Hold at shoulder height. Press straight overhead until arms lock out. Lower to shoulders.</p>
+        <p><strong>Muscles:</strong> Shoulders, triceps, upper chest.<br />
+        <strong>Pro tip:</strong> Widen your stance on the band for more resistance. Narrower = easier.</p>
+
+        <h3>5. Band Romanian Deadlifts — 3 × 15 reps</h3>
+        <p>Stand on the band. Hold it with both hands. Hinge at your hips, pushing your butt back, until you feel a deep hamstring stretch. Squeeze your glutes to stand. Keep the band close to your legs throughout.</p>
+        <p><strong>Muscles:</strong> Hamstrings, glutes, lower back.<br />
+        <strong>Pro tip:</strong> This is the best band exercise for your posterior chain. If it feels too easy, use a heavier band or do it single-leg.</p>
+
+        <h3>6. Band Pallof Press — 3 × 10 reps per side</h3>
+        <p>Anchor the band at chest height (door anchor or wrap around a pole). Stand sideways to the anchor. Hold the band at your chest with both hands. Press straight out in front of you. The band tries to rotate you — resist it. That&apos;s your core working overtime.</p>
+        <p><strong>Muscles:</strong> Obliques, transverse abdominis, entire core.<br />
+        <strong>Pro tip:</strong> This is superior to crunches for functional core strength. If you sit at a desk all day, this exercise is <Link href="/blog/desk-worker-stretches-exercises" style={{ color: '#00FF87' }}>especially important</Link>.</p>
+
+        <h2>Cool-Down (2 Minutes)</h2>
+        <ul>
+          <li><strong>Standing quad stretch</strong> — 20 seconds per leg</li>
+          <li><strong>Standing hamstring stretch</strong> — 20 seconds per leg</li>
+          <li><strong>Chest doorway stretch</strong> — 20 seconds</li>
+          <li><strong>Cross-body shoulder stretch</strong> — 15 seconds per arm</li>
+        </ul>
+
+        <h2>How to Progress</h2>
+        <p>Progressive overload with bands is different from weights. You can&apos;t add 5 pounds — you jump an entire band. Here&apos;s how to keep progressing:</p>
+        <ul>
+          <li><strong>Increase reps</strong> — Go from 12 to 15 to 20 before upgrading bands</li>
+          <li><strong>Slow down</strong> — 3-second negatives make any band brutally harder</li>
+          <li><strong>Add pauses</strong> — Hold the peak contraction for 2 seconds per rep</li>
+          <li><strong>Stack bands</strong> — Use two lighter bands together for a custom resistance</li>
+          <li><strong>Shorten the band</strong> — Choke up on it by wrapping it around your hands more. Shorter band = more tension</li>
+        </ul>
+
+        <h2>Sample Weekly Schedule</h2>
+        <p>You can run this workout 3-4 times per week. On off days, do a <Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>5-minute morning routine</Link> or <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>active recovery</Link>.</p>
+        <ul>
+          <li><strong>Monday:</strong> Full band workout (this one)</li>
+          <li><strong>Tuesday:</strong> Active recovery or rest</li>
+          <li><strong>Wednesday:</strong> Full band workout</li>
+          <li><strong>Thursday:</strong> 5-minute bodyweight session</li>
+          <li><strong>Friday:</strong> Full band workout</li>
+          <li><strong>Weekend:</strong> Hike, play sports, or rest</li>
+        </ul>
+
+        <h2>The Bottom Line</h2>
+        <p>Resistance bands eliminate every excuse. Too expensive? They cost less than a month of gym membership. No space? They work in a hotel room. Too heavy to travel with? They weigh 8 ounces.</p>
+        <p>If <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>5-minute daily workouts</Link> got you started, bands are how you keep making progress without needing a home gym. Twenty minutes, six exercises, full body — that&apos;s the deal.</p>
+        <p>Grab a band. Do the work. Level up. 💪</p>
+      </>
+    ),
+  },
+  'how-to-build-a-workout-routine': {
+    content: (
+      <>
+        <p>You&apos;ve probably tried building a workout routine before. Maybe you found a 12-week program online, did it for 6 days, then life happened. That&apos;s not a you problem — it&apos;s a <strong>design problem</strong>.</p>
+        <p>Most workout routines fail because they&apos;re built for the best version of you — the one with unlimited time, energy, and motivation. The version that doesn&apos;t exist on a Tuesday after a 10-hour workday.</p>
+        <p>This guide builds your routine from the ground up, using <strong>habit science and progressive overload</strong>. No cookie-cutter programs. A routine designed around your actual life, that starts embarrassingly easy and gets harder only when you&apos;re ready.</p>
+
+        <h2>Step 1: Define Your Minimum Viable Workout</h2>
+        <p>Forget your ideal workout. What&apos;s the <strong>smallest workout you&apos;d do on your worst day?</strong></p>
+        <p>Behavioral scientist BJ Fogg calls this the &quot;Tiny Habit.&quot; The idea: make the behavior so small that it&apos;s impossible to say no. If your workout routine requires motivation to start, it&apos;s already broken.</p>
+        <p>Examples of minimum viable workouts:</p>
+        <ul>
+          <li>10 squats and 5 push-ups (under 2 minutes)</li>
+          <li><Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>A 5-minute morning routine</Link></li>
+          <li>One set of three exercises (3-4 minutes)</li>
+          <li>Walk around the block (10 minutes)</li>
+        </ul>
+        <p><strong>Write yours down.</strong> This is your &quot;I have zero motivation&quot; backup plan. On days where everything is terrible, you do this instead of skipping entirely. The streak survives. The habit survives. That&apos;s what matters.</p>
+
+        <h2>Step 2: Choose Your Anchor</h2>
+        <p>A workout routine without a <strong>time anchor</strong> doesn&apos;t exist. &quot;I&apos;ll work out when I have time&quot; means &quot;I&apos;ll never work out.&quot;</p>
+        <p>Pick a specific trigger — something that already happens every day:</p>
+        <ul>
+          <li><strong>After waking up</strong> — Before you check your phone. The most popular anchor for <Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>morning workouts</Link>.</li>
+          <li><strong>After work</strong> — Change clothes immediately. Don&apos;t sit on the couch first (that&apos;s a trap).</li>
+          <li><strong>During lunch</strong> — 15-minute bodyweight session at your desk or a nearby park.</li>
+          <li><strong>Before dinner</strong> — Earns your meal. Psychologically satisfying.</li>
+        </ul>
+        <p>Research from the <em>European Journal of Social Psychology</em> (Lally et al., 2010) found that habit formation takes an average of <strong>66 days</strong> — but only when the behavior is linked to a consistent cue. No cue, no habit. It&apos;s that simple.</p>
+
+        <h2>Step 3: Pick Your Exercises (Keep It Simple)</h2>
+        <p>You need to cover <strong>five basic movement patterns</strong>. That&apos;s it. Not 15 exercises. Five patterns, one exercise each:</p>
+        <ul>
+          <li><strong>Push</strong> — Push-ups, dumbbell press, band press (<Link href="/blog/push-up-progression-beginner-to-advanced" style={{ color: '#00FF87' }}>push-up progression guide</Link>)</li>
+          <li><strong>Pull</strong> — Band rows, <Link href="/blog/how-to-do-pull-ups-at-home-no-bar" style={{ color: '#00FF87' }}>pull-up training</Link>, towel rows</li>
+          <li><strong>Squat</strong> — Air squats, goblet squats, <Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>squat progression</Link></li>
+          <li><strong>Hinge</strong> — Romanian deadlifts (band or dumbbell), good mornings, hip bridges</li>
+          <li><strong>Core</strong> — <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>Plank variations</Link>, dead bugs, Pallof press</li>
+        </ul>
+        <p>One exercise per pattern. 2-3 sets each. That&apos;s a complete workout in 15-25 minutes. Swap exercises every 4-6 weeks to keep things fresh, but don&apos;t reinvent the wheel every session.</p>
+
+        <h2>Step 4: Start Stupidly Easy</h2>
+        <p>This is the step everyone skips, and it&apos;s why their routines die.</p>
+        <p><strong>Week 1:</strong> Do your minimum viable workout every day. It should feel laughably easy. That&apos;s the point.</p>
+        <p><strong>Week 2:</strong> Add one set or 2 minutes.</p>
+        <p><strong>Week 3:</strong> Add another set or exercise.</p>
+        <p><strong>Week 4:</strong> Now you&apos;re at your &quot;real&quot; workout — and you have 3 weeks of momentum behind you.</p>
+        <p>Why this works: your brain doesn&apos;t resist small changes. Jumping from &quot;zero exercise&quot; to &quot;45-minute HIIT 4x/week&quot; triggers your brain&apos;s threat response. It interprets the massive change as dangerous and sabotages you with excuses. This is why <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>5-minute workouts beat hour-long sessions</Link> for building habits.</p>
+
+        <h2>Step 5: Build In Progressive Overload</h2>
+        <p>Doing the same workout forever doesn&apos;t work. Your body adapts, progress stalls, and boredom creeps in. <strong>Progressive overload</strong> means making your workouts slightly harder over time.</p>
+        <p>You don&apos;t need to add weight every session (that&apos;s a gym-bro myth for beginners). Instead, rotate through these methods:</p>
+        <ul>
+          <li><strong>Add reps</strong> — Go from 10 to 12 to 15 before increasing difficulty</li>
+          <li><strong>Add sets</strong> — From 2 sets to 3 sets of each exercise</li>
+          <li><strong>Slow down</strong> — 3-second negatives make bodyweight exercises dramatically harder</li>
+          <li><strong>Progress the exercise</strong> — From knee push-ups → standard → diamond → decline</li>
+          <li><strong>Add resistance</strong> — <Link href="/blog/resistance-band-workouts-at-home" style={{ color: '#00FF87' }}>Resistance bands</Link> or dumbbells</li>
+          <li><strong>Reduce rest time</strong> — From 60 seconds between sets to 45, then 30</li>
+        </ul>
+        <p>A simple rule: when you can complete all prescribed sets and reps with good form and it doesn&apos;t feel challenging on the last rep, it&apos;s time to progress.</p>
+
+        <h2>Step 6: Schedule Recovery (Seriously)</h2>
+        <p>Rest days aren&apos;t lazy days. They&apos;re when your muscles actually grow. If you skip recovery, you get weaker, not stronger.</p>
+        <p>A sustainable weekly structure:</p>
+        <ul>
+          <li><strong>3-4 training days</strong> — Your full routine</li>
+          <li><strong>2-3 active recovery days</strong> — <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>Light movement, stretching, walking</Link></li>
+          <li><strong>1 full rest day</strong> — Do nothing physical. Read, play games, relax.</li>
+        </ul>
+        <p>If you&apos;re doing <Link href="/blog/hiit-vs-steady-state-cardio" style={{ color: '#00FF87' }}>HIIT</Link>, never do it on consecutive days. Your nervous system needs 48 hours to recover from high-intensity work.</p>
+
+        <h2>Step 7: Track Everything</h2>
+        <p>What gets measured gets managed. You don&apos;t need a fancy app — a notes app or a piece of paper works. Track:</p>
+        <ul>
+          <li><strong>What you did</strong> — Exercises, sets, reps</li>
+          <li><strong>How it felt</strong> — Easy? Hard? Couldn&apos;t finish?</li>
+          <li><strong>Your streak</strong> — How many consecutive days/weeks you&apos;ve trained</li>
+        </ul>
+        <p>Tracking creates a <strong>feedback loop</strong>. You see progress, which motivates you, which drives consistency, which creates more progress. It&apos;s the same reason <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>gamification works so well for fitness</Link> — visible progress is addictive.</p>
+
+        <h2>Step 8: Plan for Failure</h2>
+        <p>You <em>will</em> miss days. You <em>will</em> have weeks where everything falls apart. The difference between people who build lasting routines and those who don&apos;t isn&apos;t perfection — it&apos;s <strong>recovery speed</strong>.</p>
+        <p>Build these safety nets:</p>
+        <ul>
+          <li><strong>The 2-day rule</strong> — Never miss two days in a row. One day off is rest. Two days is the start of quitting.</li>
+          <li><strong>The minimum viable workout</strong> — (Step 1, remember?) Use it when life is chaos.</li>
+          <li><strong>Pre-planned deload weeks</strong> — Every 4-6 weeks, cut your volume in half intentionally. This prevents burnout and lets your body recover.</li>
+          <li><strong>No all-or-nothing thinking</strong> — 5 minutes counts. <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>Any movement is better than no movement.</Link></li>
+        </ul>
+
+        <h2>A Sample Routine (Putting It All Together)</h2>
+        <p>Here&apos;s what this looks like in practice for a beginner doing home workouts:</p>
+
+        <h3>Week 1-2 (Building the Habit)</h3>
+        <ul>
+          <li><strong>Daily:</strong> 5-minute minimum — 10 squats, 5 push-ups (wall or knee), 20-second plank</li>
+          <li><strong>Goal:</strong> Do it every day. Difficulty doesn&apos;t matter. Consistency does.</li>
+        </ul>
+
+        <h3>Week 3-4 (Adding Volume)</h3>
+        <ul>
+          <li><strong>Mon/Wed/Fri:</strong> 15-minute workout — 3 sets of squats, push-ups, rows (band or towel), hip bridges, plank</li>
+          <li><strong>Tue/Thu:</strong> 5-minute mobility or walk</li>
+          <li><strong>Weekend:</strong> Active recovery or rest</li>
+        </ul>
+
+        <h3>Week 5-8 (Real Training)</h3>
+        <ul>
+          <li><strong>Mon/Wed/Fri:</strong> 20-25 minute workout — same 5 exercises, now with progressions. Add <Link href="/blog/resistance-band-workouts-at-home" style={{ color: '#00FF87' }}>resistance bands</Link> or <Link href="/blog/30-minute-full-body-dumbbell-workout-at-home" style={{ color: '#00FF87' }}>dumbbells</Link></li>
+          <li><strong>Tue/Thu:</strong> <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>Active recovery</Link></li>
+          <li><strong>Saturday:</strong> Longer session (30 min) or outdoor activity</li>
+          <li><strong>Sunday:</strong> Full rest</li>
+        </ul>
+
+        <h2>Why Most Routines Fail (And Yours Won&apos;t)</h2>
+        <p>Let&apos;s be blunt about why workout routines die:</p>
+        <ul>
+          <li><strong>Too ambitious too fast</strong> — You solved this with the minimum viable workout and gradual ramp-up</li>
+          <li><strong>No anchor</strong> — You attached your workout to a daily trigger</li>
+          <li><strong>No progression plan</strong> — You built in progressive overload so boredom can&apos;t kill it</li>
+          <li><strong>No recovery plan</strong> — You scheduled rest days as seriously as training days</li>
+          <li><strong>All-or-nothing thinking</strong> — You have a backup plan for bad days</li>
+        </ul>
+        <p>A workout routine isn&apos;t a program you follow. It&apos;s a <strong>system you design</strong>. The program will change — exercises rotate, difficulty increases, life throws curveballs. But the system (anchor + minimum + tracking + recovery) stays constant.</p>
+
+        <h2>Start Today, Not Monday</h2>
+        <p>&quot;I&apos;ll start Monday&quot; is the most dangerous sentence in fitness. Monday is where motivation goes to die. Start now. Do your minimum viable workout. It takes 2 minutes.</p>
+        <p>The best workout routine isn&apos;t the one written by an expert — it&apos;s the one you actually do. Repeatedly. For months. Then years.</p>
+        <p>Build the system. Trust the process. <Link href="/blog/workout-motivation-psychology" style={{ color: '#00FF87' }}>Stop relying on motivation.</Link> Your future self will thank you. 🔥</p>
+      </>
+    ),
+  },
   '30-minute-full-body-dumbbell-workout-at-home': {
     content: (
       <>

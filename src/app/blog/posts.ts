@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'resistance-band-workouts-at-home',
+    title: 'The Ultimate Resistance Band Workout: Full Body in 20 Minutes (All Levels)',
+    description: 'A complete resistance band workout targeting every muscle group in 20 minutes. Includes exercises for beginners, intermediates, and advanced — with zero other equipment.',
+    date: '2026-02-25',
+    readTime: '9 min read',
+    category: 'Workouts',
+  },
+  {
+    slug: 'how-to-build-a-workout-routine',
+    title: 'How to Build a Workout Routine You\'ll Actually Stick To (Step-by-Step)',
+    description: 'Most workout routines fail within 2 weeks. This step-by-step guide uses habit science and progressive overload to build a routine that lasts — no willpower required.',
+    date: '2026-02-25',
+    readTime: '10 min read',
+    category: 'Beginner',
+  },
+  {
     slug: '30-minute-full-body-dumbbell-workout-at-home',
     title: '30-Minute Full Body Dumbbell Workout at Home',
     description: 'A complete home dumbbell workout that hits every muscle group in 30 minutes. Includes warm-up, cool-down, sets, reps, and rest times — perfect for beginners and intermediates.',
