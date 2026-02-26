@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'yoga-for-beginners-at-home',
+    title: 'Yoga for Beginners at Home: A 15-Minute Daily Flow (No Experience Needed)',
+    description: 'A complete beginner yoga routine you can do at home in 15 minutes. No flexibility required. Includes every pose explained step-by-step with modifications.',
+    date: '2026-02-26',
+    readTime: '9 min read',
+    category: 'Beginner',
+  },
+  {
+    slug: 'how-to-improve-flexibility-fast',
+    title: 'How to Improve Flexibility Fast: The Science-Backed Stretching Guide',
+    description: 'Why you\'re still stiff after years of stretching — and the evidence-based methods that actually work. Includes a 10-minute daily routine for real results in 4 weeks.',
+    date: '2026-02-26',
+    readTime: '10 min read',
+    category: 'Beginner',
+  },
+  {
     slug: 'resistance-band-workouts-at-home',
     title: 'The Ultimate Resistance Band Workout: Full Body in 20 Minutes (All Levels)',
     description: 'A complete resistance band workout targeting every muscle group in 20 minutes. Includes exercises for beginners, intermediates, and advanced — with zero other equipment.',

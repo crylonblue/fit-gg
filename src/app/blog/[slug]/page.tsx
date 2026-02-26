@@ -1279,6 +1279,181 @@ const articles: Record<string, { content: React.ReactNode }> = {
       </>
     ),
   },
+  'yoga-for-beginners-at-home': {
+    content: (
+      <>
+        <p>You don&apos;t need to be flexible to start yoga. That&apos;s like saying you need to be clean to take a shower. Yoga <em>builds</em> flexibility, strength, and body awareness — it doesn&apos;t require them as prerequisites.</p>
+        <p>This 15-minute daily flow is designed for complete beginners. No yoga pants required. No Sanskrit. No incense. Just movement that makes your body feel better than it did 15 minutes ago.</p>
+
+        <h2>Why Yoga Works (Even for Skeptics)</h2>
+        <p>Let&apos;s skip the spiritual pitch. Here&apos;s what the research says:</p>
+        <ul>
+          <li><strong>Flexibility</strong> — A 2016 study in the <em>International Journal of Yoga</em> found significant improvements in flexibility after just 10 weeks of regular practice.</li>
+          <li><strong>Strength</strong> — Holding poses like Plank, Warrior, and Chair builds serious isometric strength. Your bodyweight is the resistance.</li>
+          <li><strong>Stress reduction</strong> — Yoga activates your parasympathetic nervous system. Translation: it literally calms your fight-or-flight response.</li>
+          <li><strong>Injury prevention</strong> — Better mobility and body awareness mean fewer tweaked backs and rolled ankles in your other workouts.</li>
+          <li><strong>Sleep quality</strong> — A Harvard Medical School review found that regular yoga practice improved both sleep onset and sleep duration.</li>
+        </ul>
+        <p>If you&apos;re already doing <Link href="/blog/bodyweight-exercises-no-equipment" style={{ color: '#00FF87' }}>bodyweight exercises</Link> or <Link href="/blog/hiit-vs-steady-state-cardio" style={{ color: '#00FF87' }}>HIIT training</Link>, yoga is the perfect complement — it fixes the mobility gaps that pure strength training misses.</p>
+
+        <h2>What You Need</h2>
+        <ul>
+          <li><strong>A yoga mat</strong> — Or a carpet. Or a towel on a hard floor. Don&apos;t let gear stop you.</li>
+          <li><strong>Comfortable clothes</strong> — Anything you can move in.</li>
+          <li><strong>15 minutes</strong> — That&apos;s it. No hour-long classes needed.</li>
+        </ul>
+
+        <h2>The 15-Minute Beginner Flow</h2>
+        <p>Hold each pose for 5-8 slow breaths (about 30-45 seconds). Move slowly between poses. If something hurts, back off — discomfort is fine, pain is not.</p>
+
+        <h3>1. Mountain Pose (Tadasana) — 30 seconds</h3>
+        <p>Stand with feet hip-width apart. Arms at your sides, palms forward. Roll your shoulders back and down. Engage your core lightly. Breathe deeply through your nose.</p>
+        <p><strong>Why it matters:</strong> This isn&apos;t just standing — it&apos;s teaching your body neutral alignment. Most people stand with their weight shifted forward and shoulders rounded. Mountain Pose resets everything.</p>
+
+        <h3>2. Forward Fold (Uttanasana) — 45 seconds</h3>
+        <p>From Mountain Pose, hinge at your hips and fold forward. Let your hands hang toward the ground. Bend your knees as much as you need to — straight legs are a goal, not a requirement.</p>
+        <p><strong>Modification:</strong> Bend your knees generously. Grab opposite elbows and sway gently. You should feel a stretch in your hamstrings, not your lower back.</p>
+
+        <h3>3. Cat-Cow (Marjaryasana-Bitilasana) — 1 minute</h3>
+        <p>Come to hands and knees. On your inhale, drop your belly and lift your chest (Cow). On your exhale, round your spine and tuck your chin (Cat). Flow between these for 8-10 rounds.</p>
+        <p><strong>Why it matters:</strong> This is the single best movement for spinal mobility. If you sit at a desk all day, Cat-Cow undoes hours of compression. See our <Link href="/blog/desk-worker-stretches-exercises" style={{ color: '#00FF87' }}>desk worker stretches guide</Link> for more.</p>
+
+        <h3>4. Downward-Facing Dog (Adho Mukha Svanasana) — 45 seconds</h3>
+        <p>From hands and knees, tuck your toes and lift your hips up and back. Your body forms an inverted V. Push the floor away with your hands. Let your head hang naturally.</p>
+        <p><strong>Modification:</strong> Bend your knees a lot. Your heels don&apos;t need to touch the floor (they probably won&apos;t for weeks). Focus on lengthening your spine, not straightening your legs.</p>
+
+        <h3>5. Warrior I (Virabhadrasana I) — 45 seconds each side</h3>
+        <p>From Downward Dog, step your right foot between your hands. Rise up, arms overhead. Your front knee is bent at 90°, back leg is straight with the heel grounded at an angle.</p>
+        <p><strong>Why it matters:</strong> Warrior I builds leg strength, hip flexor flexibility, and shoulder mobility simultaneously. It&apos;s a full-body pose disguised as a lunge.</p>
+
+        <h3>6. Warrior II (Virabhadrasana II) — 45 seconds each side</h3>
+        <p>From Warrior I, open your hips and arms to face the side wall. Front arm reaches forward, back arm reaches behind. Gaze over your front fingertips. Sink your front knee to 90°.</p>
+        <p><strong>Feel it in:</strong> Your quads (the front leg burn is real), your inner thighs, and your shoulders. This is where yoga gets surprisingly hard.</p>
+
+        <h3>7. Child&apos;s Pose (Balasana) — 1 minute</h3>
+        <p>Kneel on the mat, big toes touching, knees wide apart. Sit back on your heels and walk your hands forward, resting your forehead on the mat. Breathe deeply into your back.</p>
+        <p><strong>This is your reset button.</strong> Whenever any pose feels too intense, come back to Child&apos;s Pose. No shame. No judgment. Even advanced practitioners use it constantly.</p>
+
+        <h3>8. Supine Twist — 45 seconds each side</h3>
+        <p>Lie on your back. Hug your right knee to your chest, then guide it across your body to the left. Extend your right arm out. Look toward your right hand. Let gravity do the work.</p>
+        <p><strong>Why it matters:</strong> Spinal rotation is the most neglected movement pattern. This twist decompresses your lower back and stretches your outer hip — two chronic problem areas.</p>
+
+        <h3>9. Savasana (Corpse Pose) — 2 minutes</h3>
+        <p>Lie flat on your back, arms at your sides, palms up. Close your eyes. Do absolutely nothing for 2 full minutes. Just breathe.</p>
+        <p><strong>Don&apos;t skip this.</strong> Savasana is where your nervous system integrates the work. It&apos;s not laziness — it&apos;s the most important part of the practice.</p>
+
+        <h2>Common Beginner Mistakes</h2>
+        <ul>
+          <li><strong>Forcing flexibility</strong> — Yoga is not a competition. If you can&apos;t touch your toes, that&apos;s fine. You&apos;ll get there. Forcing it causes injury.</li>
+          <li><strong>Holding your breath</strong> — Breathe continuously. If you&apos;re holding your breath, you&apos;re pushing too hard.</li>
+          <li><strong>Comparing yourself to Instagram</strong> — Those pretzel poses took years. Your Day 1 is supposed to look wobbly.</li>
+          <li><strong>Skipping it when &quot;not flexible enough&quot;</strong> — You improve flexibility BY doing yoga. Waiting until you&apos;re flexible enough is circular logic.</li>
+        </ul>
+
+        <h2>Building the Habit</h2>
+        <p>The hardest part of yoga isn&apos;t the poses — it&apos;s showing up consistently. Here&apos;s what works:</p>
+        <ul>
+          <li><strong>Same time every day</strong> — Morning works best (your body is stiff and benefits most). But any time beats no time.</li>
+          <li><strong>Start with 5 minutes</strong> — Do just Cat-Cow, Downward Dog, and Child&apos;s Pose. That&apos;s enough. Expand when it feels natural.</li>
+          <li><strong>Track your streaks</strong> — Consistency compounds. A <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>streak system</Link> makes it hard to skip. This is exactly what <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>fit.gg is designed for</Link>.</li>
+        </ul>
+
+        <h2>What Comes Next</h2>
+        <p>After 2-3 weeks of this flow, you&apos;ll notice: your Forward Fold goes deeper, Downward Dog feels easier, and your Warrior holds are steadier. That&apos;s not magic — it&apos;s adaptation.</p>
+        <p>From here, you can add poses (Triangle, Half Moon, Crow), increase hold times, or mix yoga with your <Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>morning workout routine</Link>. The foundation you&apos;re building now makes everything else possible.</p>
+      </>
+    ),
+  },
+  'how-to-improve-flexibility-fast': {
+    content: (
+      <>
+        <p>You&apos;ve been stretching for years and you still can&apos;t touch your toes. Sound familiar? That&apos;s because most flexibility advice is wrong — or at least incomplete. Static stretching alone, the way most people do it, is one of the least effective methods for building lasting range of motion.</p>
+        <p>This guide covers what actually works, backed by exercise science research, plus a 10-minute daily routine that produces visible results in 4 weeks.</p>
+
+        <h2>Why You&apos;re Still Stiff</h2>
+        <p>Most people fail at flexibility for one (or more) of these reasons:</p>
+        <ul>
+          <li><strong>Only static stretching</strong> — Holding a stretch for 30 seconds does improve short-term range of motion, but it barely builds lasting flexibility. Your muscles return to baseline within hours.</li>
+          <li><strong>Inconsistency</strong> — Stretching once or twice a week does almost nothing. Flexibility requires daily stimulus, like <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>building any daily habit</Link>.</li>
+          <li><strong>Ignoring strength at end range</strong> — Your nervous system limits range of motion when it doesn&apos;t trust your muscles to control a position. If you&apos;re flexible but weak at the end of your range, your body will tighten back up to protect you.</li>
+          <li><strong>Stretching through pain</strong> — Pain triggers a protective reflex that tightens muscles. Aggressive stretching literally works against you.</li>
+        </ul>
+
+        <h2>The Science of What Actually Works</h2>
+
+        <h3>1. PNF Stretching (Proprioceptive Neuromuscular Facilitation)</h3>
+        <p>PNF is the gold standard for flexibility gains. A meta-analysis in the <em>Journal of Sports Rehabilitation</em> (2020) found that PNF produces significantly greater flexibility improvements than static stretching alone.</p>
+        <p><strong>How it works:</strong></p>
+        <ol>
+          <li>Stretch the target muscle to its comfortable end range</li>
+          <li>Contract the stretched muscle isometrically (push against resistance) for 6 seconds at about 60% effort</li>
+          <li>Relax, then gently deepen the stretch</li>
+          <li>Repeat 2-3 times</li>
+        </ol>
+        <p>The contraction temporarily overrides the stretch reflex, allowing your nervous system to &quot;permit&quot; a greater range of motion. It&apos;s essentially hacking your body&apos;s protective mechanism.</p>
+
+        <h3>2. Loaded Stretching</h3>
+        <p>Adding light resistance at end range teaches your muscles to be strong where they&apos;re most vulnerable. Research from the <em>Scandinavian Journal of Medicine &amp; Science in Sports</em> (2021) showed that eccentric training at long muscle lengths improved flexibility as much as dedicated stretching — while also building strength.</p>
+        <p>Examples: Deep goblet squats, Romanian deadlifts, weighted lunges, Jefferson curls.</p>
+
+        <h3>3. Active Flexibility Training</h3>
+        <p>Passive flexibility (being pushed into a position) matters less than active flexibility (getting there under your own muscle power). Active flexibility transfers directly to movement quality.</p>
+        <p><strong>Example:</strong> Instead of someone pushing your leg up for a hamstring stretch, lie on your back and actively lift your leg as high as you can using your hip flexors. The gap between where you can actively reach and where you can passively reach is your &quot;flexibility deficit&quot; — and closing it is where the real gains are.</p>
+
+        <h3>4. Consistency Over Intensity</h3>
+        <p>A 2019 study in the <em>Journal of Strength and Conditioning Research</em> found that stretching 5-7 times per week for 5 minutes produced better results than stretching 2-3 times per week for 15 minutes — even though the total weekly time was similar. Frequency trumps duration.</p>
+
+        <h2>The 10-Minute Daily Flexibility Routine</h2>
+        <p>This routine combines PNF, active flexibility, and loaded stretching for maximum results. Do it daily, preferably after a workout or warm shower when muscles are warm.</p>
+
+        <h3>1. Hip Flexor Lunge — 90 seconds per side</h3>
+        <p>Kneel in a lunge position, back knee on a pad. Tuck your pelvis under (posterior pelvic tilt) and shift forward until you feel a deep stretch in the front of your back hip. Hold 20 seconds, then contract by pushing your back knee into the floor for 6 seconds. Relax and sink deeper. Repeat 2 more times.</p>
+        <p><strong>Why:</strong> Tight hip flexors are the #1 flexibility restriction in desk workers. They pull your pelvis forward, causing lower back pain and limiting your <Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>squat depth</Link>.</p>
+
+        <h3>2. Hamstring PNF — 90 seconds per side</h3>
+        <p>Lie on your back. Loop a towel or band around one foot and pull your straight leg toward you. At your comfortable limit, push your leg against the towel for 6 seconds (hamstring contraction). Relax and pull gently deeper. Repeat 2 more times.</p>
+        <p><strong>Why:</strong> Hamstring flexibility directly affects your ability to touch your toes, deadlift with good form, and do forward folds in <Link href="/blog/yoga-for-beginners-at-home" style={{ color: '#00FF87' }}>yoga</Link>.</p>
+
+        <h3>3. Deep Squat Hold — 2 minutes</h3>
+        <p>Drop into the deepest squat you can manage, feet slightly wider than shoulder width, toes turned out. Hold onto a door frame or table leg for balance if needed. Let your hips sink. Shift your weight gently side to side.</p>
+        <p><strong>Why:</strong> The deep squat is the single most effective mobility position for your ankles, hips, and thoracic spine simultaneously. Most of the world&apos;s population rests in this position daily — Westerners lost it from too much chair-sitting.</p>
+
+        <h3>4. Thoracic Spine Rotation — 1 minute per side</h3>
+        <p>Get into a half-kneeling position. Place one hand behind your head. Rotate your upper body toward the ceiling, opening your chest. Hold 5 seconds, return, repeat 6 times per side.</p>
+        <p><strong>Why:</strong> Upper back stiffness causes shoulder pain, neck pain, and limits overhead movements. If you struggle with <Link href="/blog/desk-worker-stretches-exercises" style={{ color: '#00FF87' }}>desk posture</Link>, this is your fix.</p>
+
+        <h3>5. Active Straight Leg Raise — 1 minute per side</h3>
+        <p>Lie on your back. Keeping both legs straight, actively lift one leg as high as you can using only your hip flexors. Hold at the top for 3 seconds. Lower slowly. Do 8 reps per side.</p>
+        <p><strong>Why:</strong> This builds active hamstring flexibility — the kind that actually transfers to movement. The gap between your passive and active range will shrink week over week.</p>
+
+        <h2>The 4-Week Timeline</h2>
+        <ul>
+          <li><strong>Week 1:</strong> Everything feels awkward. Your deep squat is shallow. Your PNF contractions feel weird. This is normal. Just show up daily.</li>
+          <li><strong>Week 2:</strong> You notice your morning stiffness is less. Your squat hold gets deeper. Hip flexor stretch starts feeling easier.</li>
+          <li><strong>Week 3:</strong> Measurable improvement. Your hamstring PNF goes 2-4 inches deeper than Week 1. Deep squat feels natural. Active leg raises get higher.</li>
+          <li><strong>Week 4:</strong> People notice. Your posture is better. Your workouts feel smoother. You might touch your toes for the first time in years.</li>
+        </ul>
+
+        <h2>Flexibility Myths — Debunked</h2>
+        <ul>
+          <li><strong>&quot;Stretching prevents injury&quot;</strong> — Static stretching before exercise actually <em>increases</em> injury risk by temporarily weakening muscles. Dynamic warm-ups are better. Save stretching for after workouts.</li>
+          <li><strong>&quot;You&apos;re either flexible or you&apos;re not&quot;</strong> — Genetics influence your baseline, but everyone can dramatically improve with consistent training. Age matters far less than people think.</li>
+          <li><strong>&quot;More pain = more gain&quot;</strong> — The stretch reflex activates when you push too hard, making muscles tighter. Moderate discomfort (6/10) is the sweet spot.</li>
+          <li><strong>&quot;You need long sessions&quot;</strong> — As the research shows, 5-10 minutes daily beats hour-long sessions twice a week. <Link href="/blog/workout-motivation-psychology" style={{ color: '#00FF87' }}>Consistency is everything</Link>.</li>
+        </ul>
+
+        <h2>Combining Flexibility with Strength</h2>
+        <p>The best approach is not &quot;stretching vs. strength training&quot; — it&apos;s integrating both. Every strength exercise can be a flexibility exercise if you use full range of motion:</p>
+        <ul>
+          <li><strong>Deep squats</strong> instead of partial squats → hip and ankle flexibility</li>
+          <li><strong>Full range push-ups</strong> (chest to floor) → chest and shoulder flexibility</li>
+          <li><strong>Pull-ups from dead hang</strong> → lat and shoulder flexibility</li>
+          <li><strong>Romanian deadlifts</strong> → hamstring flexibility under load</li>
+        </ul>
+        <p>If you&apos;re following a <Link href="/blog/how-to-build-a-workout-routine" style={{ color: '#00FF87' }}>structured workout routine</Link>, just prioritize full range of motion on every exercise. You&apos;ll build strength and flexibility simultaneously — which is how the human body was designed to move.</p>
+      </>
+    ),
+  },
 }
 
 export function generateStaticParams() {
