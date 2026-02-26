@@ -42,9 +42,10 @@ export const getUser = query({
   handler: async (ctx, args) => {
     if (args.id) return await ctx.db.get(args.id);
     if (args.email) {
+      const email = args.email;
       return await ctx.db
         .query("users")
-        .withIndex("by_email", (q) => q.eq("email", args.email))
+        .withIndex("by_email", (q) => q.eq("email", email))
         .unique();
     }
     return null;
@@ -59,6 +60,6 @@ export const updateXP = mutation({
   handler: async (ctx, args) => {
     const user = await ctx.db.get(args.userId);
     if (!user) throw new Error("User not found");
-    await ctx.db.patch(args.userId, { xp: user.xp + args.xpToAdd });
+    await ctx.db.patch(args.userId, { xp: (user.xp ?? 0) + args.xpToAdd });
   },
 });
