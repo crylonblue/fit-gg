@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Particles from './Particles'
+import WaitlistSignup from './WaitlistSignup'
 
 const lines = [
   '🔥  47 day streak',
@@ -36,10 +37,9 @@ export default function Hero() {
           Build streaks. Climb leagues. Level up.
         </p>
 
-        <button className="btn" style={{ marginBottom: '56px', fontSize: '16px' }}
-          onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}>
-          Join the Waitlist
-        </button>
+        <div style={{ marginBottom: '56px', maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto' }}>
+          <WaitlistSignup source="hero" />
+        </div>
 
         {/* Live feed ticker */}
         <div style={{ height: '28px', overflow: 'hidden' }}>

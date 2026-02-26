@@ -71,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="e4cb20f0-7ca2-4f14-a4e4-cf3a1216fb0a" />
       </head>
       <body>
         {children}

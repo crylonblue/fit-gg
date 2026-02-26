@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { posts } from '../posts'
+import WaitlistSignup from '@/components/WaitlistSignup'
 
 const articles: Record<string, { content: React.ReactNode }> = {
   'resistance-band-workouts-at-home': {
@@ -1331,19 +1332,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <hr style={{ border: 'none', borderTop: '1px solid #222', margin: '60px 0 40px' }} />
 
         <div style={{ textAlign: 'center' }}>
-          <p style={{ color: '#888', marginBottom: '20px' }}>Ready to build the workout habit that sticks?</p>
-          <Link href="/#waitlist" style={{
-            display: 'inline-block',
-            padding: '14px 36px',
-            background: '#00FF87',
-            color: '#000',
-            borderRadius: '50px',
-            fontWeight: 700,
-            textDecoration: 'none',
-            fontSize: '15px',
-          }}>
-            Join the Waitlist →
-          </Link>
+          <p style={{ color: '#888', marginBottom: '20px', fontSize: '1.1rem' }}>Ready to build the workout habit that sticks?</p>
+          <WaitlistSignup source={`blog-${params.slug}`} />
         </div>
       </article>
 
