@@ -1,0 +1,508 @@
+[
+  {
+    "id": 1,
+    "title": "First Steps",
+    "day": 1,
+    "description": "Your journey begins here. Simple moves, proper form. Just show up — that's the hardest part.",
+    "estimatedMinutes": 5,
+    "exercises": [
+      {
+        "name": "Bodyweight Squats",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦵",
+        "cues": ["Feet shoulder-width apart", "Chest up, weight in heels", "Push through heels to stand"]
+      },
+      {
+        "name": "Pushups (Knees OK)",
+        "reps": 5,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Hands just outside shoulders", "Lower until chest nearly touches floor", "Keep core tight throughout"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 20,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["Straight line from head to heels", "Squeeze your core like bracing for a punch", "Breathe steadily — don't hold your breath"]
+      },
+      {
+        "name": "Lunges",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🏃",
+        "cues": ["Step forward, knee over ankle", "Back knee drops toward floor", "Push back to start through front heel"]
+      },
+      {
+        "name": "Jumping Jacks",
+        "reps": 10,
+        "duration": null,
+        "rest": 0,
+        "emoji": "⭐",
+        "cues": ["Land softly on the balls of your feet", "Arms fully extend overhead", "Keep a steady rhythm"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Build On It",
+    "day": 2,
+    "description": "Day 2 — you came back. That already puts you ahead of most people. Let's build on yesterday.",
+    "estimatedMinutes": 5,
+    "exercises": [
+      {
+        "name": "Bodyweight Squats",
+        "reps": 12,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦵",
+        "cues": ["Sit back like into a chair", "Knees track over toes", "Go as deep as comfortable"]
+      },
+      {
+        "name": "Pushups",
+        "reps": 6,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Body forms a straight plank", "Elbows at 45° from body", "Full range of motion"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 25,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["Don't let your hips sag", "Engage glutes and quads", "Eyes down, neck neutral"]
+      },
+      {
+        "name": "Lunges (Each Leg)",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🏃",
+        "cues": ["Alternate legs each rep", "Keep torso upright", "90° bend in both knees at the bottom"]
+      },
+      {
+        "name": "Jumping Jacks",
+        "reps": 15,
+        "duration": null,
+        "rest": 0,
+        "emoji": "⭐",
+        "cues": ["Stay light on your feet", "Coordinate arms and legs", "Breathe in rhythm with movement"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Finding Rhythm",
+    "day": 3,
+    "description": "Three days in — you're finding your groove. Today we add mountain climbers to the mix.",
+    "estimatedMinutes": 5,
+    "exercises": [
+      {
+        "name": "Bodyweight Squats",
+        "reps": 15,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦵",
+        "cues": ["Control the descent — don't drop", "Drive up explosively", "Keep your core braced"]
+      },
+      {
+        "name": "Pushups",
+        "reps": 8,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Slow on the way down, push up strong", "Shoulders away from ears", "Squeeze chest at the top"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 30,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["Imagine pulling belly button to spine", "Forearms parallel, shoulder-width", "Breathe — 4 seconds in, 4 out"]
+      },
+      {
+        "name": "Reverse Lunges",
+        "reps": 8,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🏃",
+        "cues": ["Step backward, not forward", "Front shin stays vertical", "Easier on knees than forward lunges"]
+      },
+      {
+        "name": "Mountain Climbers",
+        "reps": 10,
+        "duration": null,
+        "rest": 0,
+        "emoji": "⛰️",
+        "cues": ["Hands under shoulders in plank position", "Drive knees to chest alternately", "Keep hips low and level"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Push Day",
+    "day": 4,
+    "description": "Today's all about your upper body. Multiple pushup variations — your chest and arms will thank you tomorrow.",
+    "estimatedMinutes": 5,
+    "exercises": [
+      {
+        "name": "Wide Pushups",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Hands wider than shoulder-width", "Targets chest more than standard pushups", "Keep core engaged throughout"]
+      },
+      {
+        "name": "Diamond Pushups (Knees OK)",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💎",
+        "cues": ["Hands form a diamond under chest", "Elbows stay close to body", "Targets triceps — go to knees if needed"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 20,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["Active rest — stay tight", "Push the ground away from you", "Breathe normally"]
+      },
+      {
+        "name": "Shoulder Taps",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🤚",
+        "cues": ["Start in high plank position", "Tap opposite shoulder, minimize hip rotation", "Widen feet for more stability"]
+      },
+      {
+        "name": "Pushups",
+        "reps": 8,
+        "duration": null,
+        "rest": 0,
+        "emoji": "💪",
+        "cues": ["Final push — give it everything", "Maintain good form even when tired", "Partial reps count if you hit the wall"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Legs Day",
+    "day": 5,
+    "description": "Strong legs carry everything. Squats, lunges, and your first wall sit. Embrace the burn.",
+    "estimatedMinutes": 5,
+    "exercises": [
+      {
+        "name": "Bodyweight Squats",
+        "reps": 15,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦵",
+        "cues": ["Full depth — hips below knees if possible", "Arms forward for balance", "Exhale as you stand"]
+      },
+      {
+        "name": "Jump Squats",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🚀",
+        "cues": ["Squat down, then explode upward", "Land softly with bent knees", "Use arms for momentum"]
+      },
+      {
+        "name": "Lunges",
+        "reps": 12,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🏃",
+        "cues": ["Alternate legs each rep", "Take a big enough step", "Keep torso tall and proud"]
+      },
+      {
+        "name": "Calf Raises",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦶",
+        "cues": ["Rise up on your toes as high as possible", "Pause at the top for 1 second", "Lower slowly — control the negative"]
+      },
+      {
+        "name": "Wall Sit",
+        "reps": null,
+        "duration": 20,
+        "rest": 0,
+        "emoji": "🧱",
+        "cues": ["Back flat against the wall", "Thighs parallel to the floor", "Don't push off your knees with hands"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Core Focus",
+    "day": 6,
+    "description": "Your core is the foundation of every movement. Six exercises, zero excuses. Let's build that stability.",
+    "estimatedMinutes": 5,
+    "exercises": [
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 30,
+        "rest": 10,
+        "emoji": "🧘",
+        "cues": ["Forearms on ground, elbows under shoulders", "Body rigid like a board", "Breathe into your belly"]
+      },
+      {
+        "name": "Crunches",
+        "reps": 10,
+        "duration": null,
+        "rest": 10,
+        "emoji": "🔥",
+        "cues": ["Lift shoulders off the ground, not your lower back", "Exhale as you crunch up", "Hands behind head — don't pull your neck"]
+      },
+      {
+        "name": "Bicycle Crunches",
+        "reps": 10,
+        "duration": null,
+        "rest": 10,
+        "emoji": "🚴",
+        "cues": ["Opposite elbow meets opposite knee", "Extend the other leg straight", "Slow and controlled beats fast and sloppy"]
+      },
+      {
+        "name": "Side Plank (Left)",
+        "reps": null,
+        "duration": 20,
+        "rest": 5,
+        "emoji": "🧘",
+        "cues": ["Stack feet or stagger for balance", "Hips up — don't let them sag", "Free arm reaches to ceiling"]
+      },
+      {
+        "name": "Side Plank (Right)",
+        "reps": null,
+        "duration": 20,
+        "rest": 10,
+        "emoji": "🧘",
+        "cues": ["Mirror the left side exactly", "Keep shoulder over elbow", "Engage obliques — feel them work"]
+      },
+      {
+        "name": "Leg Raises",
+        "reps": 10,
+        "duration": null,
+        "rest": 0,
+        "emoji": "🦵",
+        "cues": ["Lie flat, hands under lower back for support", "Raise legs to 90° then lower slowly", "Press lower back into the floor"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Full Body",
+    "day": 7,
+    "description": "One week in! Today we hit everything — burpees, squats, pushups, plank, climbers. You're ready.",
+    "estimatedMinutes": 6,
+    "exercises": [
+      {
+        "name": "Burpees (No Pushup)",
+        "reps": 10,
+        "duration": null,
+        "rest": 20,
+        "emoji": "🏋️",
+        "cues": ["Squat down, hands to floor, jump feet back", "Jump feet forward, then jump up", "Modify: step back instead of jumping"]
+      },
+      {
+        "name": "Bodyweight Squats",
+        "reps": 15,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦵",
+        "cues": ["You know these by now — own them", "Deep, controlled, powerful", "Exhale on the way up"]
+      },
+      {
+        "name": "Pushups",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Full range of motion", "Chest to floor, arms to full extension", "Quality over speed"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 30,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["You've done this before — push for the full 30", "Stay rigid, breathe steady", "Almost there when it starts to shake"]
+      },
+      {
+        "name": "Mountain Climbers",
+        "reps": 15,
+        "duration": null,
+        "rest": 0,
+        "emoji": "⛰️",
+        "cues": ["Fast but controlled", "Keep plank position solid", "Drive those knees — finish strong"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Endurance",
+    "day": 8,
+    "description": "Higher reps, longer holds. This one's about stamina. Push through the discomfort — that's where growth lives.",
+    "estimatedMinutes": 6,
+    "exercises": [
+      {
+        "name": "Bodyweight Squats",
+        "reps": 20,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🦵",
+        "cues": ["Twenty reps — pace yourself", "Breathe on every rep", "Last five should burn — that's the point"]
+      },
+      {
+        "name": "Pushups",
+        "reps": 12,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Break into sets if needed (6+6)", "Maintain form — no worming", "You're stronger than day 1"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 40,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["40 seconds — new personal best territory", "When it shakes, you're getting stronger", "Focus on breathing to distract from the burn"]
+      },
+      {
+        "name": "Lunges",
+        "reps": 15,
+        "duration": null,
+        "rest": 15,
+        "emoji": "🏃",
+        "cues": ["Alternate legs, 15 total", "Long stride, deep bend", "Stay upright — don't lean forward"]
+      },
+      {
+        "name": "Jumping Jacks",
+        "reps": 20,
+        "duration": null,
+        "rest": 15,
+        "emoji": "⭐",
+        "cues": ["Keep the energy up", "Full extension on every rep", "Light feet, big movements"]
+      },
+      {
+        "name": "Burpees (No Pushup)",
+        "reps": 10,
+        "duration": null,
+        "rest": 0,
+        "emoji": "🏋️",
+        "cues": ["The finisher — leave it all here", "Pace yourself but don't stop", "Step back if jumping is too much"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Strength",
+    "day": 9,
+    "description": "Explosive moves and tough variations. You've built the base — now show what you can do.",
+    "estimatedMinutes": 6,
+    "exercises": [
+      {
+        "name": "Jump Squats",
+        "reps": 10,
+        "duration": null,
+        "rest": 20,
+        "emoji": "🚀",
+        "cues": ["Deep squat, explosive jump", "Land like a ninja — soft and quiet", "Reset between reps if needed"]
+      },
+      {
+        "name": "Diamond Pushups",
+        "reps": 10,
+        "duration": null,
+        "rest": 20,
+        "emoji": "💎",
+        "cues": ["Hands together under chest", "Elbows flare naturally — that's fine", "Go to knees for last few if needed"]
+      },
+      {
+        "name": "Wide Pushups",
+        "reps": 10,
+        "duration": null,
+        "rest": 15,
+        "emoji": "💪",
+        "cues": ["Wide hand placement, chest focus", "Lower slowly for maximum tension", "Push the floor apart to rise"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 45,
+        "rest": 15,
+        "emoji": "🧘",
+        "cues": ["45 seconds — your longest yet", "Break it into 3 chunks of 15 mentally", "You're almost at the end of the program"]
+      },
+      {
+        "name": "Burpees (No Pushup)",
+        "reps": 10,
+        "duration": null,
+        "rest": 0,
+        "emoji": "🏋️",
+        "cues": ["Full send — you've earned this strength", "Explosive jump at the top", "Tomorrow is the final test"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "The Test",
+    "day": 10,
+    "description": "Everything you've built, put to the test. Higher reps, longer holds, zero quit. You've got this. 🏆",
+    "estimatedMinutes": 7,
+    "exercises": [
+      {
+        "name": "Jump Squats",
+        "reps": 15,
+        "duration": null,
+        "rest": 20,
+        "emoji": "🚀",
+        "cues": ["15 reps — dig deep", "Explode up, land soft", "This is what strong feels like"]
+      },
+      {
+        "name": "Pushups",
+        "reps": 15,
+        "duration": null,
+        "rest": 20,
+        "emoji": "💪",
+        "cues": ["15 clean reps — you couldn't do 5 on day 1", "Break into sets if you must, but finish all 15", "Full chest-to-floor range"]
+      },
+      {
+        "name": "Plank Hold",
+        "reps": null,
+        "duration": 60,
+        "rest": 20,
+        "emoji": "🧘",
+        "cues": ["One full minute — the ultimate test", "Your mind will quit before your body", "Breathe, brace, and hold on"]
+      },
+      {
+        "name": "Burpees (No Pushup)",
+        "reps": 15,
+        "duration": null,
+        "rest": 20,
+        "emoji": "🏋️",
+        "cues": ["15 burpees — the boss level", "Keep moving — rest standing, not on the floor", "Every single one counts"]
+      },
+      {
+        "name": "Mountain Climbers",
+        "reps": 20,
+        "duration": null,
+        "rest": 0,
+        "emoji": "⛰️",
+        "cues": ["The grand finale — empty the tank", "Fast, furious, and all the way", "You just completed Foundations. Legend. 🏆"]
+      }
+    ]
+  }
+]
