@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { PWARegister } from '@/components/PWARegister'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -25,7 +26,10 @@ export const metadata: Metadata = {
     images: ['https://fit.gg/og.png'],
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/favicon.ico' },
+  icons: { icon: '/favicon.ico', apple: '/apple-touch-icon.png' },
+  manifest: '/manifest.json',
+  themeColor: '#10b981',
+  appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'fit.gg' },
 }
 
 const faqJsonLd = {
@@ -75,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        <PWARegister />
         <Analytics />
         <SpeedInsights />
       </body>
