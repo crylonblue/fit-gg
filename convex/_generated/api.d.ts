@@ -9,6 +9,9 @@
  */
 
 import type * as completions from "../completions.js";
+import type * as crons from "../crons.js";
+import type * as pushNotify from "../pushNotify.js";
+import type * as pushSubscriptions from "../pushSubscriptions.js";
 import type * as users from "../users.js";
 
 import type {
@@ -19,6 +22,9 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   completions: typeof completions;
+  crons: typeof crons;
+  pushNotify: typeof pushNotify;
+  pushSubscriptions: typeof pushSubscriptions;
   users: typeof users;
 }>;
 
