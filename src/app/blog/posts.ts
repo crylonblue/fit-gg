@@ -160,4 +160,28 @@ export const posts: BlogPost[] = [
     readTime: '6 min read',
     category: 'Motivation',
   },
+  {
+    slug: 'calisthenics-for-beginners-complete-guide',
+    title: 'Calisthenics for Beginners: The Complete Guide to Getting Started (2026)',
+    description: 'Everything you need to start calisthenics from zero. Includes a 4-week beginner program, progression charts, and the only 6 movements you need to master.',
+    date: '2026-03-01',
+    readTime: '12 min read',
+    category: 'Beginner',
+  },
+  {
+    slug: 'best-exercises-to-lose-belly-fat-at-home',
+    title: 'The Best Exercises to Lose Belly Fat at Home (Science-Based, No Equipment)',
+    description: 'Crunches won\'t flatten your stomach. These evidence-based exercises actually work — plus the nutrition truth most fitness apps won\'t tell you.',
+    date: '2026-03-01',
+    readTime: '10 min read',
+    category: 'Science',
+  },
+  {
+    slug: 'stretches-before-bed-better-sleep',
+    title: '10 Stretches Before Bed That Actually Help You Sleep Better',
+    description: 'A calming 10-minute bedtime stretching routine backed by sleep research. Reduces tension, lowers cortisol, and helps you fall asleep faster.',
+    date: '2026-03-01',
+    readTime: '8 min read',
+    category: 'Recovery',
+  },
 ]

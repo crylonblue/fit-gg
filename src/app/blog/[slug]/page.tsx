@@ -1454,6 +1454,257 @@ const articles: Record<string, { content: React.ReactNode }> = {
       </>
     ),
   },
+  'calisthenics-for-beginners-complete-guide': {
+    content: (
+      <>
+        <p>Calisthenics — training with your own bodyweight — is the oldest form of exercise and still the most effective way to build functional strength, mobility, and an impressive physique. No gym membership. No equipment. Just you and gravity.</p>
+        <p>But most beginners make the same mistake: they jump straight into advanced moves (muscle-ups, handstands, front levers) without building the foundation. That&apos;s like trying to write a novel before learning the alphabet.</p>
+        <p>This guide covers <strong>everything you need to start calisthenics from absolute zero</strong> — including a 4-week program you can begin today.</p>
+
+        <h2>What Is Calisthenics, Really?</h2>
+        <p>Calisthenics comes from the Greek words <em>kallos</em> (beauty) and <em>sthenos</em> (strength). It&apos;s the art of using your bodyweight as resistance to build strength, control, and aesthetics.</p>
+        <p>Think: push-ups, pull-ups, squats, dips, rows, and planks. These aren&apos;t &quot;beginner exercises&quot; you outgrow — they&apos;re <strong>fundamental movement patterns</strong> that scale infinitely through progressions.</p>
+        <p>A push-up can become an archer push-up, then a one-arm push-up, then a planche push-up. The ceiling is as high as Olympic gymnastics.</p>
+
+        <h2>Why Calisthenics Beats the Gym (For Most People)</h2>
+        <ul>
+          <li><strong>Zero cost</strong> — No equipment, no membership. You can train in your bedroom, a park, or a hotel room.</li>
+          <li><strong>Joint-friendly strength</strong> — You&apos;re moving your body through space, which builds connective tissue strength alongside muscles. Less injury risk than heavy barbell training.</li>
+          <li><strong>Functional carryover</strong> — Calisthenics strength transfers directly to real life. Climbing, carrying, sports, playing with kids.</li>
+          <li><strong>Built-in mobility</strong> — Full range-of-motion bodyweight movements improve flexibility as you get stronger. No separate &quot;stretching day&quot; needed.</li>
+          <li><strong>Impressive skills</strong> — Nobody at the gym can do a muscle-up or human flag. Calisthenics unlocks <em>skills</em>, not just size.</li>
+        </ul>
+
+        <h2>The 6 Foundational Movement Patterns</h2>
+        <p>Every calisthenics program is built on these six movements. Master the beginner version of each, then progress:</p>
+
+        <h3>1. Push (Horizontal) — Push-Ups</h3>
+        <p>The king of upper body pushing. If you can&apos;t do a full push-up yet, start with <strong>incline push-ups</strong> (hands on a table or wall). Lower the surface as you get stronger until you&apos;re on the floor.</p>
+        <p><strong>Progression:</strong> Wall → Incline → Knee → Full → Diamond → Archer → One-arm</p>
+        <p>Need a detailed breakdown? Check our <Link href="/blog/push-up-progression-beginner-to-advanced" style={{ color: '#00FF87' }}>complete push-up progression guide</Link>.</p>
+
+        <h3>2. Pull (Vertical) — Pull-Ups / Rows</h3>
+        <p>The hardest movement for most beginners. Start with <strong>Australian rows</strong> (body at 45° under a bar or table edge, pulling your chest to the bar). Progress to negative pull-ups (jump up, lower slowly over 5 seconds), then full pull-ups.</p>
+        <p><strong>Progression:</strong> Australian rows → Negative pull-ups → Band-assisted → Full pull-ups → Weighted</p>
+        <p>Don&apos;t have a bar? See our guide on <Link href="/blog/how-to-do-pull-ups-at-home-no-bar" style={{ color: '#00FF87' }}>doing pull-ups at home without a bar</Link>.</p>
+
+        <h3>3. Squat — Bodyweight Squats</h3>
+        <p>Your legs are your foundation. Start with <strong>assisted squats</strong> (holding a doorframe for balance), then progress to full squats, pistol squats, and shrimp squats.</p>
+        <p><strong>Progression:</strong> Assisted → Full → Bulgarian split → Pistol</p>
+        <p>Follow the detailed <Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>squat progression path</Link>.</p>
+
+        <h3>4. Hinge — Glute Bridges / Nordic Curls</h3>
+        <p>Most calisthenics programs neglect the posterior chain. Don&apos;t. Start with <strong>glute bridges</strong>, progress to single-leg bridges, then Nordic curl negatives. Your hamstrings and glutes will thank you.</p>
+
+        <h3>5. Core — Planks / Hollow Body</h3>
+        <p>Core strength is the foundation of every advanced calisthenics skill. Start with the <strong>plank</strong> and hollow body hold. Progress to L-sits, dragon flags, and hanging leg raises.</p>
+        <p>We have a full breakdown of <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>plank variations for core strength</Link>.</p>
+
+        <h3>6. Dip — Dips</h3>
+        <p>Dips build pushing strength from a different angle than push-ups. Start with <strong>bench dips</strong> (hands on a chair behind you), then progress to parallel bar dips. Two sturdy chairs work perfectly.</p>
+
+        <h2>Your 4-Week Beginner Calisthenics Program</h2>
+        <p>Train 3 days per week (e.g., Monday/Wednesday/Friday). Each session takes 25-35 minutes.</p>
+
+        <h3>Weeks 1-2: Foundation</h3>
+        <p>3 rounds, 60 seconds rest between exercises:</p>
+        <ul>
+          <li><strong>Incline push-ups</strong> — 3 × 8-12</li>
+          <li><strong>Australian rows</strong> — 3 × 8-12 (use a table edge)</li>
+          <li><strong>Bodyweight squats</strong> — 3 × 15</li>
+          <li><strong>Glute bridges</strong> — 3 × 15</li>
+          <li><strong>Plank hold</strong> — 3 × 20-30 seconds</li>
+          <li><strong>Bench dips</strong> — 3 × 8-12</li>
+        </ul>
+
+        <h3>Weeks 3-4: Progression</h3>
+        <p>3 rounds, 60 seconds rest:</p>
+        <ul>
+          <li><strong>Push-ups</strong> (floor or knee) — 3 × 8-12</li>
+          <li><strong>Negative pull-ups</strong> or rows — 3 × 5-8</li>
+          <li><strong>Bulgarian split squats</strong> — 3 × 10 each leg</li>
+          <li><strong>Single-leg glute bridges</strong> — 3 × 10 each leg</li>
+          <li><strong>Hollow body hold</strong> — 3 × 20 seconds</li>
+          <li><strong>Dips</strong> (bench or parallel) — 3 × 8-12</li>
+        </ul>
+
+        <h2>How to Progress (The Key to Long-Term Results)</h2>
+        <p>The magic of calisthenics is <strong>progressive overload through leverage, not weight</strong>. When an exercise gets easy (you can do 3 × 12 with perfect form), you don&apos;t add weight — you switch to a harder variation.</p>
+        <p>This is exactly the principle behind fit.gg&apos;s <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>skill tree system</Link>. Each exercise is a node in a progression tree. Master one, unlock the next. It turns the abstract concept of &quot;progressive overload&quot; into a visible, gamified path.</p>
+
+        <h2>Common Beginner Mistakes</h2>
+        <ul>
+          <li><strong>Skipping the easy stuff</strong> — Incline push-ups aren&apos;t &quot;too easy.&quot; They&apos;re building the tendon strength you&apos;ll need for harder progressions. Ego is the enemy.</li>
+          <li><strong>Ignoring legs</strong> — Instagram calisthenics is all upper body. Real calisthenics trains the whole body. Squat.</li>
+          <li><strong>Training every day</strong> — Your muscles grow during rest, not during training. 3-4 days per week is optimal. Use <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>active recovery</Link> on off days.</li>
+          <li><strong>Chasing reps over form</strong> — 5 perfect push-ups build more strength than 20 sloppy ones. Film yourself. Be honest.</li>
+          <li><strong>No plan</strong> — &quot;I&apos;ll just do some push-ups&quot; doesn&apos;t work long-term. Follow a program. The 4-week plan above is your starting point.</li>
+        </ul>
+
+        <h2>What About Nutrition?</h2>
+        <p>You don&apos;t need a complicated diet. Three rules:</p>
+        <ul>
+          <li><strong>Eat enough protein</strong> — 0.7-1g per pound of bodyweight. Chicken, fish, eggs, beans, Greek yogurt.</li>
+          <li><strong>Eat enough food</strong> — If you&apos;re skinny and want to build muscle, you need to eat more. If you want to lose fat, eat slightly less. But don&apos;t starve yourself.</li>
+          <li><strong>Don&apos;t overthink it</strong> — 80% whole foods, 20% whatever you enjoy. Sustainability beats perfection.</li>
+        </ul>
+        <p>For more detail, check our <Link href="/blog/simple-meal-prep-for-fitness-beginners" style={{ color: '#00FF87' }}>meal prep guide for fitness beginners</Link>.</p>
+
+        <h2>Start Today, Not Monday</h2>
+        <p>The best calisthenics program is the one you actually do. You don&apos;t need to wait for the &quot;right time&quot; or buy anything. Right now, wherever you are, you can do 10 push-ups (or incline push-ups), 10 squats, and a 20-second plank.</p>
+        <p>That&apos;s calisthenics. That&apos;s the beginning. And if you want a system that guides your progression, tracks your streaks, and makes it feel like a game — that&apos;s exactly what <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>fit.gg is building</Link>.</p>
+      </>
+    ),
+  },
+  'best-exercises-to-lose-belly-fat-at-home': {
+    content: (
+      <>
+        <p>Let&apos;s get the uncomfortable truth out of the way first: <strong>you cannot spot-reduce belly fat</strong>. No amount of crunches, sit-ups, or ab wheels will burn fat specifically from your stomach. That&apos;s not how human physiology works.</p>
+        <p>But here&apos;s the good news: the right exercises <em>do</em> accelerate total body fat loss — and belly fat is often the first to go once you start consistently training. This guide covers the exercises that actually work, the science behind them, and a practical routine you can do at home.</p>
+
+        <h2>Why Belly Fat Is So Stubborn (And What Actually Burns It)</h2>
+        <p>Visceral fat (the dangerous kind around your organs) and subcutaneous fat (the pinchable kind) respond to different stimuli. Both require a caloric deficit to shrink — but exercise determines <em>what kind</em> of caloric deficit works best.</p>
+        <p>Research from the <em>Journal of Obesity</em> (2012) found that <strong>high-intensity interval training (HIIT) reduces abdominal fat significantly more than steady-state cardio</strong>, even when total exercise time is lower. Why? HIIT triggers excess post-exercise oxygen consumption (EPOC) — your metabolism stays elevated for hours after training.</p>
+        <p>The second key: <strong>muscle mass</strong>. Every pound of muscle burns ~6 calories per day at rest. That doesn&apos;t sound like much, but adding 10 pounds of muscle over a year means ~60 extra calories burned daily — 22,000 per year — without changing your diet.</p>
+
+        <h2>The 8 Best Exercises for Fat Loss (Ranked)</h2>
+        <p>These are ranked by <strong>total caloric burn and metabolic impact</strong>, not by how much they &quot;target&quot; your abs.</p>
+
+        <h3>1. Burpees — The Fat Loss King</h3>
+        <p>Nothing burns more calories per minute than burpees. They combine a squat, push-up, and jump into one explosive movement that hits every major muscle group.</p>
+        <p><strong>How to:</strong> Stand, drop to a push-up, do the push-up, jump feet forward, explode up. That&apos;s one rep. Aim for 10-15 in a set.</p>
+        <p><strong>Calories:</strong> ~10 per minute at high intensity. That&apos;s 100 in 10 minutes.</p>
+
+        <h3>2. Mountain Climbers — Cardio + Core Combo</h3>
+        <p>Mountain climbers keep your heart rate high while hammering your core, hip flexors, and shoulders. They&apos;re essentially a plank with a cardio component.</p>
+        <p><strong>How to:</strong> High plank position. Drive one knee to your chest, then switch rapidly. Keep your hips level — don&apos;t let your butt rise.</p>
+
+        <h3>3. Jump Squats — Lower Body Power</h3>
+        <p>Squats are already the king of lower body exercises. Add a jump and you&apos;ve got a plyometric movement that torches calories and builds explosive leg power.</p>
+        <p><strong>How to:</strong> Squat deep, explode up into a jump, land softly, immediately squat again. Control the landing — your knees will thank you.</p>
+
+        <h3>4. High Knees — Simple Cardio Destroyer</h3>
+        <p>Don&apos;t underestimate high knees. Done at full intensity, they rival sprinting for caloric burn. They also strengthen your hip flexors and core.</p>
+
+        <h3>5. Push-Up Variations — Upper Body Metabolic Work</h3>
+        <p>Push-ups build muscle in your chest, shoulders, triceps, and core. More muscle = higher resting metabolism. Mix in <Link href="/blog/push-up-progression-beginner-to-advanced" style={{ color: '#00FF87' }}>different variations</Link> to keep progressing.</p>
+
+        <h3>6. Squat to Press (Thrusters) — Full Body Burner</h3>
+        <p>If you have even light dumbbells or <Link href="/blog/resistance-band-workouts-at-home" style={{ color: '#00FF87' }}>resistance bands</Link>, thrusters combine a squat with an overhead press. Your entire body works as one unit, spiking your heart rate.</p>
+
+        <h3>7. Plank to Push-Up — Core + Chest</h3>
+        <p>Start in a forearm plank, press up to a high plank one arm at a time, then lower back down. It&apos;s brutal on your core and triceps simultaneously. Check out more <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>plank variations</Link>.</p>
+
+        <h3>8. Dead Bugs — The Core Exercise That Actually Transfers</h3>
+        <p>Dead bugs train your deep core muscles (transverse abdominis) that stabilize your spine. They won&apos;t burn as many calories as burpees, but they build the core foundation that makes every other exercise more effective.</p>
+
+        <h2>The 20-Minute Belly Fat Blaster (Home Workout)</h2>
+        <p>Perform each exercise for 40 seconds, rest 20 seconds. Complete 3 rounds with 90 seconds rest between rounds.</p>
+        <ul>
+          <li><strong>Burpees</strong> — 40 sec on / 20 sec off</li>
+          <li><strong>Mountain climbers</strong> — 40/20</li>
+          <li><strong>Jump squats</strong> — 40/20</li>
+          <li><strong>Push-ups</strong> — 40/20</li>
+          <li><strong>High knees</strong> — 40/20</li>
+          <li><strong>Plank to push-up</strong> — 40/20</li>
+        </ul>
+        <p><strong>Total time:</strong> ~20 minutes including rest. <strong>Estimated burn:</strong> 200-350 calories depending on intensity and body weight.</p>
+        <p>If you&apos;re a complete beginner, <Link href="/blog/how-to-start-working-out-at-home-beginner" style={{ color: '#00FF87' }}>start with our beginner home workout guide</Link> first, then graduate to this routine after 2-3 weeks.</p>
+
+        <h2>The Nutrition Reality Check</h2>
+        <p>Here&apos;s the part nobody wants to hear: <strong>you cannot out-exercise a bad diet</strong>. A 20-minute HIIT workout burns ~300 calories. One large Domino&apos;s pizza is 2,000+ calories. The math doesn&apos;t lie.</p>
+        <p>For fat loss, you need to be in a moderate caloric deficit — eating roughly 300-500 fewer calories than you burn daily. That&apos;s about one fewer snack or slightly smaller portions. Nothing extreme.</p>
+        <p>The best approach combines exercise (to preserve muscle and boost metabolism) with a slight caloric deficit (to lose fat). Our <Link href="/blog/simple-meal-prep-for-fitness-beginners" style={{ color: '#00FF87' }}>meal prep guide</Link> makes the nutrition side dead simple.</p>
+
+        <h2>How Long Until You See Results?</h2>
+        <p>With consistent training (3-4x per week) and a moderate caloric deficit:</p>
+        <ul>
+          <li><strong>Week 1-2:</strong> You feel better, sleep better, have more energy. Scale may not move much.</li>
+          <li><strong>Week 3-4:</strong> Clothes fit differently. You might notice the first visual changes.</li>
+          <li><strong>Week 6-8:</strong> Visible difference. Others start noticing.</li>
+          <li><strong>Week 12+:</strong> Significant transformation. This is where it gets addictive.</li>
+        </ul>
+        <p>The hardest part is the first 2 weeks where you&apos;re working hard but don&apos;t see results yet. This is exactly why <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>streak-based systems work</Link> — they keep you motivated through the initial plateau by rewarding consistency, not just outcomes.</p>
+
+        <h2>The Bottom Line</h2>
+        <p>Forget &quot;ab blasting&quot; workouts. The path to losing belly fat is: <strong>high-intensity full-body exercises + strength training + moderate caloric deficit + consistency</strong>. The workout above gives you the first two. The third requires paying attention to what you eat. The fourth? That&apos;s a habit problem — and it&apos;s exactly what <Link href="/blog/5-minute-workout-daily-habit" style={{ color: '#00FF87' }}>fit.gg is designed to solve</Link>.</p>
+      </>
+    ),
+  },
+  'stretches-before-bed-better-sleep': {
+    content: (
+      <>
+        <p>You spend a third of your life sleeping — or trying to. If you&apos;re one of the 35% of adults who regularly struggle to fall asleep, the answer might not be in a supplement bottle. It might be on your bedroom floor.</p>
+        <p>A growing body of research shows that <strong>gentle stretching before bed significantly improves sleep quality</strong>. A 2019 study in the <em>Journal of Sport Rehabilitation</em> found that participants who performed a 10-minute stretching routine before bed fell asleep faster, woke up less during the night, and reported better sleep quality than a control group.</p>
+        <p>Here are 10 stretches that double as a sleep ritual — calming your nervous system, releasing tension, and signaling to your brain that it&apos;s time to shut down.</p>
+
+        <h2>Why Stretching Helps You Sleep</h2>
+        <p>It&apos;s not just about loose muscles. Bedtime stretching works through three mechanisms:</p>
+        <ul>
+          <li><strong>Parasympathetic activation</strong> — Slow, controlled breathing during stretches activates your &quot;rest and digest&quot; nervous system, lowering your heart rate and blood pressure.</li>
+          <li><strong>Cortisol reduction</strong> — Physical tension and mental stress create a feedback loop. Releasing muscle tension breaks the cycle and lowers cortisol.</li>
+          <li><strong>Body temperature regulation</strong> — Gentle movement raises your core temperature slightly; the subsequent cooling signals melatonin production.</li>
+        </ul>
+
+        <h2>The 10-Minute Bedtime Routine</h2>
+        <p>Hold each stretch for 60 seconds. Breathe slowly — 4 seconds in, 6 seconds out. Don&apos;t force anything. This isn&apos;t a workout; it&apos;s a wind-down.</p>
+
+        <h3>1. Standing Forward Fold</h3>
+        <p>Stand with feet hip-width apart. Bend forward from the hips, letting your head and arms hang heavy. Bend your knees slightly if your hamstrings are tight. Let gravity do the work.</p>
+        <p><strong>Why:</strong> Decompresses the spine after a day of sitting. The inverted position increases blood flow to the brain, which paradoxically promotes calm.</p>
+
+        <h3>2. Cat-Cow (Slow)</h3>
+        <p>On hands and knees, alternate between arching your back (cow) and rounding it (cat). Move with your breath — inhale into cow, exhale into cat. Do this for 60 seconds, as slowly as possible.</p>
+        <p><strong>Why:</strong> Mobilizes the entire spine and releases tension in the neck, shoulders, and lower back. The rhythmic breathing is inherently meditative.</p>
+
+        <h3>3. Child&apos;s Pose</h3>
+        <p>From hands and knees, sit your hips back onto your heels. Stretch your arms forward on the floor. Rest your forehead on the ground. Breathe into your lower back.</p>
+        <p><strong>Why:</strong> The ultimate surrender pose. It gently stretches the hips, thighs, and back while the forehead-to-ground contact activates a calming reflex.</p>
+
+        <h3>4. Supine Spinal Twist</h3>
+        <p>Lie on your back. Pull one knee to your chest, then guide it across your body to the opposite side. Extend your arm on the same side and look toward it. Hold, then switch.</p>
+        <p><strong>Why:</strong> Releases tension in the lower back and hips — the two areas that hold the most stress in desk workers.</p>
+
+        <h3>5. Figure-Four Stretch (Supine Pigeon)</h3>
+        <p>Lie on your back. Cross one ankle over the opposite knee, making a &quot;4&quot; shape. Pull the bottom leg toward your chest until you feel a deep stretch in your outer hip/glute.</p>
+        <p><strong>Why:</strong> Releases the piriformis and deep hip rotators. If you sit all day, these muscles are chronically tight and contribute to lower back discomfort that disrupts sleep.</p>
+
+        <h3>6. Legs Up the Wall</h3>
+        <p>Scoot your hips to the wall and swing your legs up, resting them against the wall. Your body forms an L-shape. Arms relaxed at your sides, palms up.</p>
+        <p><strong>Why:</strong> This is the single best pre-sleep position. It reduces leg swelling, calms the nervous system, and the gentle inversion promotes venous return without any effort. Stay here 2-3 minutes if you can.</p>
+
+        <h3>7. Seated Forward Fold</h3>
+        <p>Sit with legs extended. Hinge at the hips and reach toward your toes. Don&apos;t round your back aggressively — just go to where you feel a gentle pull in your hamstrings.</p>
+        <p><strong>Why:</strong> Stretches the entire posterior chain and the rhythmic breathing in this position is deeply calming. More flexible? See our <Link href="/blog/how-to-improve-flexibility-fast" style={{ color: '#00FF87' }}>flexibility guide</Link> for deeper variations.</p>
+
+        <h3>8. Neck Rolls</h3>
+        <p>Sit comfortably. Drop your right ear to your right shoulder. Slowly roll your chin to your chest, then to the left shoulder. Reverse. Do 3 slow circles each direction.</p>
+        <p><strong>Why:</strong> Your neck holds more tension than anywhere else. Even 60 seconds of gentle neck rolls can reduce headache frequency and improve sleep onset.</p>
+
+        <h3>9. Happy Baby</h3>
+        <p>Lie on your back. Grab the outsides of your feet with your hands, knees wide, pulling them toward your armpits. Rock gently side to side.</p>
+        <p><strong>Why:</strong> Opens the hips and inner thighs while providing a gentle lower back massage. The rocking motion is inherently soothing — there&apos;s a reason babies do this.</p>
+
+        <h3>10. Savasana (Corpse Pose)</h3>
+        <p>Lie flat on your back, arms at your sides, palms up, feet falling open. Close your eyes. Breathe naturally. Stay for 2 minutes minimum.</p>
+        <p><strong>Why:</strong> This isn&apos;t &quot;just lying there.&quot; Savasana is the integration pose — your body processes all the stretching and your nervous system settles into rest mode. Many people fall asleep here. That&apos;s the point.</p>
+
+        <h2>Tips for Maximum Sleep Benefit</h2>
+        <ul>
+          <li><strong>Dim the lights</strong> — Do your stretches in low light to support melatonin production.</li>
+          <li><strong>No screens during</strong> — Put your phone in another room. This is phone-free time.</li>
+          <li><strong>Same time every night</strong> — Consistency trains your brain. After a week, your body will start getting sleepy as soon as you start stretching.</li>
+          <li><strong>Pair with breathwork</strong> — The 4-6 breathing pattern (4 in, 6 out) activates your vagus nerve and drops your heart rate within minutes.</li>
+          <li><strong>Don&apos;t push intensity</strong> — This is NOT a <Link href="/blog/hiit-vs-steady-state-cardio" style={{ color: '#00FF87' }}>HIIT session</Link>. If you&apos;re straining, you&apos;re doing it wrong. Gentle tension, no pain.</li>
+        </ul>
+
+        <h2>Building the Habit</h2>
+        <p>The hardest part isn&apos;t the stretching — it&apos;s remembering to do it. Your brain will always find reasons to skip: &quot;I&apos;m too tired,&quot; &quot;it&apos;s too late,&quot; &quot;I&apos;ll start tomorrow.&quot;</p>
+        <p>The trick is making it <strong>so short and easy that skipping feels harder than doing it</strong>. Start with just 3 stretches — Child&apos;s Pose, Spinal Twist, Legs Up the Wall. That&apos;s 3 minutes. Once the habit sticks, add more.</p>
+        <p>This is the same <Link href="/blog/workout-motivation-psychology" style={{ color: '#00FF87' }}>psychology behind micro-habit building</Link> — start absurdly small, then expand. And if you want a system that tracks your consistency and rewards your streaks, that&apos;s exactly the <Link href="/blog/morning-workout-routine-5-minutes" style={{ color: '#00FF87' }}>5-minute habit approach</Link> fit.gg is built around.</p>
+      </>
+    ),
+  },
 }
 
 export function generateStaticParams() {
