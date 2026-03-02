@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { PWARegister } from '@/components/PWARegister'
@@ -28,8 +28,11 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.ico', apple: '/apple-touch-icon.png' },
   manifest: '/manifest.json',
-  themeColor: '#10b981',
   appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'fit.gg' },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#10b981',
 }
 
 const faqJsonLd = {
