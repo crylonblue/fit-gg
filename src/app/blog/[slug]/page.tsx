@@ -1969,6 +1969,345 @@ const articles: Record<string, { content: React.ReactNode }> = {
       </>
     ),
   },
+  'walking-for-weight-loss-plan': {
+    content: (
+      <>
+        <p>Here&apos;s an uncomfortable truth: most people who start running to lose weight quit within a month. It hurts, it&apos;s boring, and the results are slower than expected. But <strong>walking</strong> — the exercise everyone dismisses as &quot;not real exercise&quot; — turns out to be one of the most effective and sustainable ways to lose body fat.</p>
+        <p>Not power walking. Not mall walking. Just... walking with a plan. And the science backs it up.</p>
+
+        <h2>Why Walking Burns More Fat Than You Think</h2>
+        <p>During low-intensity exercise like walking, your body primarily burns <strong>fat for fuel</strong>. At higher intensities (running, HIIT), your body shifts to burning glycogen (stored carbs). This is called the &quot;fat oxidation zone,&quot; and walking sits right in the sweet spot.</p>
+        <p>A 2014 study in the <em>Journal of Exercise Nutrition &amp; Biochemistry</em> found that women who walked 50-70 minutes, 3 days per week for 12 weeks lost an average of <strong>1.5 inches off their waistline</strong> and reduced body fat by 1.5% — without changing their diet.</p>
+        <p>Here&apos;s what makes walking special for fat loss:</p>
+        <ul>
+          <li><strong>Low cortisol impact</strong> — Unlike intense exercise, walking doesn&apos;t spike your stress hormones. High cortisol promotes belly fat storage. Walking avoids this entirely.</li>
+          <li><strong>Sustainable calorie burn</strong> — A 160-lb person burns ~300 calories per hour of brisk walking. That&apos;s 2,100 calories/week from daily 1-hour walks — nearly a pound of fat loss per week from walking alone.</li>
+          <li><strong>Zero recovery needed</strong> — You can walk every single day. No rest days required. No soreness. No injury risk. This adds up fast.</li>
+          <li><strong>Appetite regulation</strong> — Moderate walking actually <em>reduces</em> appetite, while intense exercise often increases hunger. This means you naturally eat less without trying.</li>
+        </ul>
+
+        <h2>The 8-Week Walking-for-Weight-Loss Plan</h2>
+        <p>This progressive plan takes you from casual walker to consistent fat-burner. The key: increase duration before intensity.</p>
+
+        <h3>Weeks 1-2: Build the Habit</h3>
+        <ul>
+          <li><strong>Duration:</strong> 20-30 minutes per walk</li>
+          <li><strong>Frequency:</strong> 5 days per week</li>
+          <li><strong>Pace:</strong> Comfortable — you should be able to hold a full conversation</li>
+          <li><strong>Goal:</strong> Make walking automatic. Same time every day. Don&apos;t worry about speed.</li>
+        </ul>
+
+        <h3>Weeks 3-4: Add Duration</h3>
+        <ul>
+          <li><strong>Duration:</strong> 35-45 minutes per walk</li>
+          <li><strong>Frequency:</strong> 5-6 days per week</li>
+          <li><strong>Pace:</strong> Slightly brisk — conversation is possible but requires occasional pauses</li>
+          <li><strong>Add:</strong> One longer walk on the weekend (60 minutes). Explore a new route.</li>
+        </ul>
+
+        <h3>Weeks 5-6: Introduce Intensity</h3>
+        <ul>
+          <li><strong>Duration:</strong> 40-50 minutes per walk</li>
+          <li><strong>Frequency:</strong> 6 days per week</li>
+          <li><strong>Pace:</strong> Brisk walking with 2-minute fast intervals every 10 minutes</li>
+          <li><strong>Add:</strong> Hills or inclines twice per week. Walking uphill increases calorie burn by 50-60%.</li>
+        </ul>
+
+        <h3>Weeks 7-8: Maximize Results</h3>
+        <ul>
+          <li><strong>Duration:</strong> 45-60 minutes per walk</li>
+          <li><strong>Frequency:</strong> 6-7 days per week</li>
+          <li><strong>Pace:</strong> Alternating brisk and fast intervals (3 min brisk, 1 min fast)</li>
+          <li><strong>Add:</strong> A light <Link href="/blog/resistance-band-workouts-at-home" style={{ color: '#00FF87' }}>resistance band workout</Link> or <Link href="/blog/bodyweight-exercises-no-equipment" style={{ color: '#00FF87' }}>bodyweight routine</Link> 2-3 times per week to preserve muscle while losing fat.</li>
+        </ul>
+
+        <h2>Walking Speed Matters (But Not How You Think)</h2>
+        <p>You don&apos;t need to walk fast. You need to walk <strong>consistently</strong>. That said, pace does affect calorie burn:</p>
+        <ul>
+          <li><strong>Casual stroll (2 mph):</strong> ~200 cal/hour</li>
+          <li><strong>Brisk walk (3.5 mph):</strong> ~300 cal/hour</li>
+          <li><strong>Power walk (4.5 mph):</strong> ~400 cal/hour</li>
+          <li><strong>Incline walk (3.5 mph, 10% grade):</strong> ~450 cal/hour</li>
+        </ul>
+        <p>The sweet spot for most people: <strong>3-4 mph</strong>. That&apos;s a pace where you&apos;re breathing a bit harder but could still talk to someone next to you.</p>
+
+        <h2>10,000 Steps: Useful or Myth?</h2>
+        <p>The 10,000-step goal was invented by a Japanese pedometer company in the 1960s. It wasn&apos;t based on science. But modern research has largely validated it by accident.</p>
+        <p>A 2023 meta-analysis in the <em>European Journal of Preventive Cardiology</em> found that <strong>every additional 1,000 steps per day reduces all-cause mortality by 15%</strong>. Benefits plateau around 8,000-10,000 steps for most people.</p>
+        <p>For weight loss specifically, aim for <strong>8,000-12,000 steps daily</strong>. That&apos;s roughly 60-90 minutes of walking when you include your normal daily movement.</p>
+
+        <h2>The Nutrition Factor (Keep It Simple)</h2>
+        <p>Walking alone can cause weight loss, but combining it with basic nutrition awareness accelerates results dramatically. You don&apos;t need a diet plan — just three rules:</p>
+        <ul>
+          <li><strong>Protein at every meal</strong> — Keeps you full and preserves muscle. Aim for a palm-sized portion.</li>
+          <li><strong>Eat real food 80% of the time</strong> — If it grew from the ground or had a face, it counts. The other 20% is whatever you want.</li>
+          <li><strong>Don&apos;t drink your calories</strong> — Soda, juice, and fancy coffee drinks can add 500+ calories daily without filling you up.</li>
+        </ul>
+        <p>For a more structured approach, check out our <Link href="/blog/simple-meal-prep-for-fitness-beginners" style={{ color: '#00FF87' }}>beginner meal prep guide</Link>.</p>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <ul>
+          <li><strong>Going too fast too soon</strong> — Speed walking on day one leads to shin splints and burnout. Build gradually.</li>
+          <li><strong>Only counting &quot;exercise&quot; walks</strong> — Steps throughout the day count equally. Take calls while walking. Park farther away. Take the stairs.</li>
+          <li><strong>Skipping rest when injured</strong> — Walking is low-impact but not zero-impact. If your feet, knees, or hips hurt, take a day off.</li>
+          <li><strong>Expecting overnight results</strong> — Fat loss from walking is steady but slow. Expect 0.5-1 lb per week. That&apos;s 25-50 lbs per year — life-changing, if you stick with it.</li>
+        </ul>
+
+        <h2>Make It a Habit (Not a Chore)</h2>
+        <p>The best walking routine is one you actually do. Here&apos;s how to make it stick:</p>
+        <ul>
+          <li><strong>Walk at the same time daily</strong> — Morning walkers have the highest consistency rates. Before coffee, before email, before excuses.</li>
+          <li><strong>Listen to something</strong> — Podcasts, audiobooks, or music make walking feel shorter. Save your favorite content exclusively for walks.</li>
+          <li><strong>Track your steps</strong> — What gets measured gets managed. A $20 fitness band or your phone works fine.</li>
+          <li><strong>Walk with someone</strong> — Social accountability is powerful. Even a weekly walking buddy helps.</li>
+          <li><strong>Use <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>streak tracking</Link></strong> — Don&apos;t break the chain. Even a 10-minute walk counts to keep the streak alive.</li>
+        </ul>
+
+        <h2>The Bottom Line</h2>
+        <p>Walking isn&apos;t sexy. It won&apos;t get you Instagram followers. But it&apos;s the single most effective exercise for people who want to lose weight and keep it off, because you can do it forever.</p>
+        <p>Start with 20 minutes. Build to 60. Walk every day. Eat mostly real food. And give it 8 weeks before you judge the results.</p>
+        <p>You&apos;ll be surprised.</p>
+      </>
+    ),
+  },
+  'dumbbell-exercises-for-beginners': {
+    content: (
+      <>
+        <p>Dumbbells are the single most versatile piece of gym equipment ever created. Two adjustable dumbbells can replace an entire gym — and they&apos;re the fastest way for beginners to build real, visible strength.</p>
+        <p>But walk into the dumbbell section as a beginner and it&apos;s overwhelming. What weight? Which exercises? How many reps? This guide answers all of it.</p>
+
+        <h2>Why Dumbbells Are Perfect for Beginners</h2>
+        <ul>
+          <li><strong>Fix imbalances early</strong> — Unlike barbells, dumbbells force each arm to work independently. Your stronger side can&apos;t compensate for your weaker one.</li>
+          <li><strong>Natural movement patterns</strong> — Dumbbells let your wrists and elbows follow their natural path, reducing joint stress.</li>
+          <li><strong>Lower injury risk</strong> — No spotter needed. If you fail a rep, just drop the dumbbells. Try that with a barbell bench press.</li>
+          <li><strong>Progressive overload made easy</strong> — Start with 5 lbs, add 2.5-5 lbs when it gets easy. Simple, effective, and motivating.</li>
+        </ul>
+
+        <h2>How to Choose Your Starting Weight</h2>
+        <p>The right starting weight depends on the exercise. Here&apos;s a general guide:</p>
+        <ul>
+          <li><strong>Upper body (curls, presses):</strong> Women 5-10 lbs, Men 10-20 lbs</li>
+          <li><strong>Lower body (squats, lunges):</strong> Women 10-15 lbs, Men 15-25 lbs</li>
+          <li><strong>The test:</strong> Can you complete 12 reps with good form, where the last 2-3 feel challenging? That&apos;s your weight.</li>
+        </ul>
+        <p>When in doubt, go lighter. Form beats ego every time.</p>
+
+        <h2>The 12 Essential Dumbbell Exercises</h2>
+
+        <h3>1. Goblet Squat</h3>
+        <p><strong>Muscles:</strong> Quads, glutes, core</p>
+        <p>Hold one dumbbell vertically at your chest with both hands. Feet shoulder-width apart. Squat down until your thighs are parallel to the floor, keeping your chest up and elbows inside your knees. Drive through your heels to stand.</p>
+        <p><strong>Why it&apos;s great:</strong> The front-loaded weight teaches you to squat with perfect form. It&apos;s virtually impossible to lean too far forward. Compare with <Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>bodyweight squat progressions</Link>.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 12</p>
+
+        <h3>2. Dumbbell Romanian Deadlift</h3>
+        <p><strong>Muscles:</strong> Hamstrings, glutes, lower back</p>
+        <p>Hold a dumbbell in each hand, arms hanging. Hinge at the hips (push your butt back) and lower the dumbbells along your shins. Keep your back flat and a slight bend in your knees. When you feel a deep stretch in your hamstrings, squeeze your glutes to stand.</p>
+        <p><strong>Why it&apos;s great:</strong> Trains the entire posterior chain — the muscles most people neglect. Essential for <Link href="/blog/how-to-fix-bad-posture-exercises" style={{ color: '#00FF87' }}>fixing bad posture</Link>.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 10</p>
+
+        <h3>3. Dumbbell Bench Press (or Floor Press)</h3>
+        <p><strong>Muscles:</strong> Chest, shoulders, triceps</p>
+        <p>Lie on a bench (or the floor) with a dumbbell in each hand. Press them up until your arms are straight, lower slowly until your elbows are at 90°, then press again. Floor pressing limits the range of motion, which is easier on your shoulders.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 10</p>
+
+        <h3>4. Single-Arm Dumbbell Row</h3>
+        <p><strong>Muscles:</strong> Lats, rhomboids, biceps</p>
+        <p>Place one hand and knee on a bench. Hold a dumbbell in the other hand, arm hanging straight. Pull it to your hip, squeezing your shoulder blade back. Lower with control (2-3 seconds).</p>
+        <p><strong>Sets/Reps:</strong> 3 × 10 per arm</p>
+
+        <h3>5. Overhead Press</h3>
+        <p><strong>Muscles:</strong> Shoulders, triceps, upper chest</p>
+        <p>Stand with dumbbells at shoulder height, palms facing forward. Press straight overhead until arms are fully extended. Lower to shoulders. Keep your core tight — don&apos;t arch your back.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 10</p>
+
+        <h3>6. Dumbbell Lunges</h3>
+        <p><strong>Muscles:</strong> Quads, glutes, hamstrings, balance</p>
+        <p>Hold a dumbbell in each hand at your sides. Step forward and lower your back knee toward the floor. Both knees should reach ~90°. Push through your front heel to return to standing. Alternate legs.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 10 per leg</p>
+
+        <h3>7. Bicep Curls</h3>
+        <p><strong>Muscles:</strong> Biceps</p>
+        <p>Stand with dumbbells at your sides, palms forward. Curl both dumbbells up, squeezing at the top. Lower slowly. Keep your elbows pinned to your sides — no swinging.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 12</p>
+
+        <h3>8. Tricep Overhead Extension</h3>
+        <p><strong>Muscles:</strong> Triceps</p>
+        <p>Hold one dumbbell with both hands behind your head, elbows pointing up. Extend your arms to press the weight overhead. Lower behind your head with control. Keep your elbows close to your ears.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 12</p>
+
+        <h3>9. Dumbbell Deadlift</h3>
+        <p><strong>Muscles:</strong> Full body — glutes, hamstrings, quads, back, grip</p>
+        <p>Place dumbbells on the floor beside your feet. Squat down, grab them, and stand up by driving through your heels. Keep your chest up and back flat throughout.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 10</p>
+
+        <h3>10. Renegade Rows</h3>
+        <p><strong>Muscles:</strong> Back, core, shoulders</p>
+        <p>Get in a push-up position with hands on dumbbells. Row one dumbbell to your hip while balancing on the other. Alternate sides. Keep your hips level — don&apos;t rotate.</p>
+        <p><strong>Why it&apos;s great:</strong> Combines core stability with back strength. A serious upgrade from <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>basic planks</Link>.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 8 per arm</p>
+
+        <h3>11. Dumbbell Chest Fly</h3>
+        <p><strong>Muscles:</strong> Chest, front shoulders</p>
+        <p>Lie on a bench with dumbbells pressed above your chest. With a slight bend in your elbows, lower the weights out to the sides in an arc until you feel a stretch across your chest. Squeeze back to the top.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 12</p>
+
+        <h3>12. Farmer&apos;s Walk</h3>
+        <p><strong>Muscles:</strong> Grip, core, traps, full body</p>
+        <p>Grab the heaviest dumbbells you can hold. Walk with perfect posture — chest up, shoulders back, core tight — for 30-40 seconds. This deceptively simple exercise builds functional strength, grip power, and postural endurance.</p>
+        <p><strong>Sets/Reps:</strong> 3 × 30-40 seconds</p>
+
+        <h2>Your 3-Day Beginner Dumbbell Plan</h2>
+        <p>Perform each workout once per week with at least one <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>rest day</Link> between sessions.</p>
+
+        <h3>Day A — Push (Chest, Shoulders, Triceps)</h3>
+        <ul>
+          <li>Dumbbell Bench Press — 3 × 10</li>
+          <li>Overhead Press — 3 × 10</li>
+          <li>Chest Fly — 3 × 12</li>
+          <li>Tricep Overhead Extension — 3 × 12</li>
+          <li>Goblet Squat — 3 × 12</li>
+        </ul>
+
+        <h3>Day B — Pull (Back, Biceps)</h3>
+        <ul>
+          <li>Single-Arm Row — 3 × 10 per arm</li>
+          <li>Romanian Deadlift — 3 × 10</li>
+          <li>Renegade Rows — 3 × 8 per arm</li>
+          <li>Bicep Curls — 3 × 12</li>
+          <li>Farmer&apos;s Walk — 3 × 40 sec</li>
+        </ul>
+
+        <h3>Day C — Legs &amp; Full Body</h3>
+        <ul>
+          <li>Goblet Squat — 3 × 12</li>
+          <li>Dumbbell Lunges — 3 × 10 per leg</li>
+          <li>Dumbbell Deadlift — 3 × 10</li>
+          <li>Overhead Press — 3 × 10</li>
+          <li>Dumbbell Bench Press — 3 × 10</li>
+        </ul>
+
+        <h2>When to Increase Weight</h2>
+        <p>Follow the <strong>2-for-2 rule</strong>: If you can complete 2 extra reps on your last set for 2 consecutive workouts, increase the weight by 2.5-5 lbs. This ensures you&apos;re progressing at a pace your body can handle.</p>
+        <p>Don&apos;t rush it. Adding 5 lbs per month to each exercise means you&apos;ll be lifting 60 lbs more by year&apos;s end. That&apos;s a transformation.</p>
+
+        <h2>The Bottom Line</h2>
+        <p>These 12 exercises cover every major muscle group. Master them with light weight and perfect form before going heavy. Consistency with the 3-day plan will build visible muscle and functional strength in 8-12 weeks.</p>
+        <p>Already comfortable with dumbbells? Consider adding <Link href="/blog/resistance-band-workouts-at-home" style={{ color: '#00FF87' }}>resistance bands</Link> for variety, or progress to <Link href="/blog/calisthenics-for-beginners-complete-guide" style={{ color: '#00FF87' }}>calisthenics</Link> for the ultimate bodyweight challenge.</p>
+      </>
+    ),
+  },
+  'how-to-do-a-handstand-progression': {
+    content: (
+      <>
+        <p>The freestanding handstand is the ultimate bodyweight flex. It requires zero equipment, builds incredible shoulder and core strength, and looks genuinely impressive. But most people try it wrong — they kick up against a wall for months and wonder why they never get it.</p>
+        <p>This progression takes you from zero to a freestanding handstand using the <strong>same drills gymnasts use</strong>. It&apos;s not fast (expect 3-12 months depending on your starting fitness), but it works.</p>
+
+        <h2>Before You Start: Wrist Prep Is Non-Negotiable</h2>
+        <p>Your wrists will bear your entire bodyweight. Skip the prep and you&apos;ll get wrist pain that sets you back weeks. Do this before <em>every</em> handstand session:</p>
+        <ul>
+          <li><strong>Wrist circles</strong> — 20 each direction, fingers interlocked</li>
+          <li><strong>Prayer stretches</strong> — Palms together at chest, push down until you feel a stretch. Hold 20 seconds.</li>
+          <li><strong>Wrist flexor stretch</strong> — Fingers pointing back, palms on the floor, lean gently. Hold 20 seconds.</li>
+          <li><strong>Finger push-ups</strong> — On your fingertips (from knees is fine), do 10 reps. Builds finger and wrist strength.</li>
+          <li><strong>Wrist push-ups</strong> — Backs of hands on the floor, gently load. Start on knees. 10 reps.</li>
+        </ul>
+        <p>This takes 3 minutes. Do it. Your wrists will thank you at month six when you&apos;re holding 30-second handstands.</p>
+
+        <h2>Phase 1: Build the Foundation (Weeks 1-4)</h2>
+        <p>You need shoulder strength and core stability before going upside down. If you can&apos;t hold a <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>solid 60-second plank</Link>, start there first.</p>
+
+        <h3>Wall Plank (Nose to Wall)</h3>
+        <p>Face the wall. Place your hands on the floor, walk your feet up the wall until your body is vertical, chest facing the wall. Arms straight, fingers spread wide, body in a straight line from wrists to toes.</p>
+        <p><strong>Goal:</strong> Hold for 30-60 seconds, 3 sets. When you can do 3 × 60s, move on.</p>
+        <p><strong>Key points:</strong> Push the floor away (protract your shoulders), squeeze your glutes, point your toes. Look at the wall between your hands, not at the floor.</p>
+
+        <h3>Shoulder Taps (Wall Plank Position)</h3>
+        <p>In the wall plank position, shift your weight to one hand and tap the opposite shoulder. Alternate. Keep your hips level — no twisting.</p>
+        <p><strong>Goal:</strong> 3 × 10 taps per side. This teaches single-arm balance while inverted.</p>
+
+        <h3>Pike Push-Ups</h3>
+        <p>From a downward dog position (hips high, hands and feet on the floor), bend your elbows and lower your head toward the floor. Press back up. This builds overhead pressing strength specific to handstands.</p>
+        <p><strong>Goal:</strong> 3 × 10 with good form. Progress by elevating your feet on a step or chair.</p>
+
+        <h2>Phase 2: Finding Balance (Weeks 5-10)</h2>
+        <p>This is where most people stall. The secret: <strong>belly-to-wall practice, not back-to-wall</strong>. Facing the wall teaches correct alignment. Back-to-wall teaches a banana-shaped handstand you&apos;ll have to unlearn.</p>
+
+        <h3>Wall Walks</h3>
+        <p>Start in a push-up position with your feet against the wall. Walk your feet up the wall while walking your hands closer to the wall. Get as close as possible (nose touching), then walk back down. That&apos;s one rep.</p>
+        <p><strong>Goal:</strong> 3 × 5 clean wall walks</p>
+
+        <h3>Toe Pulls (The Balance Drill)</h3>
+        <p>In a chest-to-wall handstand, gently pull one foot off the wall. Then the other. Hold a free-standing position for as long as possible — even 1 second counts. Your toes lightly tap the wall when you lose balance.</p>
+        <p><strong>This is the most important drill.</strong> You&apos;re training your hands to balance. Your fingers press into the floor to correct when you over-balance (falling toward your back), and your palms/heel of hand push when you under-balance (falling toward your stomach).</p>
+        <p><strong>Goal:</strong> Accumulate 60 seconds of free time (away from wall) per session. Even in 2-3 second holds.</p>
+
+        <h3>Heel Pulls</h3>
+        <p>Same as toe pulls, but with your back to the wall. Rest your heels on the wall and pull away into balance. This trains the other direction of balance correction.</p>
+        <p><strong>Goal:</strong> Accumulate 60 seconds of free balance time per session.</p>
+
+        <h2>Phase 3: The Kick-Up (Weeks 8-16)</h2>
+        <p>Many progressions teach the kick-up first. That&apos;s backwards. You need to know how to balance before you kick up, otherwise you&apos;re just flinging yourself at a wall.</p>
+
+        <h3>The Proper Kick-Up Technique</h3>
+        <ol>
+          <li><strong>Start in a lunge</strong> — One foot forward, arms overhead, looking at the floor about 6 inches past where your hands will go.</li>
+          <li><strong>Plant your hands</strong> — Shoulder-width apart, fingers spread, gripping the floor. Arms straight and locked.</li>
+          <li><strong>Kick with your back leg</strong> — A controlled swing, not a violent kick. Think of it as a &quot;lever&quot; — your back leg goes up, your front leg follows.</li>
+          <li><strong>Stack your body</strong> — Shoulders over wrists, hips over shoulders, feet over hips. One straight line.</li>
+          <li><strong>Correct with your fingers</strong> — Over-balancing? Press hard with your fingertips. Under-balancing? Press with your palm base.</li>
+        </ol>
+
+        <h3>The Bail</h3>
+        <p>Learning to bail safely removes the fear factor:</p>
+        <ul>
+          <li><strong>Cartwheel out:</strong> If you over-balance, turn to the side and cartwheel down. This should be your default bail.</li>
+          <li><strong>Forward roll:</strong> Tuck your chin, bend your arms, and roll. Only if you&apos;re comfortable with forward rolls.</li>
+          <li><strong>Pirouette:</strong> Shift your weight to one hand and turn 180° to land on your feet. Advanced but the cleanest exit.</li>
+        </ul>
+
+        <h3>Practice Protocol</h3>
+        <ul>
+          <li><strong>Kick-up attempts:</strong> 10-15 per session</li>
+          <li><strong>Wall holds:</strong> 3 × max hold (chest-to-wall for alignment)</li>
+          <li><strong>Toe pulls:</strong> 5 minutes of practice</li>
+          <li><strong>Frequency:</strong> 4-6 days per week. Handstand practice is skill work, not strength work — you can do it almost daily.</li>
+        </ul>
+
+        <h2>Phase 4: Freestanding Holds (Months 3-6+)</h2>
+        <p>At this point you can kick up and hold for a few seconds. Now it&apos;s about extending hold time.</p>
+        <ul>
+          <li><strong>Aim for max holds</strong> — 10 attempts per session, trying to hold as long as possible</li>
+          <li><strong>Film yourself</strong> — You can&apos;t see your own alignment. Video reveals banana backs, bent arms, and misaligned hips instantly.</li>
+          <li><strong>5-second milestone</strong> — When you hit 5 seconds consistently, you&apos;ve &quot;got it.&quot; Getting to 30 seconds is just refinement from there.</li>
+          <li><strong>Practice finger balance</strong> — In a hold, deliberately over-balance slightly and save it with your fingertips. Then under-balance and save with your palms. This active correction is the real skill.</li>
+        </ul>
+
+        <h2>Common Mistakes</h2>
+        <ul>
+          <li><strong>Banana back</strong> — Ribs flaring, back arched, feet way behind your head. Fix: squeeze your glutes, tuck your ribs, think &quot;hollow body.&quot;</li>
+          <li><strong>Bent arms</strong> — Your arms should be locked. Bent arms collapse. If you can&apos;t hold straight arms, build more <Link href="/blog/push-up-progression-beginner-to-advanced" style={{ color: '#00FF87' }}>push-up strength</Link> first.</li>
+          <li><strong>Looking at the floor directly below</strong> — Look slightly forward (between your hands or just ahead). This helps with alignment.</li>
+          <li><strong>Kicking too hard</strong> — A controlled kick beats a hard kick. If you&apos;re constantly over-balancing, you&apos;re kicking too hard.</li>
+          <li><strong>Not enough practice</strong> — Handstands are a skill. 10 minutes daily beats 60 minutes weekly. Frequency is everything.</li>
+        </ul>
+
+        <h2>Realistic Timeline</h2>
+        <ul>
+          <li><strong>Month 1:</strong> Comfortable wall handstands, 30-60 sec holds</li>
+          <li><strong>Month 2-3:</strong> Consistent kick-ups, 2-5 sec freestanding holds</li>
+          <li><strong>Month 4-6:</strong> 10-20 sec freestanding holds</li>
+          <li><strong>Month 6-12:</strong> 30+ sec holds, starting to feel easy</li>
+        </ul>
+        <p>Some people get it in 3 months. Some take a year. Both are normal. The key is daily practice, even just 10 minutes.</p>
+
+        <h2>The Bottom Line</h2>
+        <p>The handstand is the ultimate test of bodyweight mastery — it requires strength, balance, body awareness, and patience. Follow this progression, practice daily, and you&apos;ll get there. It&apos;s one of the most rewarding skills in fitness.</p>
+        <p>Already strong but need more core work? Start with <Link href="/blog/plank-variations-core-strength" style={{ color: '#00FF87' }}>advanced plank variations</Link>. Want a broader bodyweight program? Check the <Link href="/blog/calisthenics-for-beginners-complete-guide" style={{ color: '#00FF87' }}>calisthenics beginner guide</Link>.</p>
+      </>
+    ),
+  }
 }
 
 export function generateStaticParams() {
