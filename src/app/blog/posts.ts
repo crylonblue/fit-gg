@@ -9,6 +9,22 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'active-recovery-day-guide',
+    title: 'Complete Guide to Active Recovery Days: What to Do, Why It Works (2026)',
+    description: 'Active recovery days accelerate muscle repair, reduce soreness, and keep your fitness streak alive. Here\'s exactly what to do on rest days — with a full routine.',
+    date: '2026-03-05',
+    readTime: '10 min read',
+    category: 'Recovery',
+  },
+  {
+    slug: 'best-mobility-exercises-desk-workers',
+    title: 'Best Mobility Exercises for Desk Workers: 15-Minute Daily Routine (2026)',
+    description: 'Sitting all day wrecks your body. These mobility exercises fix stiff hips, tight shoulders, and rounded posture — in just 15 minutes. Includes a follow-along routine.',
+    date: '2026-03-05',
+    readTime: '11 min read',
+    category: 'Mobility',
+  },
+  {
     slug: 'yoga-for-beginners-at-home',
     title: 'Yoga for Beginners at Home: A 15-Minute Daily Flow (No Experience Needed)',
     description: 'A complete beginner yoga routine you can do at home in 15 minutes. No flexibility required. Includes every pose explained step-by-step with modifications.',

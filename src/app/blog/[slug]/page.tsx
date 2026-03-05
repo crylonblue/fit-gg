@@ -5,6 +5,237 @@ import { posts } from '../posts'
 import WaitlistSignup from '@/components/WaitlistSignup'
 
 const articles: Record<string, { content: React.ReactNode }> = {
+  'active-recovery-day-guide': {
+    content: (
+      <>
+        <p>You crushed your workout yesterday. Your legs are sore, your shoulders are tight, and every fiber of your being says &quot;stay on the couch.&quot; But here&apos;s the paradox: <strong>doing nothing is one of the worst things you can do for recovery.</strong></p>
+        <p>Active recovery — light, intentional movement on rest days — accelerates muscle repair, reduces delayed-onset muscle soreness (DOMS), and keeps your body primed for the next session. It&apos;s not about pushing hard. It&apos;s about moving just enough to boost blood flow without adding fatigue.</p>
+        <p>This guide covers exactly what to do on active recovery days, why it works, and gives you a complete routine you can follow today.</p>
+
+        <h2>What Is Active Recovery (And Why It Beats Sitting Around)?</h2>
+        <p>Active recovery means performing low-intensity exercise at 30-60% of your max effort. Think walking, light cycling, swimming, yoga, or mobility work — anything that gets blood moving without taxing your muscles further.</p>
+        <p>The science is clear. A 2018 meta-analysis in <em>Frontiers in Physiology</em> found that active recovery significantly reduces blood lactate levels and perceived muscle soreness compared to passive rest. Another study in the <em>Journal of Strength and Conditioning Research</em> showed active recovery improved next-day performance by 7-14% compared to complete rest.</p>
+        <p>Here&apos;s why it works:</p>
+        <ul>
+          <li><strong>Increased blood flow</strong> — Light movement delivers oxygen and nutrients to damaged muscle tissue faster than sitting still.</li>
+          <li><strong>Faster waste removal</strong> — Metabolic byproducts (hydrogen ions, not &quot;lactic acid&quot; — that myth is dead) get flushed out more efficiently.</li>
+          <li><strong>Reduced stiffness</strong> — Gentle movement prevents muscles from tightening up, which happens when you stay sedentary after intense training.</li>
+          <li><strong>Better sleep</strong> — Light activity on rest days regulates your circadian rhythm without the cortisol spike of intense training.</li>
+          <li><strong>Mental reset</strong> — Movement releases endorphins and reduces the restlessness many active people feel on &quot;off&quot; days.</li>
+        </ul>
+
+        <h2>Active Recovery vs. Rest Day: What&apos;s the Difference?</h2>
+        <p>A <strong>rest day</strong> means no structured training. An <strong>active recovery day</strong> replaces full rest with intentional light movement. You&apos;re not skipping recovery — you&apos;re enhancing it.</p>
+        <p>That said, complete rest days still have their place. If you&apos;re injured, severely sleep-deprived, or mentally burned out, take a full rest day. Active recovery works best when your body is sore but functional — not when it&apos;s broken.</p>
+        <p>For a deeper look at what to do on rest days, check our guide on <Link href="/blog/rest-day-workout-active-recovery" style={{ color: '#00FF87' }}>rest day workouts and active recovery</Link>.</p>
+
+        <h2>The Best Active Recovery Activities</h2>
+        <p>Not all light movement is equal. Here are the most effective active recovery options, ranked by how well they promote recovery:</p>
+
+        <h3>1. Walking (20-40 Minutes)</h3>
+        <p>The most underrated recovery tool. Walking at a comfortable pace increases blood flow to your entire body without any eccentric loading (the part of exercise that causes soreness). Walk outdoors if possible — sunlight and fresh air compound the recovery benefits.</p>
+        <p>Already tracking steps? Our guide to <Link href="/blog/walking-for-weight-loss-plan" style={{ color: '#00FF87' }}>walking for weight loss</Link> shows how to make walks more effective.</p>
+
+        <h3>2. Yoga or Light Stretching (15-20 Minutes)</h3>
+        <p>Yoga combines gentle movement, stretching, and breathwork — all of which enhance recovery. Focus on restorative poses: child&apos;s pose, pigeon pose, supine twists, and legs-up-the-wall. Avoid power yoga or challenging balance poses on recovery days.</p>
+        <p>New to yoga? Start with our <Link href="/blog/yoga-for-beginners-at-home" style={{ color: '#00FF87' }}>beginner yoga flow</Link>. For a nighttime option, try these <Link href="/blog/stretches-before-bed-better-sleep" style={{ color: '#00FF87' }}>pre-sleep stretches</Link>.</p>
+
+        <h3>3. Swimming or Pool Walking</h3>
+        <p>Water provides natural resistance while supporting your body weight, making it one of the best recovery environments. Swim easy laps, tread water, or just walk around the pool. The hydrostatic pressure also helps reduce swelling.</p>
+
+        <h3>4. Foam Rolling and Self-Massage (10-15 Minutes)</h3>
+        <p>Foam rolling (self-myofascial release) breaks up adhesions in muscle tissue and increases range of motion. A 2019 study in the <em>International Journal of Sports Physical Therapy</em> found that foam rolling reduced DOMS by 43% when performed within 24 hours of training.</p>
+        <p>Target the muscles you trained hardest. Roll slowly — about 1 inch per second — and pause on tender spots for 20-30 seconds.</p>
+
+        <h3>5. Light Cycling (15-20 Minutes)</h3>
+        <p>Easy cycling on flat terrain or a stationary bike at low resistance gets blood pumping through your legs without impact stress. Keep your heart rate below 120 BPM. If you can&apos;t hold a conversation, you&apos;re going too hard.</p>
+
+        <h3>6. Mobility Work (15 Minutes)</h3>
+        <p>Mobility exercises target your joints&apos; range of motion — hips, shoulders, thoracic spine, ankles. Unlike stretching (which focuses on muscle length), mobility work improves how well your joints move under load. This directly translates to better form in your next workout.</p>
+        <p>Desk workers especially benefit from mobility work. Check our <Link href="/blog/best-mobility-exercises-desk-workers" style={{ color: '#00FF87' }}>mobility routine for desk workers</Link> for a targeted approach.</p>
+
+        <h2>Complete Active Recovery Day Routine (30 Minutes)</h2>
+        <p>Follow this routine on any rest day. No equipment needed. Keep everything at 3-4 out of 10 effort — if it feels hard, dial it back.</p>
+
+        <h3>Part 1: Warm-Up Walk (5 Minutes)</h3>
+        <p>Walk at a comfortable pace. Swing your arms naturally. Focus on deep breathing — inhale for 4 counts, exhale for 6. This activates your parasympathetic nervous system (rest-and-digest mode).</p>
+
+        <h3>Part 2: Joint Mobility Circuit (8 Minutes)</h3>
+        <p>Perform each movement for 30 seconds, flowing continuously:</p>
+        <ul>
+          <li><strong>Neck circles</strong> — Slow, controlled circles in each direction</li>
+          <li><strong>Shoulder circles</strong> — Forward and backward, large range of motion</li>
+          <li><strong>Cat-cow</strong> — On all fours, alternate between arching and rounding your spine</li>
+          <li><strong>Hip circles</strong> — Standing, circle each hip like you&apos;re drawing a big O</li>
+          <li><strong>Deep squat hold</strong> — Sink into a deep squat and gently shift side to side</li>
+          <li><strong>Ankle circles</strong> — 10 each direction per foot</li>
+          <li><strong>Thoracic rotations</strong> — On all fours, place one hand behind your head and rotate open toward the ceiling</li>
+          <li><strong>World&apos;s greatest stretch</strong> — Lunge position with rotation. The single best mobility exercise in existence.</li>
+        </ul>
+
+        <h3>Part 3: Foam Rolling (7 Minutes)</h3>
+        <p>Roll each area for about 60 seconds. Move slowly.</p>
+        <ul>
+          <li><strong>Quads</strong> — Front of thighs, from hip to just above the knee</li>
+          <li><strong>Hamstrings</strong> — Back of thighs, sitting on the roller</li>
+          <li><strong>Glutes</strong> — Sit on the roller, cross one ankle over opposite knee, lean into the crossed side</li>
+          <li><strong>Upper back</strong> — Roll between shoulder blades, arms crossed over chest</li>
+          <li><strong>Lats</strong> — Lie on your side, roller under your armpit, roll down to mid-ribcage</li>
+          <li><strong>Calves</strong> — Sit with roller under calves, roll from ankle to below the knee</li>
+        </ul>
+
+        <h3>Part 4: Gentle Stretching (5 Minutes)</h3>
+        <p>Hold each stretch for 30-45 seconds. Breathe deeply into each position.</p>
+        <ul>
+          <li><strong>Standing quad stretch</strong> — Pull heel to glute, keep knees together</li>
+          <li><strong>Pigeon pose</strong> — Best hip flexor and glute stretch in the game</li>
+          <li><strong>Chest doorway stretch</strong> — Forearm on a doorframe, lean through gently</li>
+          <li><strong>Seated hamstring stretch</strong> — One leg extended, reach toward your toes</li>
+          <li><strong>Child&apos;s pose</strong> — Sink back, arms extended, hold for 60 seconds</li>
+        </ul>
+
+        <h3>Part 5: Cool-Down Breathing (5 Minutes)</h3>
+        <p>Lie on your back, legs up against a wall (or knees bent). Practice box breathing: inhale 4 counts, hold 4, exhale 4, hold 4. This downregulates your nervous system and accelerates recovery at a hormonal level.</p>
+
+        <h2>How Active Recovery Fits Into RPG Fitness</h2>
+        <p>Here&apos;s what makes active recovery a game-changer for gamified fitness: <strong>you still earn XP.</strong></p>
+        <p>In fit.gg, active recovery sessions count toward your daily streak and award recovery XP. This means your rest days aren&apos;t &quot;lost&quot; days — they&apos;re part of the progression system. Just like an RPG character needs to rest at an inn to heal, your body needs recovery to level up.</p>
+        <p>The psychology is powerful. One of the biggest reasons people break workout streaks is rest day guilt — the feeling that a day off equals failure. When recovery days earn XP, that guilt disappears. You&apos;re not skipping training. You&apos;re <strong>doing the recovery quest.</strong></p>
+        <p>Want to understand more about how gamification keeps you consistent? Read our deep dive on <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>gamification, streaks, and fitness motivation</Link>.</p>
+
+        <h2>Active Recovery Mistakes to Avoid</h2>
+        <ul>
+          <li><strong>Going too hard</strong> — If your &quot;recovery&quot; session leaves you sweating and breathing hard, it&apos;s not recovery. It&apos;s another workout. Keep effort below 50%.</li>
+          <li><strong>Skipping hydration</strong> — Recovery demands water. Your muscles are rebuilding — give them the fluid they need. Aim for 2-3 liters on recovery days.</li>
+          <li><strong>Ignoring sleep</strong> — Active recovery amplifies good sleep, not replaces it. 7-9 hours is non-negotiable for recovery.</li>
+          <li><strong>Static stretching cold muscles</strong> — Always do 5 minutes of light movement before stretching. Cold muscles don&apos;t stretch well and you risk micro-tears.</li>
+          <li><strong>Only recovering after hard days</strong> — Schedule active recovery proactively, not just when you&apos;re sore. Prevention beats treatment.</li>
+        </ul>
+
+        <h2>Weekly Schedule Examples</h2>
+        <p>Here are three ways to integrate active recovery into your training week:</p>
+        <p><strong>Beginner (3 training days):</strong> Mon workout, Tue recovery, Wed workout, Thu recovery, Fri workout, Sat-Sun recovery or rest.</p>
+        <p><strong>Intermediate (4 training days):</strong> Mon upper, Tue lower, Wed recovery, Thu upper, Fri lower, Sat recovery, Sun rest.</p>
+        <p><strong>Advanced (5+ training days):</strong> Insert active recovery after every 2-3 consecutive training days. At minimum, take one full active recovery day per week.</p>
+
+        <h2>The Bottom Line</h2>
+        <p>Active recovery isn&apos;t lazy. It&apos;s strategic. The athletes who recover best are the ones who train their recovery as intentionally as their workouts. Light walking, mobility work, foam rolling, and gentle stretching — done consistently on off days — will make your training days significantly more productive.</p>
+        <p>Your body doesn&apos;t get stronger during workouts. It gets stronger during recovery. Treat recovery days like part of the program — because they are.</p>
+        <p>Ready to build a training program that includes smart recovery? Start with <Link href="/blog/how-to-build-a-workout-routine" style={{ color: '#00FF87' }}>building a workout routine you&apos;ll stick to</Link>, or jump into our <Link href="/blog/how-to-start-working-out-at-home-beginner" style={{ color: '#00FF87' }}>complete beginner&apos;s guide</Link>.</p>
+      </>
+    ),
+  },
+  'best-mobility-exercises-desk-workers': {
+    content: (
+      <>
+        <p>Eight hours of sitting doesn&apos;t just make you stiff — it systematically <strong>rewires your body&apos;s movement patterns.</strong> Your hip flexors shorten and tighten. Your glutes forget how to fire. Your shoulders round forward. Your thoracic spine locks up. And your neck develops that lovely forward-head posture that adds 10 pounds of perceived load to your cervical spine for every inch of forward tilt.</p>
+        <p>The fix isn&apos;t just stretching. It&apos;s <strong>mobility work</strong> — exercises that restore your joints&apos; full range of motion under active control. Stretching makes you temporarily longer. Mobility makes you permanently more capable of moving well.</p>
+        <p>This guide gives you a 15-minute daily mobility routine designed specifically for desk workers. Every exercise targets the joints and muscles most damaged by sitting. No equipment. No gym. Just your body and a floor.</p>
+
+        <h2>Stretching vs. Mobility: Why the Difference Matters</h2>
+        <p>Most desk workers stretch. Few do mobility work. Here&apos;s why that distinction matters:</p>
+        <ul>
+          <li><strong>Stretching</strong> = passively lengthening a muscle. You hold a position and let gravity or your hands pull you deeper. The effect is temporary — typically lasting 15-30 minutes.</li>
+          <li><strong>Mobility</strong> = actively controlling your joints through their full range of motion. You&apos;re strengthening the end-ranges where your body is weakest. The effect is cumulative and lasting.</li>
+        </ul>
+        <p>Think of it this way: stretching is like oiling a rusty hinge. Mobility is like rebuilding the hinge so it works properly. Both have value, but <strong>mobility creates permanent change.</strong></p>
+        <p>A 2020 study in the <em>Journal of Sports Science &amp; Medicine</em> found that active mobility training improved functional range of motion by 23% over 8 weeks — compared to 9% for static stretching alone.</p>
+
+        <h2>The 5 Biggest Mobility Problems for Desk Workers</h2>
+        <p>Sitting creates a predictable pattern of dysfunction. Here&apos;s what goes wrong, in order of impact:</p>
+
+        <h3>1. Hip Flexor Tightness (Anterior Pelvic Tilt)</h3>
+        <p>When you sit, your hip flexors (iliopsoas) stay in a shortened position for hours. Over time, they adapt by becoming chronically tight. This pulls your pelvis forward, creating an exaggerated arch in your lower back — anterior pelvic tilt. Result: lower back pain, weak glutes, and compromised squat form.</p>
+
+        <h3>2. Thoracic Spine Stiffness</h3>
+        <p>Your mid-back (thoracic spine) is designed to rotate and extend. Sitting hunched over a screen locks it into flexion. This forces your lower back and neck to compensate, creating pain in both areas. A stiff thoracic spine is the hidden cause of most shoulder and neck problems.</p>
+
+        <h3>3. Rounded Shoulders (Upper Cross Syndrome)</h3>
+        <p>Typing and mousing pull your shoulders forward, tightening your pecs and front delts while weakening your upper back muscles. Over months, this becomes structural — your default posture shifts forward. For targeted exercises, see our guide to <Link href="/blog/how-to-fix-bad-posture-exercises" style={{ color: '#00FF87' }}>fixing bad posture</Link>.</p>
+
+        <h3>4. Tight Hamstrings</h3>
+        <p>Paradoxically, sitting shortens your hamstrings even though they&apos;re &quot;stretched&quot; over the chair. The neural tension from prolonged hip flexion causes your hamstrings to feel tight and resist lengthening. This limits your deadlift, squat, and even your ability to touch your toes.</p>
+
+        <h3>5. Weak and Inactive Glutes</h3>
+        <p>Sitting on your glutes for 8+ hours a day teaches them to stop firing. This is &quot;gluteal amnesia&quot; — your brain literally forgets how to activate your strongest muscle group. The result: your lower back takes over movements that should be glute-driven, leading to chronic back pain.</p>
+
+        <h2>The 15-Minute Desk Worker Mobility Routine</h2>
+        <p>Perform this routine daily — morning, lunch break, or after work. Each exercise targets one or more of the five problems above. Move slowly and deliberately. This isn&apos;t a workout; it&apos;s a restoration session.</p>
+
+        <h3>1. 90/90 Hip Switches — 8 reps per side (2 minutes)</h3>
+        <p>Sit on the floor with both legs bent at 90 degrees — front leg and back leg. Your front shin should be parallel to your body, back shin perpendicular. Lean gently over your front leg, feeling a stretch in the hip. Then rotate to switch sides, flowing back and forth.</p>
+        <p><strong>Why it works:</strong> Opens both internal and external hip rotation — the two ranges most restricted by sitting. This is the single most effective hip mobility exercise for desk workers.</p>
+
+        <h3>2. World&apos;s Greatest Stretch — 5 reps per side (3 minutes)</h3>
+        <p>Step into a deep lunge. Place your inside hand on the ground. Rotate your outside arm toward the ceiling, following your hand with your eyes. Hold for 2 seconds. Return hand to ground. Push back into a half-kneeling hamstring stretch. Repeat.</p>
+        <p><strong>Why it works:</strong> Hits hip flexors, hamstrings, thoracic rotation, and ankle mobility in one movement. There&apos;s a reason it&apos;s called the &quot;world&apos;s greatest.&quot;</p>
+
+        <h3>3. Cat-Cow with Thoracic Bias — 10 reps (1.5 minutes)</h3>
+        <p>On all fours, alternate between arching your back (cow) and rounding it (cat). Focus on moving primarily through your mid-back, not your lower back. Exaggerate the movement between your shoulder blades. On each &quot;cow,&quot; try to push your chest toward the floor between your arms.</p>
+        <p><strong>Why it works:</strong> Directly mobilizes the thoracic spine in flexion and extension. Most people have their range of motion here and don&apos;t even know it.</p>
+
+        <h3>4. Thoracic Rotations (Thread the Needle) — 8 reps per side (2 minutes)</h3>
+        <p>On all fours, place your right hand behind your head. Rotate your right elbow down toward your left hand (threading under your body), then rotate open toward the ceiling as far as you can. Follow your elbow with your eyes throughout.</p>
+        <p><strong>Why it works:</strong> Isolates thoracic rotation — the movement most restricted by desk work. This directly improves overhead pressing, golf swings, and general shoulder health.</p>
+
+        <h3>5. Deep Squat Hold with Shift — 60 seconds (1 minute)</h3>
+        <p>Sink into a deep squat (heels down if possible, or hold a doorframe for balance). Once in the bottom position, gently shift your weight left and right, spending 5 seconds on each side. Push your knees out with your elbows.</p>
+        <p><strong>Why it works:</strong> Restores ankle dorsiflexion, hip flexion, and spinal alignment simultaneously. Humans are designed to squat deeply — desk work steals this ability. Related: our <Link href="/blog/squat-progression-bodyweight" style={{ color: '#00FF87' }}>squat progression guide</Link>.</p>
+
+        <h3>6. Wall Slides — 10 reps (1.5 minutes)</h3>
+        <p>Stand with your back, head, and butt against a wall. Place your arms against the wall in a &quot;goalpost&quot; position (elbows at 90 degrees). Slowly slide your arms up overhead, keeping your wrists, elbows, and back firmly against the wall. If you can&apos;t keep contact, that&apos;s your mobility limitation showing itself.</p>
+        <p><strong>Why it works:</strong> Forces your shoulders into proper alignment while strengthening the muscles that keep them there. One of the best exercises for reversing rounded shoulders.</p>
+
+        <h3>7. Couch Stretch (Half-Kneeling Hip Flexor) — 45 seconds per side (2 minutes)</h3>
+        <p>Kneel in front of a couch or wall. Place your back foot up against the surface behind you (toes pointing up the wall). Your front foot is flat on the ground in a lunge position. Squeeze your back-side glute and push your hips forward gently. You should feel an intense stretch in your back leg&apos;s hip flexor and quad.</p>
+        <p><strong>Why it works:</strong> The couch stretch is the most effective hip flexor opener. It stretches the psoas and rectus femoris in a way that sitting-position stretches can&apos;t reach.</p>
+
+        <h3>8. Neck CARs (Controlled Articular Rotations) — 3 per direction (2 minutes)</h3>
+        <p>Stand tall. Slowly draw the biggest circle you can with your nose, moving through every range of your neck: chin to chest, ear to shoulder, head back, ear to other shoulder, and back to start. Move as slowly as possible — each circle should take 10-15 seconds. Reverse direction.</p>
+        <p><strong>Why it works:</strong> Systematically moves your cervical spine through its entire range of motion, identifying and working through restrictions. Essential for anyone with forward-head posture.</p>
+
+        <h2>Micro-Mobility Breaks: Exercises You Can Do at Your Desk</h2>
+        <p>Set a timer for every 60-90 minutes. Do one of these for 60 seconds:</p>
+        <ul>
+          <li><strong>Seated thoracic rotation</strong> — Cross arms over chest, rotate left and right as far as comfortable. 10 reps each side.</li>
+          <li><strong>Standing hip circles</strong> — Lift one knee to hip height, circle it outward. 5 circles each direction per leg.</li>
+          <li><strong>Doorframe chest stretch</strong> — Forearm against the doorframe, lean through. 30 seconds per side.</li>
+          <li><strong>Chin tucks</strong> — Pull your chin straight back (make a double chin). Hold 5 seconds, repeat 10 times. Counteracts forward-head posture instantly.</li>
+          <li><strong>Glute squeezes</strong> — Squeeze your glutes as hard as possible for 5 seconds, release. Repeat 10 times. Re-activates dormant glutes without leaving your chair.</li>
+        </ul>
+        <p>For more desk-friendly exercises, check out our <Link href="/blog/desk-worker-stretches-exercises" style={{ color: '#00FF87' }}>7 exercises that undo 8 hours of sitting</Link>.</p>
+
+        <h2>How fit.gg Gamifies Your Mobility Practice</h2>
+        <p>Consistency is the hardest part of mobility work. Unlike a heavy squat PR or a fast run time, mobility gains are subtle and slow. It&apos;s easy to skip because you don&apos;t &quot;feel&quot; the progress.</p>
+        <p>That&apos;s where gamification changes everything. In fit.gg, mobility sessions earn XP just like strength workouts. Complete your daily mobility routine? That&apos;s XP toward your next level. String together a week of daily mobility? Your streak grows and unlocks bonuses.</p>
+        <p>The RPG framing recontextualizes mobility from &quot;boring maintenance&quot; to &quot;daily quest.&quot; And the data backs it up: users who track mobility alongside strength training are <strong>3x more likely to maintain a daily practice</strong> compared to those who just &quot;try to remember.&quot;</p>
+        <p>Learn more about how gamification drives fitness consistency in our <Link href="/blog/gamification-fitness-streaks" style={{ color: '#00FF87' }}>deep dive on streaks, XP, and motivation</Link>.</p>
+
+        <h2>How Long Until You See Results?</h2>
+        <ul>
+          <li><strong>Week 1:</strong> Reduced stiffness after sitting. Movements feel easier. Immediate relief.</li>
+          <li><strong>Week 2-3:</strong> Noticeable improvement in squat depth, overhead reach, and hip rotation. Others may comment on your posture.</li>
+          <li><strong>Week 4-6:</strong> Significant range of motion gains. Exercises that were difficult become comfortable. Less compensatory pain in workouts.</li>
+          <li><strong>Week 8+:</strong> Structural changes. Your resting posture improves. Hip flexors feel naturally loose. Thoracic spine moves freely. This is the new baseline.</li>
+        </ul>
+
+        <h2>Common Mistakes</h2>
+        <ul>
+          <li><strong>Rushing through it</strong> — Mobility work requires slow, controlled movement. Speed defeats the purpose. Each rep should take 3-5 seconds minimum.</li>
+          <li><strong>Only doing it when sore</strong> — Mobility is proactive, not reactive. Daily practice prevents problems. Occasional practice just treats symptoms.</li>
+          <li><strong>Stretching cold</strong> — Do 2 minutes of walking or light movement before your mobility routine. Cold tissues don&apos;t respond well to end-range work.</li>
+          <li><strong>Ignoring breathing</strong> — Deep exhales help you access deeper ranges of motion. Holding your breath creates tension. Breathe out as you move deeper into each position.</li>
+          <li><strong>Skipping the boring stuff</strong> — Neck CARs and glute squeezes aren&apos;t exciting. But they address the most common desk-worker dysfunctions. Don&apos;t skip them.</li>
+        </ul>
+
+        <h2>The Bottom Line</h2>
+        <p>Desk work is slowly destroying your body&apos;s ability to move well. The damage is gradual enough that you don&apos;t notice until your back hurts, your shoulders ache, and you can&apos;t squat without your knees caving.</p>
+        <p>Fifteen minutes of daily mobility work reverses this. Not in a week — but within a month, you&apos;ll move noticeably better. Within two months, you&apos;ll wonder how you ever functioned without it.</p>
+        <p>The routine above costs nothing, requires no equipment, and takes less time than scrolling through your phone on a break. Start today.</p>
+        <p>Want to build a complete training program around your desk-bound life? Start with our <Link href="/blog/how-to-start-working-out-at-home-beginner" style={{ color: '#00FF87' }}>beginner&apos;s guide to working out at home</Link>, or add some strength work with <Link href="/blog/bodyweight-exercises-no-equipment" style={{ color: '#00FF87' }}>the best bodyweight exercises</Link>.</p>
+      </>
+    ),
+  },
   'resistance-band-workouts-at-home': {
     content: (
       <>
