@@ -1,16 +1,52 @@
 'use client'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Particles from './Particles'
 import WaitlistSignup from './WaitlistSignup'
 
 const lines = [
-  '🔥  47 day streak',
-  '⚡  Level 12 reached',
-  '🏆  Promoted to Gold League',
-  '💪  Squats 101 mastered',
+  '🔥  47 day streak — @darkslayer_99',
+  '⚡  Level 12 reached — @fitwarrior',
+  '🏆  Promoted to Gold League — @xp_grinder',
+  '💪  Squats 101 mastered — @noob_gains',
   '🎯  Session complete — 92% accuracy',
   '🌳  New skill unlocked: Diamond Pushups',
 ]
+
+function AnimatedStat({ target, suffix, label }: { target: number; suffix: string; label: string }) {
+  const [count, setCount] = useState(0)
+  const [started, setStarted] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setStarted(true), 800)
+    return () => clearTimeout(timer)
+  }, [])
+
+  useEffect(() => {
+    if (!started) return
+    const duration = 2000
+    const steps = 60
+    const increment = target / steps
+    let current = 0
+    const timer = setInterval(() => {
+      current += increment
+      if (current >= target) { setCount(target); clearInterval(timer) }
+      else setCount(Math.floor(current))
+    }, duration / steps)
+    return () => clearInterval(timer)
+  }, [started, target])
+
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 900, fontFamily: 'var(--font-heading)', color: '#00FF87', letterSpacing: '-0.03em' }}>
+        {count.toLocaleString()}{suffix}
+      </div>
+      <div style={{ fontSize: '11px', color: '#555', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.12em', marginTop: '4px' }}>
+        {label}
+      </div>
+    </div>
+  )
+}
 
 export default function Hero() {
   const [idx, setIdx] = useState(0)
@@ -20,41 +56,69 @@ export default function Hero() {
   }, [])
 
   return (
-    <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+    <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', overflow: 'hidden' }}>
       <Particles />
 
-      {/* Radial glows */}
-      <div style={{ position: 'absolute', top: '-20%', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '800px', background: 'radial-gradient(circle, rgba(0,255,135,0.04) 0%, transparent 60%)', pointerEvents: 'none' }} />
+      {/* Atmospheric light rays */}
+      <div className="light-rays" />
 
-      <div className="container" style={{ position: 'relative', padding: '0 24px' }}>
-        <h1 style={{ fontSize: 'clamp(4.5rem, 12vw, 10rem)', fontWeight: 800, lineHeight: 0.9, letterSpacing: '-0.05em', marginBottom: '32px' }}>
-          YOUR BODY<span style={{ color: '#222' }}>.</span><br />
-          <span className="text-gradient">YOUR GAME<span style={{ WebkitTextFillColor: '#222' }}>.</span></span>
+      {/* Radial glows */}
+      <div style={{ position: 'absolute', top: '-30%', left: '50%', transform: 'translateX(-50%)', width: '1000px', height: '1000px', background: 'radial-gradient(circle, rgba(0,255,135,0.06) 0%, transparent 50%)', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', top: '20%', right: '-10%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(168,85,247,0.03) 0%, transparent 50%)', pointerEvents: 'none' }} />
+
+      <div className="container" style={{ position: 'relative', padding: '120px 24px 80px' }}>
+        {/* Floating shield logo */}
+        <div style={{ marginBottom: '32px', animation: 'shield-float 4s ease-in-out infinite, shield-glow 3s ease-in-out infinite' }}>
+          <Image src="/logo-shield.png" alt="fit.gg shield" width={80} height={80} priority />
+        </div>
+
+        {/* MASSIVE headline */}
+        <h1 style={{
+          fontSize: 'clamp(4rem, 13vw, 11rem)',
+          fontWeight: 900,
+          lineHeight: 0.88,
+          letterSpacing: '-0.06em',
+          marginBottom: '32px',
+          fontFamily: 'var(--font-heading)',
+        }}>
+          YOUR BODY<span style={{ color: '#1a1a1a' }}>.</span><br />
+          <span className="text-gradient">YOUR GAME<span style={{ WebkitTextFillColor: '#1a1a1a' }}>.</span></span>
         </h1>
 
-        <p style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: '#666', lineHeight: 1.8, maxWidth: '480px', margin: '0 auto 48px', fontWeight: 500 }}>
+        <p style={{
+          fontSize: 'clamp(1rem, 2vw, 1.2rem)', color: '#666', lineHeight: 1.8,
+          maxWidth: '460px', margin: '0 auto 48px', fontWeight: 500,
+        }}>
           5-minute daily workouts with RPG progression.<br />
-          Build streaks. Climb leagues. Level up.
+          Build streaks. Climb leagues. Level up your life.
         </p>
 
-        <div style={{ marginBottom: '56px', maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto' }}>
+        {/* Waitlist CTA */}
+        <div style={{ marginBottom: '64px', maxWidth: '500px', marginLeft: 'auto', marginRight: 'auto' }}>
           <WaitlistSignup source="hero" />
+        </div>
+
+        {/* Animated stat counters */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 'clamp(32px, 6vw, 64px)', marginBottom: '48px', flexWrap: 'wrap' }}>
+          <AnimatedStat target={2847} suffix="+" label="Warriors" />
+          <AnimatedStat target={50000} suffix="+" label="Workouts Done" />
+          <AnimatedStat target={98} suffix="%" label="Stick Rate" />
         </div>
 
         {/* Live feed ticker */}
         <div style={{ height: '28px', overflow: 'hidden' }}>
           <div key={idx} className="cursor" style={{
-            fontSize: '14px', color: '#00FF87', fontWeight: 600,
+            fontSize: '13px', color: '#00FF87', fontWeight: 600,
             fontFamily: 'var(--font-heading)', letterSpacing: '0.01em',
             animation: 'count-up 0.4s ease-out',
           }}>
             {lines[idx]}
           </div>
         </div>
-
-        {/* count-up keyframe inline since it's small */}
-        <style>{`@keyframes count-up { 0% { opacity:0; transform:translateY(12px); } 100% { opacity:1; transform:translateY(0); }}`}</style>
       </div>
+
+      {/* Bottom fade */}
+      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '120px', background: 'linear-gradient(transparent, #000)', pointerEvents: 'none' }} />
     </section>
   )
 }

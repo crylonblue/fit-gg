@@ -13,7 +13,7 @@ RPG fitness app. Gamifies workouts with XP, streaks, levels, and character class
 
 ## What's Built
 - Landing page with 3D hero, class selection, waitlist
-- 28 SEO blog posts (workout guides, nutrition, stretching)
+- 31 SEO blog posts (workout guides, nutrition, stretching, recovery, mobility)
 - App shell: dashboard, workout session player, progress page, profile
 - 10 progressive workout sessions (JSON data)
 - Streak + XP system
