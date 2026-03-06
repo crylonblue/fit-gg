@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { Trophy, Flame } from 'lucide-react'
 
 interface SessionCompleteProps {
   sessionTitle: string
@@ -29,7 +30,9 @@ export default function SessionComplete({ sessionTitle, day, xpEarned }: Session
 
   return (
     <div className={`flex flex-col items-center justify-center min-h-screen px-6 text-center transition-all duration-700 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-      <div className="text-7xl mb-6">🏆</div>
+      <div className="mb-6" style={{ display: 'flex', justifyContent: 'center' }}>
+        <Trophy size={72} strokeWidth={1.5} style={{ color: '#FFD700', filter: 'drop-shadow(0 0 20px rgba(255,215,0,0.3))' }} />
+      </div>
 
       <h1
         className="text-4xl md:text-5xl font-bold font-heading mb-2"
@@ -48,7 +51,7 @@ export default function SessionComplete({ sessionTitle, day, xpEarned }: Session
       </div>
 
       <div className="flex items-center gap-2 text-xl text-gray-300 mb-12">
-        <span>🔥</span>
+        <Flame size={20} strokeWidth={2} style={{ color: '#FF6B35' }} />
         <span>Keep the streak alive — come back tomorrow!</span>
       </div>
 

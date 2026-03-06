@@ -1,10 +1,11 @@
 'use client'
+import { Zap, Dumbbell, ArrowRight } from 'lucide-react'
 import { useReveal } from '@/hooks/useReveal'
 
 const steps = [
-  { num: '01', word: 'OPEN', desc: 'Your daily session is waiting. Picked for your level. Tap and go.', color: '#00FF87', icon: '⚡' },
-  { num: '02', word: 'MOVE', desc: '5 minutes. Bodyweight only. Your bedroom is your arena.', color: '#A855F7', icon: '💪' },
-  { num: '03', word: 'LEVEL UP', desc: 'Earn XP. Extend your streak. Climb the leaderboard. Repeat.', color: '#3B82F6', icon: '🚀' },
+  { num: '01', word: 'OPEN', desc: 'Your daily session is waiting. Picked for your level. Tap and go.', color: '#00FF87', icon: <Zap size={22} strokeWidth={2} style={{ color: '#00FF87' }} /> },
+  { num: '02', word: 'MOVE', desc: '5 minutes. Bodyweight only. Your bedroom is your arena.', color: '#A855F7', icon: <Dumbbell size={22} strokeWidth={2} style={{ color: '#A855F7' }} /> },
+  { num: '03', word: 'LEVEL UP', desc: 'Earn XP. Extend your streak. Climb the leaderboard. Repeat.', color: '#3B82F6', icon: <ArrowRight size={22} strokeWidth={2} style={{ color: '#3B82F6' }} /> },
 ]
 
 export default function HowItWorks() {
@@ -50,6 +51,7 @@ export default function HowItWorks() {
                 <div className="hex-icon" style={{
                   background: `${s.color}15`, margin: '0 auto 20px',
                   border: `1px solid ${s.color}30`,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}>
                   {s.icon}
                 </div>

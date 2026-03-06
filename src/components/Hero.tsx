@@ -1,16 +1,17 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { Flame, Zap, Trophy, Dumbbell, Target, TreePine } from 'lucide-react'
 import Particles from './Particles'
 import WaitlistSignup from './WaitlistSignup'
 
-const lines = [
-  '🔥  47 day streak — @darkslayer_99',
-  '⚡  Level 12 reached — @fitwarrior',
-  '🏆  Promoted to Gold League — @xp_grinder',
-  '💪  Squats 101 mastered — @noob_gains',
-  '🎯  Session complete — 92% accuracy',
-  '🌳  New skill unlocked: Diamond Pushups',
+const lines: { icon: React.ReactNode; text: string }[] = [
+  { icon: <Flame size={14} className="inline" style={{ color: '#FF6B35' }} />, text: '47 day streak — @darkslayer_99' },
+  { icon: <Zap size={14} className="inline" style={{ color: '#FBBF24' }} />, text: 'Level 12 reached — @fitwarrior' },
+  { icon: <Trophy size={14} className="inline" style={{ color: '#FFD700' }} />, text: 'Promoted to Gold League — @xp_grinder' },
+  { icon: <Dumbbell size={14} className="inline" style={{ color: '#A855F7' }} />, text: 'Squats 101 mastered — @noob_gains' },
+  { icon: <Target size={14} className="inline" style={{ color: '#3B82F6' }} />, text: 'Session complete — 92% accuracy' },
+  { icon: <TreePine size={14} className="inline" style={{ color: '#00FF87' }} />, text: 'New skill unlocked: Diamond Pushups' },
 ]
 
 function AnimatedStat({ target, suffix, label }: { target: number; suffix: string; label: string }) {
@@ -111,8 +112,10 @@ export default function Hero() {
             fontSize: '13px', color: '#00FF87', fontWeight: 600,
             fontFamily: 'var(--font-heading)', letterSpacing: '0.01em',
             animation: 'count-up 0.4s ease-out',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
           }}>
-            {lines[idx]}
+            {lines[idx].icon}
+            <span>{lines[idx].text}</span>
           </div>
         </div>
       </div>

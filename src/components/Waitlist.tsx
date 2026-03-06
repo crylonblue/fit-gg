@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import { Shield } from 'lucide-react'
 import { useReveal } from '@/hooks/useReveal'
 
 export default function Waitlist() {
@@ -60,7 +61,9 @@ export default function Waitlist() {
 
           {submitted ? (
             <div>
-              <div style={{ fontSize: '48px', marginBottom: '16px' }}>🎮</div>
+              <div style={{ marginBottom: '16px', display: 'flex', justifyContent: 'center' }}>
+                <Shield size={48} strokeWidth={1.5} style={{ color: '#00FF87', filter: 'drop-shadow(0 0 12px rgba(0,255,135,0.3))' }} />
+              </div>
               <p style={{ fontSize: '32px', fontWeight: 900, textTransform: 'uppercase', color: '#00FF87', fontFamily: 'var(--font-heading)' }}>GG. You&apos;re in.</p>
               <p style={{ fontSize: '14px', color: '#444', marginTop: '8px' }}>We&apos;ll keep you posted.</p>
             </div>

@@ -1,11 +1,12 @@
 'use client'
 import { useState } from 'react'
+import { Dumbbell, Target, Zap, Gem, Lock, Check, Mountain, PersonStanding, CircleDot, Triangle, Armchair, Activity } from 'lucide-react'
 import { useReveal } from '@/hooks/useReveal'
 
 interface SkillNode {
   id: string
   label: string
-  emoji: string
+  icon: React.ReactNode
   x: number
   y: number
   unlocked: boolean
@@ -16,22 +17,22 @@ interface SkillNode {
 
 const nodes: SkillNode[] = [
   // Foundations tier
-  { id: 'squats', label: 'Squats 101', emoji: '🦵', x: 15, y: 15, unlocked: true, mastered: true, tier: 'foundations', description: 'Master basic squat form. 8 sessions to complete.' },
-  { id: 'pushups', label: 'Pushups 101', emoji: '💪', x: 40, y: 12, unlocked: true, mastered: true, tier: 'foundations', description: 'Learn proper pushup mechanics from the ground up.' },
-  { id: 'core', label: 'Core 101', emoji: '🎯', x: 65, y: 15, unlocked: true, mastered: true, tier: 'foundations', description: 'Build a solid core foundation with planks and crunches.' },
-  { id: 'mobility', label: 'Mobility', emoji: '🧘', x: 88, y: 12, unlocked: true, mastered: false, tier: 'foundations', description: 'Improve flexibility and range of motion. 6 sessions.' },
+  { id: 'squats', label: 'Squats 101', icon: <PersonStanding size={20} strokeWidth={2} />, x: 15, y: 15, unlocked: true, mastered: true, tier: 'foundations', description: 'Master basic squat form. 8 sessions to complete.' },
+  { id: 'pushups', label: 'Pushups 101', icon: <Dumbbell size={20} strokeWidth={2} />, x: 40, y: 12, unlocked: true, mastered: true, tier: 'foundations', description: 'Learn proper pushup mechanics from the ground up.' },
+  { id: 'core', label: 'Core 101', icon: <Target size={20} strokeWidth={2} />, x: 65, y: 15, unlocked: true, mastered: true, tier: 'foundations', description: 'Build a solid core foundation with planks and crunches.' },
+  { id: 'mobility', label: 'Mobility', icon: <Activity size={20} strokeWidth={2} />, x: 88, y: 12, unlocked: true, mastered: false, tier: 'foundations', description: 'Improve flexibility and range of motion. 6 sessions.' },
 
   // Intermediate tier
-  { id: 'jump-squats', label: 'Jump Squats', emoji: '⚡', x: 10, y: 42, unlocked: true, mastered: false, tier: 'intermediate', description: 'Add explosiveness to your squats. Plyometric power.' },
-  { id: 'diamond', label: 'Diamond Push', emoji: '💎', x: 32, y: 38, unlocked: true, mastered: false, tier: 'intermediate', description: 'Narrow grip pushups targeting triceps. 10 sessions.' },
-  { id: 'mountain', label: 'Mountain Climbers', emoji: '⛰️', x: 55, y: 42, unlocked: false, mastered: false, tier: 'intermediate', description: 'High-intensity cardio meets core strength.' },
-  { id: 'lunges', label: 'Lunge Mastery', emoji: '🏃', x: 78, y: 38, unlocked: false, mastered: false, tier: 'intermediate', description: 'Single-leg strength and balance training.' },
+  { id: 'jump-squats', label: 'Jump Squats', icon: <Zap size={20} strokeWidth={2} />, x: 10, y: 42, unlocked: true, mastered: false, tier: 'intermediate', description: 'Add explosiveness to your squats. Plyometric power.' },
+  { id: 'diamond', label: 'Diamond Push', icon: <Gem size={20} strokeWidth={2} />, x: 32, y: 38, unlocked: true, mastered: false, tier: 'intermediate', description: 'Narrow grip pushups targeting triceps. 10 sessions.' },
+  { id: 'mountain', label: 'Mountain Climbers', icon: <Mountain size={20} strokeWidth={2} />, x: 55, y: 42, unlocked: false, mastered: false, tier: 'intermediate', description: 'High-intensity cardio meets core strength.' },
+  { id: 'lunges', label: 'Lunge Mastery', icon: <PersonStanding size={20} strokeWidth={2} />, x: 78, y: 38, unlocked: false, mastered: false, tier: 'intermediate', description: 'Single-leg strength and balance training.' },
 
   // Advanced tier
-  { id: 'pistol', label: 'Pistol Squats', emoji: '🔫', x: 15, y: 68, unlocked: false, mastered: false, tier: 'advanced', description: 'The ultimate single-leg squat. Strength + balance mastery.' },
-  { id: 'pike', label: 'Pike Pushups', emoji: '🔺', x: 40, y: 72, unlocked: false, mastered: false, tier: 'advanced', description: 'Shoulder strength gateway to handstands.' },
-  { id: 'lsit', label: 'L-Sit Hold', emoji: '🪑', x: 65, y: 68, unlocked: false, mastered: false, tier: 'advanced', description: 'Core and tricep isometric hold. Pure strength.' },
-  { id: 'handstand', label: 'Handstand', emoji: '🤸', x: 88, y: 72, unlocked: false, mastered: false, tier: 'advanced', description: 'Wall-assisted to freestanding. The ultimate goal.' },
+  { id: 'pistol', label: 'Pistol Squats', icon: <CircleDot size={20} strokeWidth={2} />, x: 15, y: 68, unlocked: false, mastered: false, tier: 'advanced', description: 'The ultimate single-leg squat. Strength + balance mastery.' },
+  { id: 'pike', label: 'Pike Pushups', icon: <Triangle size={20} strokeWidth={2} />, x: 40, y: 72, unlocked: false, mastered: false, tier: 'advanced', description: 'Shoulder strength gateway to handstands.' },
+  { id: 'lsit', label: 'L-Sit Hold', icon: <Armchair size={20} strokeWidth={2} />, x: 65, y: 68, unlocked: false, mastered: false, tier: 'advanced', description: 'Core and tricep isometric hold. Pure strength.' },
+  { id: 'handstand', label: 'Handstand', icon: <PersonStanding size={20} strokeWidth={2} />, x: 88, y: 72, unlocked: false, mastered: false, tier: 'advanced', description: 'Wall-assisted to freestanding. The ultimate goal.' },
 ]
 
 const connections: [string, string][] = [
@@ -144,15 +145,26 @@ export default function SkillTree() {
                       zIndex: 1,
                       boxShadow: isActive ? `0 0 20px ${color}33` : node.mastered ? `0 0 12px ${color}22` : 'none',
                       opacity: node.unlocked ? 1 : 0.4,
+                      color: node.unlocked ? color : '#333',
                     }}
                   >
-                    <span style={{ fontSize: '20px', lineHeight: 1 }}>{node.unlocked ? node.emoji : '🔒'}</span>
+                    <span style={{ lineHeight: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      {node.unlocked ? node.icon : <Lock size={20} strokeWidth={2} style={{ color: '#333' }} />}
+                    </span>
                     <span style={{
                       fontSize: '7px', fontWeight: 700, color: node.mastered ? color : '#555',
                       textTransform: 'uppercase', letterSpacing: '0.02em', lineHeight: 1,
                       maxWidth: '48px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
                     }}>{node.label}</span>
-                    {node.mastered && <span style={{ position: 'absolute', top: '-6px', right: '-6px', fontSize: '12px' }}>✅</span>}
+                    {node.mastered && (
+                      <span style={{
+                        position: 'absolute', top: '-6px', right: '-6px',
+                        width: '18px', height: '18px', borderRadius: '50%',
+                        background: '#00FF87', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      }}>
+                        <Check size={10} strokeWidth={3} style={{ color: '#000' }} />
+                      </span>
+                    )}
                   </button>
                 )
               })}
@@ -169,14 +181,29 @@ export default function SkillTree() {
                 animation: 'count-up 0.3s ease-out',
               }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
-                  <span style={{ fontSize: '28px' }}>{activeNode.emoji}</span>
+                  <div style={{
+                    width: '40px', height: '40px', borderRadius: '10px',
+                    background: `${activeNode.tier === 'foundations' ? '#00FF87' : activeNode.tier === 'intermediate' ? '#F97316' : '#A855F7'}15`,
+                    border: `1px solid ${activeNode.tier === 'foundations' ? '#00FF87' : activeNode.tier === 'intermediate' ? '#F97316' : '#A855F7'}25`,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    color: activeNode.tier === 'foundations' ? '#00FF87' : activeNode.tier === 'intermediate' ? '#F97316' : '#A855F7',
+                  }}>
+                    {activeNode.icon}
+                  </div>
                   <div>
                     <h4 style={{ fontSize: '16px', fontWeight: 800 }}>{activeNode.label}</h4>
                     <span style={{
                       fontSize: '10px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em',
                       color: activeNode.mastered ? '#00FF87' : activeNode.unlocked ? '#F97316' : '#555',
+                      display: 'inline-flex', alignItems: 'center', gap: '4px',
                     }}>
-                      {activeNode.mastered ? '✓ Mastered' : activeNode.unlocked ? 'In Progress' : '🔒 Locked'}
+                      {activeNode.mastered ? (
+                        <><Check size={10} strokeWidth={3} /> Mastered</>
+                      ) : activeNode.unlocked ? (
+                        'In Progress'
+                      ) : (
+                        <><Lock size={10} strokeWidth={2} /> Locked</>
+                      )}
                     </span>
                   </div>
                 </div>

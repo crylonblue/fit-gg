@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { Timer, Home, Target, TreePine, Star } from 'lucide-react'
 import { useReveal } from '@/hooks/useReveal'
 
 function AnimatedNumber({ target, suffix = '' }: { target: number; suffix?: string }) {
@@ -32,16 +33,16 @@ function AnimatedNumber({ target, suffix = '' }: { target: number; suffix?: stri
 }
 
 const stats = [
-  { value: 5, suffix: ' min', label: 'Per session', icon: '⏱️' },
-  { value: 0, suffix: '', label: 'Equipment needed', display: 'ZERO', icon: '🏠' },
-  { value: 200, suffix: '+', label: 'Guided sessions', icon: '🎯' },
-  { value: 30, suffix: '+', label: 'Progressive skills', icon: '🌳' },
+  { value: 5, suffix: ' min', label: 'Per session', icon: <Timer size={24} strokeWidth={2} style={{ color: '#00FF87' }} /> },
+  { value: 0, suffix: '', label: 'Equipment needed', display: 'ZERO', icon: <Home size={24} strokeWidth={2} style={{ color: '#00FF87' }} /> },
+  { value: 200, suffix: '+', label: 'Guided sessions', icon: <Target size={24} strokeWidth={2} style={{ color: '#00FF87' }} /> },
+  { value: 30, suffix: '+', label: 'Progressive skills', icon: <TreePine size={24} strokeWidth={2} style={{ color: '#00FF87' }} /> },
 ]
 
 const testimonials = [
-  { name: 'Alex K.', role: 'Software Engineer', avatar: '🧑‍💻', text: 'Finally something that sticks. The streak system is genuinely addictive — 47 days and counting.', stars: 5 },
-  { name: 'Sarah M.', role: 'Gamer & Streamer', avatar: '🎮', text: 'I treat it like a daily quest. 5 minutes between games, and I actually feel the difference.', stars: 5 },
-  { name: 'Jordan T.', role: 'Remote Worker', avatar: '💼', text: 'My back pain is gone after 3 weeks. The skill tree makes me want to unlock everything.', stars: 5 },
+  { name: 'Alex K.', initials: 'AK', role: 'Software Engineer', color: '#3B82F6', text: 'Finally something that sticks. The streak system is genuinely addictive — 47 days and counting.', stars: 5 },
+  { name: 'Sarah M.', initials: 'SM', role: 'Gamer & Streamer', color: '#A855F7', text: 'I treat it like a daily quest. 5 minutes between games, and I actually feel the difference.', stars: 5 },
+  { name: 'Jordan T.', initials: 'JT', role: 'Remote Worker', color: '#F97316', text: 'My back pain is gone after 3 weeks. The skill tree makes me want to unlock everything.', stars: 5 },
 ]
 
 export default function SocialProof() {
@@ -53,7 +54,7 @@ export default function SocialProof() {
         <div ref={ref} className="reveal stats-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', textAlign: 'center', marginBottom: '120px' }}>
           {stats.map((s, i) => (
             <div key={i} className="glass-card" style={{ padding: '32px 20px' }}>
-              <div style={{ fontSize: '28px', marginBottom: '12px' }}>{s.icon}</div>
+              <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'center' }}>{s.icon}</div>
               <div style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, fontFamily: 'var(--font-heading)', letterSpacing: '-0.04em', color: '#00FF87' }}>
                 {s.display || <AnimatedNumber target={s.value} suffix={s.suffix} />}
               </div>
@@ -79,7 +80,7 @@ export default function SocialProof() {
             <div key={i} className="glass-card" style={{ padding: '32px' }}>
               <div style={{ display: 'flex', gap: '2px', marginBottom: '16px' }}>
                 {Array.from({ length: t.stars }).map((_, j) => (
-                  <span key={j} style={{ color: '#FBBF24', fontSize: '14px' }}>★</span>
+                  <Star key={j} size={14} strokeWidth={0} fill="#FBBF24" style={{ color: '#FBBF24' }} />
                 ))}
               </div>
               <p style={{ color: '#aaa', fontSize: '15px', lineHeight: 1.7, marginBottom: '20px', fontStyle: 'italic' }}>
@@ -88,10 +89,11 @@ export default function SocialProof() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <div style={{
                   width: '40px', height: '40px', borderRadius: '50%',
-                  background: 'rgba(0,255,135,0.08)', border: '1px solid rgba(0,255,135,0.15)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px',
+                  background: `${t.color}15`, border: `1px solid ${t.color}30`,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '13px', fontWeight: 800, color: t.color, fontFamily: 'var(--font-heading)',
                 }}>
-                  {t.avatar}
+                  {t.initials}
                 </div>
                 <div>
                   <div style={{ fontWeight: 700, fontSize: '14px' }}>{t.name}</div>

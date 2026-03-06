@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import { ClipboardList, Activity, Dumbbell, Salad } from 'lucide-react'
 import { useReveal } from '@/hooks/useReveal'
 
 const featured = [
@@ -8,28 +9,28 @@ const featured = [
     title: 'How to Build a Workout Routine You\'ll Actually Stick To',
     category: 'Beginner',
     readTime: '10 min read',
-    emoji: '📋',
+    icon: <ClipboardList size={28} strokeWidth={1.5} style={{ color: '#00FF87' }} />,
   },
   {
     slug: 'yoga-for-beginners-at-home',
     title: 'Yoga for Beginners at Home: A 15-Minute Daily Flow',
     category: 'Beginner',
     readTime: '9 min read',
-    emoji: '🧘',
+    icon: <Activity size={28} strokeWidth={1.5} style={{ color: '#A855F7' }} />,
   },
   {
     slug: 'calisthenics-workout-plan-no-equipment',
     title: 'Calisthenics Workout Plan: Build Muscle With Zero Equipment',
     category: 'Workouts',
     readTime: '11 min read',
-    emoji: '💪',
+    icon: <Dumbbell size={28} strokeWidth={1.5} style={{ color: '#F97316' }} />,
   },
   {
     slug: 'simple-meal-prep-for-fitness-beginners',
     title: 'Simple Meal Prep for Fitness Beginners',
     category: 'Nutrition',
     readTime: '9 min read',
-    emoji: '🥗',
+    icon: <Salad size={28} strokeWidth={1.5} style={{ color: '#FBBF24' }} />,
   },
 ]
 
@@ -69,7 +70,7 @@ export default function FeaturedArticles() {
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = '#00FF87'; (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = '#1a1a1a'; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
                 >
-                  <div style={{ fontSize: '32px', marginBottom: '16px' }}>{post.emoji}</div>
+                  <div style={{ marginBottom: '16px' }}>{post.icon}</div>
                   <div style={{ display: 'flex', gap: '8px', marginBottom: '10px', fontSize: '12px' }}>
                     <span style={{ color: '#00FF87', fontWeight: 600 }}>{post.category}</span>
                     <span style={{ color: '#555' }}>·</span>

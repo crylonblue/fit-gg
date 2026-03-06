@@ -1,4 +1,5 @@
 'use client'
+import { Check, X, Award } from 'lucide-react'
 import { useReveal } from '@/hooks/useReveal'
 
 const competitors = [
@@ -47,7 +48,11 @@ export default function Comparison() {
                       borderLeft: i === 3 ? '1px solid rgba(0,255,135,0.1)' : 'none',
                       borderRight: i === 3 ? '1px solid rgba(0,255,135,0.1)' : 'none',
                     }}>
-                      {i === 3 && <div style={{ fontSize: '10px', color: '#00FF87', fontWeight: 700, marginBottom: '4px', letterSpacing: '0.15em' }}>⭐ BEST</div>}
+                      {i === 3 && (
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '4px', fontSize: '10px', color: '#00FF87', fontWeight: 700, marginBottom: '4px', letterSpacing: '0.15em' }}>
+                          <Award size={12} strokeWidth={2.5} style={{ color: '#00FF87' }} /> BEST
+                        </div>
+                      )}
                       {c.name}
                     </th>
                   ))}
@@ -64,15 +69,18 @@ export default function Comparison() {
                           textAlign: 'center',
                           padding: '16px 24px',
                           borderBottom: '1px solid rgba(255,255,255,0.03)',
-                          fontSize: '18px',
                           background: ci === 3 ? 'rgba(0,255,135,0.05)' : 'transparent',
                           borderLeft: ci === 3 ? '1px solid rgba(0,255,135,0.1)' : 'none',
                           borderRight: ci === 3 ? '1px solid rgba(0,255,135,0.1)' : 'none',
                         }}>
                           {val ? (
-                            <span style={{ color: '#00FF87', filter: ci === 3 ? 'drop-shadow(0 0 6px rgba(0,255,135,0.4))' : 'none' }}>✓</span>
+                            <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', borderRadius: '50%', background: 'rgba(0,255,135,0.1)', filter: ci === 3 ? 'drop-shadow(0 0 6px rgba(0,255,135,0.4))' : 'none' }}>
+                              <Check size={14} strokeWidth={3} style={{ color: '#00FF87' }} />
+                            </span>
                           ) : (
-                            <span style={{ color: '#333' }}>✕</span>
+                            <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', borderRadius: '50%', background: 'rgba(255,255,255,0.03)' }}>
+                              <X size={14} strokeWidth={2} style={{ color: '#333' }} />
+                            </span>
                           )}
                         </td>
                       )
@@ -90,12 +98,16 @@ export default function Comparison() {
               border: '1px solid rgba(0,255,135,0.15)',
               boxShadow: '0 0 40px rgba(0,255,135,0.05)',
             }}>
-              <div style={{ fontSize: '18px', fontWeight: 900, color: '#00FF87', fontFamily: 'var(--font-heading)', marginBottom: '20px', textAlign: 'center' }}>⭐ fit.gg</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', fontSize: '18px', fontWeight: 900, color: '#00FF87', fontFamily: 'var(--font-heading)', marginBottom: '20px', textAlign: 'center' }}>
+                <Award size={16} strokeWidth={2.5} style={{ color: '#00FF87' }} /> fit.gg
+              </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {features.map((f, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ color: '#aaa', fontSize: '14px' }}>{f.label}</span>
-                    <span style={{ color: '#00FF87', fontSize: '16px', filter: 'drop-shadow(0 0 4px rgba(0,255,135,0.4))' }}>✓</span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', borderRadius: '50%', background: 'rgba(0,255,135,0.1)', filter: 'drop-shadow(0 0 4px rgba(0,255,135,0.4))' }}>
+                      <Check size={14} strokeWidth={3} style={{ color: '#00FF87' }} />
+                    </span>
                   </div>
                 ))}
               </div>
@@ -106,7 +118,9 @@ export default function Comparison() {
                 {features.map((f, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ color: '#444', fontSize: '14px' }}>{f.label}</span>
-                    <span style={{ color: '#333', fontSize: '16px' }}>✕</span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', borderRadius: '50%', background: 'rgba(255,255,255,0.03)' }}>
+                      <X size={14} strokeWidth={2} style={{ color: '#333' }} />
+                    </span>
                   </div>
                 ))}
               </div>

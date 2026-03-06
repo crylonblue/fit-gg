@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { Instagram, Twitter } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -33,12 +34,12 @@ export default function Footer() {
 
         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
           {[
-            { href: 'https://twitter.com/fitdotgg', icon: '𝕏' },
-            { href: 'https://instagram.com/fit.gg', icon: '📸' },
-            { href: 'https://tiktok.com/@fitdotgg', icon: '🎵' },
+            { href: 'https://twitter.com/fitdotgg', icon: <Twitter size={18} strokeWidth={2} /> },
+            { href: 'https://instagram.com/fit.gg', icon: <Instagram size={18} strokeWidth={2} /> },
+            { href: 'https://tiktok.com/@fitdotgg', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg> },
           ].map((s) => (
             <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer" style={{
-              color: '#333', textDecoration: 'none', fontSize: '18px', transition: 'all 0.2s',
+              color: '#333', textDecoration: 'none', transition: 'all 0.2s',
               width: '40px', height: '40px', borderRadius: '50%',
               background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',

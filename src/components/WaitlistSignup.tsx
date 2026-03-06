@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { Gamepad2 } from 'lucide-react'
 
 export default function WaitlistSignup({ source = 'inline' }: { source?: string }) {
   const [email, setEmail] = useState('')
@@ -36,8 +37,8 @@ export default function WaitlistSignup({ source = 'inline' }: { source?: string 
   if (submitted) {
     return (
       <div style={{ textAlign: 'center' }}>
-        <p style={{ fontSize: '18px', fontWeight: 800, color: '#00FF87', textTransform: 'uppercase' }}>
-          GG. You&apos;re in. 🎮
+        <p style={{ fontSize: '18px', fontWeight: 800, color: '#00FF87', textTransform: 'uppercase', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+          GG. You&apos;re in. <Gamepad2 size={18} strokeWidth={2} style={{ color: '#00FF87' }} />
         </p>
         <p style={{ fontSize: '13px', color: '#555', marginTop: '4px' }}>We&apos;ll keep you posted.</p>
       </div>
