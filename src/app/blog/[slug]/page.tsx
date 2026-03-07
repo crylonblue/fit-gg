@@ -2545,8 +2545,9 @@ export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const post = posts.find((p) => p.slug === params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const post = posts.find((p) => p.slug === slug)
   if (!post) return {}
   return {
     title: `${post.title} — fit.gg`,
@@ -2561,9 +2562,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = posts.find((p) => p.slug === params.slug)
-  const article = articles[params.slug]
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = posts.find((p) => p.slug === slug)
+  const article = articles[slug]
   if (!post || !article) notFound()
 
   return (
@@ -2593,7 +2595,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
         <div style={{ textAlign: 'center' }}>
           <p style={{ color: '#888', marginBottom: '20px', fontSize: '1.1rem' }}>Ready to build the workout habit that sticks?</p>
-          <WaitlistSignup source={`blog-${params.slug}`} />
+          <WaitlistSignup source={`blog-${slug}`} />
         </div>
       </article>
 
